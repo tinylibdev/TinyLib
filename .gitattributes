@@ -3,5 +3,8 @@
 *.hpp   text diff=cpp
 *.h     text diff=cpp
 
+# Correct C++ over C
+*.h linguist-language=cpp
+
 # Ignore docs in language detection
-TinyLib/_Info/** linguist-vendored
+TinyLib/_Info/Docs/** linguist-vendored
