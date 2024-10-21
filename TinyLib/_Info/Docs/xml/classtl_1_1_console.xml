@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classtl_1_1_console" kind="class" language="C++" prot="public">
+    <compoundname>tl::Console</compoundname>
+    <includes refid="_console_8h" local="no">Console.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>tl::Console</qualifiedname>
+        <enumvalue id="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a3329fdffb6147c571e247eeac0d3df82" prot="public">
+          <name>Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a64adb1d58c397edebef237f579be0364" prot="public">
+          <name>Dec</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a0e555b0fc424baadfbb68139c4553498" prot="public">
+          <name>Hex</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="24" column="9" bodyfile="TinyLib/Console/Console.h" bodystart="25" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtl_1_1_console_1aa6c6395a32b55d2c4fba28ef522b4179" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE tl::Console::stdOut</definition>
+        <argsstring></argsstring>
+        <name>stdOut</name>
+        <qualifiedname>tl::Console::stdOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="32" column="16" bodyfile="TinyLib/Console/Console.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_console_1a573b75eb5035f436b576c1e237df644c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Console::hexMode</definition>
+        <argsstring></argsstring>
+        <name>hexMode</name>
+        <qualifiedname>tl::Console::hexMode</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="33" column="13" bodyfile="TinyLib/Console/Console.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtl_1_1_console_1ac0c7008acd6d093950b86703b4b5de12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Console::Console</definition>
+        <argsstring>()</argsstring>
+        <name>Console</name>
+        <qualifiedname>tl::Console::Console</qualifiedname>
+        <briefdescription>
+<para>Opens up a new console window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="11" column="9" bodyfile="TinyLib/Console/Console.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a3a77a1046ea91222aea9725d64420bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Console::~Console</definition>
+        <argsstring>()</argsstring>
+        <name>~Console</name>
+        <qualifiedname>tl::Console::~Console</qualifiedname>
+        <briefdescription>
+<para>Automatically closes the console when object is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="12" column="9" bodyfile="TinyLib/Console/Console.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a28cbea123d31ecac8d40bc7a85ba2038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <qualifiedname>tl::Console::create</qualifiedname>
+        <briefdescription>
+<para>Recreate the console window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="14" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1ab3d7e7bb288351089364bd2f90087ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>tl::Console::close</qualifiedname>
+        <briefdescription>
+<para>Manually close the console window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="15" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::print</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>print</name>
+        <qualifiedname>tl::Console::print</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+<para>Display a C-string in console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What text to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="16" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1ab1b9665ba361a679f9c08ab4572d1669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::println</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>println</name>
+        <qualifiedname>tl::Console::println</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+<para>Display a C-string in console with a new line after. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What text to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="17" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a91d5c96f0cae60dff60530e6376f9804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::print</definition>
+        <argsstring>(u32)</argsstring>
+        <name>print</name>
+        <qualifiedname>tl::Console::print</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51" kindref="member">u32</ref></type>
+          <defname>num</defname>
+        </param>
+        <briefdescription>
+<para>Display a number in console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What number to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="18" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a0b20510a491cb2ce72c2586161d78bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::println</definition>
+        <argsstring>(u32)</argsstring>
+        <name>println</name>
+        <qualifiedname>tl::Console::println</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51" kindref="member">u32</ref></type>
+          <defname>num</defname>
+        </param>
+        <briefdescription>
+<para>Display a number in console with a newline after. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>What number to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="19" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a0b4ecfd95f4b4d11f84a2ff8d2047c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>tl::Console::clear</qualifiedname>
+        <briefdescription>
+<para>Clear the console. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="20" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="79" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1a4264551a1d9018934ffe9d3046a9b31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Console::set</definition>
+        <argsstring>(u8)</argsstring>
+        <name>set</name>
+        <qualifiedname>tl::Console::set</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+<para>Set certain settings for the console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtl_1_1_console" kindref="compound">Console</ref> enum for setting.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="classtl_1_1_console" kindref="compound">Console</ref> has an enum with settings you can pass here to change some settings such as displaying numbers in decimal or hex format. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="21" column="14" bodyfile="TinyLib/Console/Console.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_console_1ae4d0cfc755e22969589c1e746594333a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Console::isOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isOpen</name>
+        <qualifiedname>tl::Console::isOpen</qualifiedname>
+        <briefdescription>
+<para>Check if console is still open. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if console is open. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Console/Console.h" line="22" column="13" bodyfile="TinyLib/Console/Console.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TinyLib/Console/Console.h" line="8" column="5" bodyfile="TinyLib/Console/Console.h" bodystart="9" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classtl_1_1_console_1a0b4ecfd95f4b4d11f84a2ff8d2047c7d" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>clear</name></member>
+      <member refid="classtl_1_1_console_1ab3d7e7bb288351089364bd2f90087ba8" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>close</name></member>
+      <member refid="classtl_1_1_console_1ac0c7008acd6d093950b86703b4b5de12" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>Console</name></member>
+      <member refid="classtl_1_1_console_1a28cbea123d31ecac8d40bc7a85ba2038" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>create</name></member>
+      <member refid="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a64adb1d58c397edebef237f579be0364" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>Dec</name></member>
+      <member refid="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a3329fdffb6147c571e247eeac0d3df82" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>Default</name></member>
+      <member refid="classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a0e555b0fc424baadfbb68139c4553498" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>Hex</name></member>
+      <member refid="classtl_1_1_console_1a573b75eb5035f436b576c1e237df644c" prot="private" virt="non-virtual"><scope>tl::Console</scope><name>hexMode</name></member>
+      <member refid="classtl_1_1_console_1ae4d0cfc755e22969589c1e746594333a" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>isOpen</name></member>
+      <member refid="classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>print</name></member>
+      <member refid="classtl_1_1_console_1a91d5c96f0cae60dff60530e6376f9804" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>print</name></member>
+      <member refid="classtl_1_1_console_1ab1b9665ba361a679f9c08ab4572d1669" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>println</name></member>
+      <member refid="classtl_1_1_console_1a0b20510a491cb2ce72c2586161d78bb2" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>println</name></member>
+      <member refid="classtl_1_1_console_1a4264551a1d9018934ffe9d3046a9b31c" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>set</name></member>
+      <member refid="classtl_1_1_console_1aa6c6395a32b55d2c4fba28ef522b4179" prot="private" virt="non-virtual"><scope>tl::Console</scope><name>stdOut</name></member>
+      <member refid="classtl_1_1_console_1a3a77a1046ea91222aea9725d64420bff" prot="public" virt="non-virtual"><scope>tl::Console</scope><name>~Console</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

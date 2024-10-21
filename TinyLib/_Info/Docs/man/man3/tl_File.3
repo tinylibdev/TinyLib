@@ -1,0 +1,123 @@
+.TH "tl::File" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tl::File
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <File\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFile\fP ()"
+.br
+.RI "New file reader, path must be set with \fBtl::File::open()\fP\&. "
+.ti -1c
+.RI "\fBFile\fP (const char *path)"
+.br
+.RI "New file reader, preset with a path\&. "
+.ti -1c
+.RI "\fB~File\fP ()"
+.br
+.RI "Nothing to clean up for now\&. "
+.ti -1c
+.RI "void \fBopen\fP (const char *path)"
+.br
+.RI "Open a new file path on this file\&. "
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.RI "Close the file path\&. "
+.ti -1c
+.RI "void \fBread\fP (char **data)"
+.br
+.RI "Read char data from this file objects file path\&. "
+.ti -1c
+.RI "size_t \fBlength\fP ()"
+.br
+.RI "Get length of file data\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB8\fP of file \fBFile\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "tl::File::File ()"
+
+.PP
+New file reader, path must be set with \fBtl::File::open()\fP\&. 
+.PP
+Definition at line \fB7\fP of file \fBFile\&.cpp\fP\&.
+.SS "tl::File::File (const char * path)"
+
+.PP
+New file reader, preset with a path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP \fBFile\fP path to read from\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB15\fP of file \fBFile\&.cpp\fP\&.
+.SS "tl::File::~File ()"
+
+.PP
+Nothing to clean up for now\&. 
+.PP
+Definition at line \fB22\fP of file \fBFile\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void tl::File::close ()"
+
+.PP
+Close the file path\&. 
+.PP
+Definition at line \fB37\fP of file \fBFile\&.cpp\fP\&.
+.SS "size_t tl::File::length ()"
+
+.PP
+Get length of file data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBFile\fP length\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB96\fP of file \fBFile\&.cpp\fP\&.
+.SS "void tl::File::open (const char * path)"
+
+.PP
+Open a new file path on this file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP \fBFile\fP path to read from\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB30\fP of file \fBFile\&.cpp\fP\&.
+.SS "void tl::File::read (char ** data)"
+
+.PP
+Read char data from this file objects file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP Data from file will go in here\&. nullptr if invalid path\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB45\fP of file \fBFile\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

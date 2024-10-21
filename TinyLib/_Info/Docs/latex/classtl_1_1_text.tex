@@ -1,0 +1,181 @@
+\doxysection{tl\+::Text Class Reference}
+\label{classtl_1_1_text}\index{tl::Text@{tl::Text}}
+
+
+{\ttfamily \#include $<$Text.\+h$>$}
+
+Inheritance diagram for tl\+::Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtl_1_1_text}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Text} (const \textbf{ ascii} $\ast$=nullptr, \textbf{ u32}=12, \textbf{ Vec2i}=\{ 0, 0 \})
+\begin{DoxyCompactList}\small\item\em Create a new text that can be drawn to screen. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Text} ()
+\begin{DoxyCompactList}\small\item\em Clean up string data. \end{DoxyCompactList}\item 
+void \textbf{ set\+String} (const \textbf{ ascii} $\ast$)
+\begin{DoxyCompactList}\small\item\em Set the string data. \end{DoxyCompactList}\item 
+\textbf{ ascii} $\ast$ \textbf{ get\+String} () const
+\begin{DoxyCompactList}\small\item\em Get the string data from this text. \end{DoxyCompactList}\item 
+void \textbf{ set\+Font\+Size} (\textbf{ s32})
+\begin{DoxyCompactList}\small\item\em Set the font size for this text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ tl\+::\+Drawable}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Drawable} (\textbf{ Vec4i} bounds=\{0, 0, 0, 0\})
+\begin{DoxyCompactList}\small\item\em Creates a new drawable object with it\textquotesingle{}s position and size. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Nothing to clean up for now. \end{DoxyCompactList}\item 
+void \textbf{ set\+Position} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set position of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Get the current position of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Size} () const
+\begin{DoxyCompactList}\small\item\em Get the current size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Color} \textbf{ get\+Color} () const
+\begin{DoxyCompactList}\small\item\em Get the current color of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ move} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Move this drawable object from current position. \end{DoxyCompactList}\item 
+void \textbf{ set\+Color} (\textbf{ Color})
+\begin{DoxyCompactList}\small\item\em Set the color of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Drawable} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is intersecting with another. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Window} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is inside the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \textbf{ tl\+::\+Drawable}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ s32} \textbf{ posX}
+\item 
+\textbf{ s32} \textbf{ posY}
+\item 
+\textbf{ s32} \textbf{ sizeX}
+\item 
+\textbf{ s32} \textbf{ sizeY}
+\item 
+\textbf{ u8} \textbf{ r} = 0
+\item 
+\textbf{ u8} \textbf{ g} = 0
+\item 
+\textbf{ u8} \textbf{ b} = 0
+\item 
+\textbf{ u8} \textbf{ a} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 8} of file \textbf{ Text.\+h}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{tl::Text@{tl::Text}!Text@{Text}}
+\index{Text@{Text}!tl::Text@{tl::Text}}
+\doxysubsubsection{Text()}
+{\footnotesize\ttfamily \label{classtl_1_1_text_aead89526f1134efdbb683662d503ecce} 
+tl\+::\+Text\+::\+Text (\begin{DoxyParamCaption}\item[{const \textbf{ ascii} $\ast$}]{str}{ = {\ttfamily nullptr}, }\item[{\textbf{ u32}}]{font\+Size}{ = {\ttfamily 12}, }\item[{\textbf{ Vec2i}}]{pos}{ = {\ttfamily \{~0,~0~\}}}\end{DoxyParamCaption})}
+
+
+
+Create a new text that can be drawn to screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & What the text displays. \\
+\hline
+{\em font\+Size} & How big text is. \\
+\hline
+{\em pos} & Where text is.\\
+\hline
+\end{DoxyParams}
+The defaults for each parameter, no string data, fonst size 12, position (0, 0). 
+
+Definition at line \textbf{ 13} of file \textbf{ Text.\+cpp}.
+
+\index{tl::Text@{tl::Text}!````~Text@{$\sim$Text}}
+\index{````~Text@{$\sim$Text}!tl::Text@{tl::Text}}
+\doxysubsubsection{$\sim$Text()}
+{\footnotesize\ttfamily \label{classtl_1_1_text_a12cfa88d0cea89d2e553d8cbde046f41} 
+tl\+::\+Text\+::$\sim$\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Clean up string data. 
+
+
+
+Definition at line \textbf{ 22} of file \textbf{ Text.\+cpp}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{tl::Text@{tl::Text}!getString@{getString}}
+\index{getString@{getString}!tl::Text@{tl::Text}}
+\doxysubsubsection{getString()}
+{\footnotesize\ttfamily \label{classtl_1_1_text_a342716a8b9b9f950fed58d3e73eb1035} 
+\textbf{ ascii} $\ast$ tl\+::\+Text\+::get\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the string data from this text. 
+
+\begin{DoxyReturn}{Returns}
+Internal string. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 51} of file \textbf{ Text.\+cpp}.
+
+\index{tl::Text@{tl::Text}!setFontSize@{setFontSize}}
+\index{setFontSize@{setFontSize}!tl::Text@{tl::Text}}
+\doxysubsubsection{setFontSize()}
+{\footnotesize\ttfamily \label{classtl_1_1_text_af448df96815b0aa650eec8a2cf5bcc0d} 
+void tl\+::\+Text\+::set\+Font\+Size (\begin{DoxyParamCaption}\item[{\textbf{ s32}}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Set the font size for this text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & New font size.\\
+\hline
+\end{DoxyParams}
+I might change how font size scales later on, it doesn\textquotesingle{}t seem to be accurate based on pixels when using GDI/\+DirectX. 
+
+Definition at line \textbf{ 62} of file \textbf{ Text.\+cpp}.
+
+\index{tl::Text@{tl::Text}!setString@{setString}}
+\index{setString@{setString}!tl::Text@{tl::Text}}
+\doxysubsubsection{setString()}
+{\footnotesize\ttfamily \label{classtl_1_1_text_a32191037254d9cf575cb9677be4536ae} 
+void tl\+::\+Text\+::set\+String (\begin{DoxyParamCaption}\item[{const \textbf{ ascii} $\ast$}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Set the string data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & New string for text. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 30} of file \textbf{ Text.\+cpp}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Lib/\+Graphics/\textbf{ Text.\+h}\item 
+Tiny\+Lib/\+Graphics/\textbf{ Text.\+cpp}\end{DoxyCompactItemize}

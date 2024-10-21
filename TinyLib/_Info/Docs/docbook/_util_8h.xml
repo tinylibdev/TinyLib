@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__util_8h" xml:lang="en-US">
+<title>TinyLib/Base/Util.h File Reference</title>
+<indexterm><primary>TinyLib/Base/Util.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../Base/Win/WinAPI.h&quot;<?linebreak?>#include &quot;Types.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetl">tl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

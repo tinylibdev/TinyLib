@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__types_8h_source" xml:lang="en-US">
+<title>Types.h</title>
+<indexterm><primary>TinyLib/Base/Types.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__types_8h_source_1l00001"/>00001 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="__types_8h_source_1l00002"/>00002 <emphasis role="comment">*&#32;This&#32;file&#32;contains&#32;custom&#32;typedefs&#32;for&#32;a&#32;more&#32;standard&#32;type&#32;naming&#32;system.</emphasis>
+<anchor xml:id="__types_8h_source_1l00003"/>00003 <emphasis role="comment">*&#32;These&#32;are&#32;used&#32;internally&#32;and&#32;may&#32;be&#32;used&#32;by&#32;the&#32;user&#32;of&#32;this&#32;library&#32;as&#32;well.</emphasis>
+<anchor xml:id="__types_8h_source_1l00004"/>00004 <emphasis role="comment">*&#32;If&#32;there&apos;s&#32;a&#32;conflict&#32;for&#32;a&#32;specific&#32;C&#32;type&#32;between&#32;systems,&#32;we&#32;unify&#32;them.</emphasis>
+<anchor xml:id="__types_8h_source_1l00005"/>00005 <emphasis role="comment">*&#32;All&#32;numbers&#32;also&#32;have&#32;the&#32;range&#32;they&#32;can&#32;have&#32;in&#32;a&#32;comment&#32;for&#32;IDEs&#32;to&#32;see.</emphasis>
+<anchor xml:id="__types_8h_source_1l00006"/>00006 <emphasis role="comment">*&#32;More&#32;advanced&#32;types&#32;like&#32;String&#32;and&#32;Bitset&#32;have&#32;their&#32;own&#32;class&#32;files.</emphasis>
+<anchor xml:id="__types_8h_source_1l00007"/>00007 <emphasis role="comment">*&#32;Except&#32;I&#32;haven&apos;t&#32;added&#32;back&#32;String&#32;or&#32;Bitset&#32;since&#32;a&#32;recent&#32;redesign,&#32;they&apos;ll&#32;return.</emphasis>
+<anchor xml:id="__types_8h_source_1l00008"/>00008 <emphasis role="comment">*/</emphasis>
+<anchor xml:id="__types_8h_source_1l00009"/>00009 
+<anchor xml:id="__types_8h_source_1l00010"/>00010 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__types_8h_source_1l00011"/>00011 
+<anchor xml:id="__types_8h_source_1l00012"/>00012 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__types_8h_source_1l00013"/>00013 {
+<anchor xml:id="__types_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;-127&#32;:&#32;128</emphasis>
+<anchor xml:id="__types_8h_source_1l00015"/><link linkend="_namespacetl_1a2b5321f751711d1665cff1914daea4da">00015</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a2b5321f751711d1665cff1914daea4da">s8</link>&#32;=&#32;<emphasis role="keywordtype">signed</emphasis>&#32;char;
+<anchor xml:id="__types_8h_source_1l00016"/>00016 
+<anchor xml:id="__types_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;-32,767&#32;:&#32;32,768</emphasis>
+<anchor xml:id="__types_8h_source_1l00018"/><link linkend="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c">00018</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c">s16</link>&#32;=&#32;<emphasis role="keywordtype">signed</emphasis>&#32;short;
+<anchor xml:id="__types_8h_source_1l00019"/>00019 
+<anchor xml:id="__types_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;-2,147,483,647&#32;:&#32;2,147,483,648</emphasis>
+<anchor xml:id="__types_8h_source_1l00021"/><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">00021</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;=&#32;<emphasis role="keywordtype">signed</emphasis>&#32;int;
+<anchor xml:id="__types_8h_source_1l00022"/>00022 
+<anchor xml:id="__types_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;-9,223,372,036,854,775,807&#32;:&#32;9,223,372,036,854,775,808</emphasis>
+<anchor xml:id="__types_8h_source_1l00024"/>00024 <emphasis role="preprocessor">#ifdef&#32;_MSC_VER</emphasis>
+<anchor xml:id="__types_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">s64</link>&#32;=&#32;<emphasis role="keywordtype">signed</emphasis>&#32;__int64;
+<anchor xml:id="__types_8h_source_1l00026"/>00026 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="__types_8h_source_1l00027"/><link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">00027</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">s64</link>&#32;=&#32;<emphasis role="keywordtype">signed</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;long;
+<anchor xml:id="__types_8h_source_1l00028"/>00028 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="__types_8h_source_1l00029"/>00029 
+<anchor xml:id="__types_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;0&#32;:&#32;255</emphasis>
+<anchor xml:id="__types_8h_source_1l00031"/><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">00031</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;=&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;char;
+<anchor xml:id="__types_8h_source_1l00032"/>00032 
+<anchor xml:id="__types_8h_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;0&#32;:&#32;65,535</emphasis>
+<anchor xml:id="__types_8h_source_1l00034"/><link linkend="_namespacetl_1a413c6dc972e88526a668913ce1b06b29">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a413c6dc972e88526a668913ce1b06b29">u16</link>&#32;=&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;short;
+<anchor xml:id="__types_8h_source_1l00035"/>00035 
+<anchor xml:id="__types_8h_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;0&#32;:&#32;4,294,967,295</emphasis>
+<anchor xml:id="__types_8h_source_1l00037"/><link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">00037</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;=&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;int;
+<anchor xml:id="__types_8h_source_1l00038"/>00038 
+<anchor xml:id="__types_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;0&#32;:&#32;18,446,744,073,709,551,616</emphasis>
+<anchor xml:id="__types_8h_source_1l00040"/>00040 <emphasis role="preprocessor">#ifdef&#32;_MSC_VER</emphasis>
+<anchor xml:id="__types_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">u64</link>&#32;=&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;__int64;
+<anchor xml:id="__types_8h_source_1l00042"/>00042 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="__types_8h_source_1l00043"/><link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">00043</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">u64</link>&#32;=&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;long;
+<anchor xml:id="__types_8h_source_1l00044"/>00044 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="__types_8h_source_1l00045"/>00045 
+<anchor xml:id="__types_8h_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Can&#32;have&#32;up&#32;to&#32;7&#32;real&#32;decimals.</emphasis>
+<anchor xml:id="__types_8h_source_1l00047"/><link linkend="_namespacetl_1a6903978f17afa16057594b38fa3602e6">00047</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a6903978f17afa16057594b38fa3602e6">f32</link>&#32;=&#32;float;
+<anchor xml:id="__types_8h_source_1l00048"/>00048 
+<anchor xml:id="__types_8h_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Can&#32;have&#32;up&#32;to&#32;15&#32;real&#32;decimals.</emphasis>
+<anchor xml:id="__types_8h_source_1l00050"/><link linkend="_namespacetl_1a29d996d8825610815a08c5db10016151">00050</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a29d996d8825610815a08c5db10016151">f64</link>&#32;=&#32;double;
+<anchor xml:id="__types_8h_source_1l00051"/>00051 
+<anchor xml:id="__types_8h_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;single&#32;ASCII&#32;character.</emphasis>
+<anchor xml:id="__types_8h_source_1l00053"/><link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">00053</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>&#32;=&#32;char;
+<anchor xml:id="__types_8h_source_1l00054"/>00054 
+<anchor xml:id="__types_8h_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;single&#32;unicode&#32;character.</emphasis>
+<anchor xml:id="__types_8h_source_1l00056"/><link linkend="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd">00056</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd">unicode</link>&#32;=&#32;wchar_t;
+<anchor xml:id="__types_8h_source_1l00057"/>00057 
+<anchor xml:id="__types_8h_source_1l00058"/>00058 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;true/false&#32;value.</emphasis>
+<anchor xml:id="__types_8h_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;This&#32;actually&#32;takes&#32;1&#32;byte&#32;of&#32;data&#32;if&#32;used.</emphasis>
+<anchor xml:id="__types_8h_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;If&#32;you&#32;want&#32;to&#32;make&#32;full&#32;usage&#32;of&#32;a&#32;byte&#32;use&#32;tl::bitset</emphasis>
+<anchor xml:id="__types_8h_source_1l00061"/><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">00061</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link>&#32;=&#32;bool;
+<anchor xml:id="__types_8h_source_1l00062"/>00062 
+<anchor xml:id="__types_8h_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;vector&#32;of&#32;2&#32;signed&#32;integers.</emphasis>
+<anchor xml:id="__types_8h_source_1l00064"/><link linkend="_structtl_1_1_vec2i">00064</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structtl_1_1_vec2i">Vec2i</link>
+<anchor xml:id="__types_8h_source_1l00065"/>00065 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00066"/><link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">00066</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>;
+<anchor xml:id="__types_8h_source_1l00067"/>00067 
+<anchor xml:id="__types_8h_source_1l00068"/><link linkend="_structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e">00068</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e">Vec2i</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;xValue&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;yValue&#32;=&#32;0)
+<anchor xml:id="__types_8h_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>&#32;=&#32;xValue;
+<anchor xml:id="__types_8h_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>&#32;=&#32;yValue;
+<anchor xml:id="__types_8h_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__types_8h_source_1l00073"/>00073 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__types_8h_source_1l00074"/>00074 
+<anchor xml:id="__types_8h_source_1l00075"/>00075 
+<anchor xml:id="__types_8h_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;vector&#32;of&#32;3&#32;signed&#32;integers.</emphasis>
+<anchor xml:id="__types_8h_source_1l00077"/><link linkend="_structtl_1_1_vec3i">00077</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structtl_1_1_vec3i">Vec3i</link>
+<anchor xml:id="__types_8h_source_1l00078"/>00078 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00079"/><link linkend="_structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856">00079</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;<link linkend="_structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856">x</link>,&#32;<link linkend="_structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795">y</link>,&#32;<link linkend="_structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc">z</link>;
+<anchor xml:id="__types_8h_source_1l00080"/>00080 
+<anchor xml:id="__types_8h_source_1l00081"/><link linkend="_structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6">00081</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6">Vec3i</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;xValue&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;yValue&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;zValue&#32;=&#32;0)
+<anchor xml:id="__types_8h_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856">x</link>&#32;=&#32;xValue;
+<anchor xml:id="__types_8h_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795">y</link>&#32;=&#32;yValue;
+<anchor xml:id="__types_8h_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc">z</link>&#32;=&#32;zValue;
+<anchor xml:id="__types_8h_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__types_8h_source_1l00087"/>00087 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__types_8h_source_1l00088"/>00088 
+<anchor xml:id="__types_8h_source_1l00089"/>00089 
+<anchor xml:id="__types_8h_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;vector&#32;of&#32;4&#32;signed&#32;integers.&#32;Usually&#32;for&#32;a&#32;rectangle&#32;or&#32;boundaries.</emphasis>
+<anchor xml:id="__types_8h_source_1l00091"/><link linkend="_structtl_1_1_vec4i">00091</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structtl_1_1_vec4i">Vec4i</link>
+<anchor xml:id="__types_8h_source_1l00092"/>00092 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00093"/><link linkend="_structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf">00093</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;<link linkend="_structtl_1_1_vec4i_1a17b2afb4b34536cbd6d91541b0bad6ae">width</link>,&#32;<link linkend="_structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf">height</link>,&#32;<link linkend="_structtl_1_1_vec4i_1ac6da38a573fbebae04faac771c05ed3c">left</link>,&#32;<link linkend="_structtl_1_1_vec4i_1a12c7124e0b9fba766527872bb432ed98">top</link>;
+<anchor xml:id="__types_8h_source_1l00094"/>00094 
+<anchor xml:id="__types_8h_source_1l00095"/><link linkend="_structtl_1_1_vec4i_1abdfe289ff39400cba5b2392d70596e2e">00095</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec4i_1abdfe289ff39400cba5b2392d70596e2e">Vec4i</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;newWidth&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;newHeight&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;newLeft&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;newTop&#32;=&#32;0)
+<anchor xml:id="__types_8h_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec4i_1a17b2afb4b34536cbd6d91541b0bad6ae">width</link>&#32;=&#32;newWidth;
+<anchor xml:id="__types_8h_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf">height</link>&#32;=&#32;newHeight;
+<anchor xml:id="__types_8h_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec4i_1ac6da38a573fbebae04faac771c05ed3c">left</link>&#32;=&#32;newLeft;
+<anchor xml:id="__types_8h_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec4i_1a12c7124e0b9fba766527872bb432ed98">top</link>&#32;=&#32;newTop;
+<anchor xml:id="__types_8h_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__types_8h_source_1l00102"/>00102 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__types_8h_source_1l00103"/>00103 
+<anchor xml:id="__types_8h_source_1l00104"/>00104 
+<anchor xml:id="__types_8h_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;A&#32;color&#32;with&#32;4&#32;channels.</emphasis>
+<anchor xml:id="__types_8h_source_1l00106"/><link linkend="_structtl_1_1_color">00106</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">struct&#32;</emphasis><link linkend="_structtl_1_1_color">Color</link>
+<anchor xml:id="__types_8h_source_1l00107"/>00107 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00108"/><link linkend="_structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34">00108</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;<link linkend="_structtl_1_1_color_1a353edd65a9c14c9e9fc12b3a2bd8a8c8">r</link>,&#32;<link linkend="_structtl_1_1_color_1acabb8eda91ed6d102b19a6b74f43e206">g</link>,&#32;<link linkend="_structtl_1_1_color_1a3bf83204b4a0ed202d04f0c09fac4e95">b</link>,&#32;<link linkend="_structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34">a</link>;
+<anchor xml:id="__types_8h_source_1l00109"/>00109 
+<anchor xml:id="__types_8h_source_1l00110"/><link linkend="_structtl_1_1_color_1aa8219d93b98b8c371ba5dcaa63cc5c91">00110</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color_1aa8219d93b98b8c371ba5dcaa63cc5c91">Color</link>(<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;red&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;green&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;blue&#32;=&#32;0,&#32;<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;alpha&#32;=&#32;255)
+<anchor xml:id="__types_8h_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__types_8h_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color_1a353edd65a9c14c9e9fc12b3a2bd8a8c8">r</link>&#32;=&#32;red;
+<anchor xml:id="__types_8h_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color_1acabb8eda91ed6d102b19a6b74f43e206">g</link>&#32;=&#32;green;
+<anchor xml:id="__types_8h_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color_1a3bf83204b4a0ed202d04f0c09fac4e95">b</link>&#32;=&#32;blue;
+<anchor xml:id="__types_8h_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34">a</link>&#32;=&#32;alpha;
+<anchor xml:id="__types_8h_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__types_8h_source_1l00117"/>00117 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__types_8h_source_1l00118"/>00118 }
+</programlisting></section>

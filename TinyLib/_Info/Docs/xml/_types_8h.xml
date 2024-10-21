@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_types_8h" kind="file" language="C++">
+    <compoundname>Types.h</compoundname>
+    <includedby refid="_base_category_8h" local="yes">TinyLib/Base/BaseCategory.h</includedby>
+    <includedby refid="_time_8h" local="yes">TinyLib/Base/Time.h</includedby>
+    <includedby refid="_util_8h" local="yes">TinyLib/Base/Util.h</includedby>
+    <includedby refid="_drawable_8h" local="yes">TinyLib/Graphics/Drawable.h</includedby>
+    <includedby refid="_key_8h" local="yes">TinyLib/System/Key.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>TinyLib/Base/BaseCategory.h</label>
+        <link refid="_base_category_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>TinyLib/Base/Time.cpp</label>
+        <link refid="_time_8cpp"/>
+      </node>
+      <node id="20">
+        <label>TinyLib/Base/Time.h</label>
+        <link refid="_time_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TinyLib/Base/Types.h</label>
+        <link refid="_types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>TinyLib/Base/Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TinyLib/Console/Console.cpp</label>
+        <link refid="_console_8cpp"/>
+      </node>
+      <node id="3">
+        <label>TinyLib/Console/Console.h</label>
+        <link refid="_console_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TinyLib/Console/ConsoleCategory.h</label>
+        <link refid="_console_category_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>TinyLib/Graphics/Drawable.cpp</label>
+        <link refid="_drawable_8cpp"/>
+      </node>
+      <node id="23">
+        <label>TinyLib/Graphics/Drawable.h</label>
+        <link refid="_drawable_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TinyLib/Graphics/GraphicsCategory.h</label>
+        <link refid="_graphics_category_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TinyLib/Graphics/Rectangle.cpp</label>
+        <link refid="_rectangle_8cpp"/>
+      </node>
+      <node id="7">
+        <label>TinyLib/Graphics/Rectangle.h</label>
+        <link refid="_rectangle_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>TinyLib/Graphics/Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="13">
+        <label>TinyLib/Graphics/Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TinyLib/Graphics/Window.cpp</label>
+        <link refid="_window_8cpp"/>
+      </node>
+      <node id="10">
+        <label>TinyLib/Graphics/Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>TinyLib/System/File.cpp</label>
+        <link refid="_file_8cpp"/>
+      </node>
+      <node id="15">
+        <label>TinyLib/System/File.h</label>
+        <link refid="_file_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>TinyLib/System/Key.cpp</label>
+        <link refid="_key_8cpp"/>
+      </node>
+      <node id="24">
+        <label>TinyLib/System/Key.h</label>
+        <link refid="_key_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>TinyLib/System/Mouse.cpp</label>
+        <link refid="_mouse_8cpp"/>
+      </node>
+      <node id="18">
+        <label>TinyLib/System/Mouse.h</label>
+        <link refid="_mouse_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>TinyLib/System/SystemCategory.h</label>
+        <link refid="_system_category_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TinyLib/TinyLib.h</label>
+        <link refid="_tiny_lib_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtl_1_1_vec2i" prot="public">tl::Vec2i</innerclass>
+    <innerclass refid="structtl_1_1_vec3i" prot="public">tl::Vec3i</innerclass>
+    <innerclass refid="structtl_1_1_vec4i" prot="public">tl::Vec4i</innerclass>
+    <innerclass refid="structtl_1_1_color" prot="public">tl::Color</innerclass>
+    <innernamespace refid="namespacetl">tl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>This<sp/>file<sp/>contains<sp/>custom<sp/>typedefs<sp/>for<sp/>a<sp/>more<sp/>standard<sp/>type<sp/>naming<sp/>system.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>These<sp/>are<sp/>used<sp/>internally<sp/>and<sp/>may<sp/>be<sp/>used<sp/>by<sp/>the<sp/>user<sp/>of<sp/>this<sp/>library<sp/>as<sp/>well.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/>If<sp/>there&apos;s<sp/>a<sp/>conflict<sp/>for<sp/>a<sp/>specific<sp/>C<sp/>type<sp/>between<sp/>systems,<sp/>we<sp/>unify<sp/>them.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>All<sp/>numbers<sp/>also<sp/>have<sp/>the<sp/>range<sp/>they<sp/>can<sp/>have<sp/>in<sp/>a<sp/>comment<sp/>for<sp/>IDEs<sp/>to<sp/>see.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>More<sp/>advanced<sp/>types<sp/>like<sp/>String<sp/>and<sp/>Bitset<sp/>have<sp/>their<sp/>own<sp/>class<sp/>files.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>Except<sp/>I<sp/>haven&apos;t<sp/>added<sp/>back<sp/>String<sp/>or<sp/>Bitset<sp/>since<sp/>a<sp/>recent<sp/>redesign,<sp/>they&apos;ll<sp/>return.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetl" kindref="compound">tl</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-127<sp/>:<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacetl_1a2b5321f751711d1665cff1914daea4da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a2b5321f751711d1665cff1914daea4da" kindref="member">s8</ref><sp/>=<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>char;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-32,767<sp/>:<sp/>32,768</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacetl_1a4a14ec5f8ff07f086064f520c972079c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a4a14ec5f8ff07f086064f520c972079c" kindref="member">s16</ref><sp/>=<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>short;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-2,147,483,647<sp/>:<sp/>2,147,483,648</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>=<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-9,223,372,036,854,775,807<sp/>:<sp/>9,223,372,036,854,775,808</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1ad9a92397991f53b6250d01dbd9c54450" kindref="member">s64</ref><sp/>=<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>__int64;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacetl_1ad9a92397991f53b6250d01dbd9c54450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1ad9a92397991f53b6250d01dbd9c54450" kindref="member">s64</ref><sp/>=<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>:<sp/>255</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>:<sp/>65,535</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespacetl_1a413c6dc972e88526a668913ce1b06b29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a413c6dc972e88526a668913ce1b06b29" kindref="member">u16</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>:<sp/>4,294,967,295</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51" kindref="member">u32</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>:<sp/>18,446,744,073,709,551,616</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a904241d60278f00c7d91b31161237d62" kindref="member">u64</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>__int64;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespacetl_1a904241d60278f00c7d91b31161237d62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a904241d60278f00c7d91b31161237d62" kindref="member">u64</ref><sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Can<sp/>have<sp/>up<sp/>to<sp/>7<sp/>real<sp/>decimals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespacetl_1a6903978f17afa16057594b38fa3602e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a6903978f17afa16057594b38fa3602e6" kindref="member">f32</ref><sp/>=<sp/>float;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Can<sp/>have<sp/>up<sp/>to<sp/>15<sp/>real<sp/>decimals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacetl_1a29d996d8825610815a08c5db10016151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a29d996d8825610815a08c5db10016151" kindref="member">f64</ref><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>single<sp/>ASCII<sp/>character.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597" kindref="member">ascii</ref><sp/>=<sp/>char;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>single<sp/>unicode<sp/>character.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd" kindref="member">unicode</ref><sp/>=<sp/>wchar_t;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>true/false<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>actually<sp/>takes<sp/>1<sp/>byte<sp/>of<sp/>data<sp/>if<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>want<sp/>to<sp/>make<sp/>full<sp/>usage<sp/>of<sp/>a<sp/>byte<sp/>use<sp/>tl::bitset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref><sp/>=<sp/>bool;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>vector<sp/>of<sp/>2<sp/>signed<sp/>integers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structtl_1_1_vec2i" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="structtl_1_1_vec2i_1a41e041952704574074609118c0427518" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/><ref refid="structtl_1_1_vec2i_1a41e041952704574074609118c0427518" kindref="member">x</ref>,<sp/><ref refid="structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e" kindref="member">Vec2i</ref>(<ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>xValue<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>yValue<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec2i_1a41e041952704574074609118c0427518" kindref="member">x</ref><sp/>=<sp/>xValue;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287" kindref="member">y</ref><sp/>=<sp/>yValue;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>vector<sp/>of<sp/>3<sp/>signed<sp/>integers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structtl_1_1_vec3i" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtl_1_1_vec3i" kindref="compound">Vec3i</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79" refid="structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/><ref refid="structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856" kindref="member">x</ref>,<sp/><ref refid="structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795" kindref="member">y</ref>,<sp/><ref refid="structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6" kindref="member">Vec3i</ref>(<ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>xValue<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>yValue<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>zValue<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856" kindref="member">x</ref><sp/>=<sp/>xValue;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795" kindref="member">y</ref><sp/>=<sp/>yValue;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc" kindref="member">z</ref><sp/>=<sp/>zValue;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>vector<sp/>of<sp/>4<sp/>signed<sp/>integers.<sp/>Usually<sp/>for<sp/>a<sp/>rectangle<sp/>or<sp/>boundaries.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structtl_1_1_vec4i" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtl_1_1_vec4i" kindref="compound">Vec4i</ref></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93" refid="structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/><ref refid="structtl_1_1_vec4i_1a17b2afb4b34536cbd6d91541b0bad6ae" kindref="member">width</ref>,<sp/><ref refid="structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf" kindref="member">height</ref>,<sp/><ref refid="structtl_1_1_vec4i_1ac6da38a573fbebae04faac771c05ed3c" kindref="member">left</ref>,<sp/><ref refid="structtl_1_1_vec4i_1a12c7124e0b9fba766527872bb432ed98" kindref="member">top</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structtl_1_1_vec4i_1abdfe289ff39400cba5b2392d70596e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec4i_1abdfe289ff39400cba5b2392d70596e2e" kindref="member">Vec4i</ref>(<ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>newWidth<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>newHeight<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>newLeft<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref><sp/>newTop<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec4i_1a17b2afb4b34536cbd6d91541b0bad6ae" kindref="member">width</ref><sp/>=<sp/>newWidth;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf" kindref="member">height</ref><sp/>=<sp/>newHeight;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec4i_1ac6da38a573fbebae04faac771c05ed3c" kindref="member">left</ref><sp/>=<sp/>newLeft;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_vec4i_1a12c7124e0b9fba766527872bb432ed98" kindref="member">top</ref><sp/>=<sp/>newTop;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>color<sp/>with<sp/>4<sp/>channels.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structtl_1_1_color" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtl_1_1_color" kindref="compound">Color</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108" refid="structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/><ref refid="structtl_1_1_color_1a353edd65a9c14c9e9fc12b3a2bd8a8c8" kindref="member">r</ref>,<sp/><ref refid="structtl_1_1_color_1acabb8eda91ed6d102b19a6b74f43e206" kindref="member">g</ref>,<sp/><ref refid="structtl_1_1_color_1a3bf83204b4a0ed202d04f0c09fac4e95" kindref="member">b</ref>,<sp/><ref refid="structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structtl_1_1_color_1aa8219d93b98b8c371ba5dcaa63cc5c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_color_1aa8219d93b98b8c371ba5dcaa63cc5c91" kindref="member">Color</ref>(<ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>red<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>green<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>blue<sp/>=<sp/>0,<sp/><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>alpha<sp/>=<sp/>255)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_color_1a353edd65a9c14c9e9fc12b3a2bd8a8c8" kindref="member">r</ref><sp/>=<sp/>red;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_color_1acabb8eda91ed6d102b19a6b74f43e206" kindref="member">g</ref><sp/>=<sp/>green;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_color_1a3bf83204b4a0ed202d04f0c09fac4e95" kindref="member">b</ref><sp/>=<sp/>blue;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34" kindref="member">a</ref><sp/>=<sp/>alpha;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="TinyLib/Base/Types.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+\doxysection{Drawable.\+h}
+\label{_drawable_8h_source}\index{TinyLib/Graphics/Drawable.h@{TinyLib/Graphics/Drawable.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../Base/Types.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../Base/Win/WinAPI.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }tl}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \textcolor{comment}{//\ Forward\ declaration\ for\ the\ window\ intersect.}}
+\DoxyCodeLine{00009\ \ \ \textcolor{keyword}{class\ }Window;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \textcolor{keyword}{class\ }Drawable}
+\DoxyCodeLine{00012\ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ Drawable(Vec4i\ bounds\ =\ \{0,\ 0,\ 0,\ 0\});}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \string~Drawable();}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setPosition(Vec2i);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSize(Vec2i);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ Vec2i\ getPosition()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ Vec2i\ getSize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ Color\ getColor()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ move(Vec2i);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setColor(Color);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ bit\ intersects(Drawable\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ bit\ intersects(Window\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ s32\ posX,\ posY,\ sizeX,\ sizeY;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ u8\ r\ =\ 0,\ g\ =\ 0,\ b\ =\ 0,\ a\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \};}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}

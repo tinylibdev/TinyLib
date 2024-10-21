@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__window_8cpp_source" xml:lang="en-US">
+<title>Window.cpp</title>
+<indexterm><primary>TinyLib/Graphics/Window.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__window_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__window_8h">Window.h</link>&quot;</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__window_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__window_8cpp_source_1l00004"/>00004 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__window_8cpp_source_1l00005"/>00005 {
+<anchor xml:id="__window_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;LRESULT&#32;CALLBACK&#32;Window::WndProc(HWND&#32;hwnd,&#32;UINT&#32;msg,&#32;WPARAM&#32;wParam,&#32;LPARAM&#32;lParam)
+<anchor xml:id="__window_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a">Window</link>*&#32;window&#32;=&#32;<emphasis role="keyword">reinterpret_cast&lt;</emphasis><link linkend="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a">Window</link>*<emphasis role="keyword">&gt;</emphasis>(GetWindowLongPtr(hwnd,&#32;GWLP_USERDATA));
+<anchor xml:id="__window_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(window&#32;==&#32;<emphasis role="keyword">nullptr</emphasis>)
+<anchor xml:id="__window_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;DefWindowProc(hwnd,&#32;msg,&#32;wParam,&#32;lParam);
+<anchor xml:id="__window_8cpp_source_1l00020"/>00020 
+<anchor xml:id="__window_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(msg)
+<anchor xml:id="__window_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;WM_CLOSE:
+<anchor xml:id="__window_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;window-&gt;currentEvents&#32;|=&#32;<link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da5be4e5d266410d4098330ef298d0a590">Event::Closed</link>;
+<anchor xml:id="__window_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;WM_DESTROY:
+<anchor xml:id="__window_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PostQuitMessage(0);
+<anchor xml:id="__window_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;WM_MOVE:
+<anchor xml:id="__window_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;window-&gt;currentEvents&#32;|=&#32;<link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654daed0acb15944cd2abce85da77065f7ba0">Event::Moved</link>;
+<anchor xml:id="__window_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;WM_SIZE:
+<anchor xml:id="__window_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;window-&gt;currentEvents&#32;|=&#32;<link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da60573197598e5aa232348f6efb3f7066">Event::Resized</link>;
+<anchor xml:id="__window_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:
+<anchor xml:id="__window_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;DefWindowProc(hwnd,&#32;msg,&#32;wParam,&#32;lParam);
+<anchor xml:id="__window_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00043"/>00043 
+<anchor xml:id="__window_8cpp_source_1l00044"/>00044 
+<anchor xml:id="__window_8cpp_source_1l00053"/><link linkend="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a">00053</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a">Window::Window</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;size,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;title,&#32;LONG&#32;style)
+<anchor xml:id="__window_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d">create</link>({size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>},&#32;title,&#32;style);
+<anchor xml:id="__window_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00057"/>00057 
+<anchor xml:id="__window_8cpp_source_1l00058"/>00058 
+<anchor xml:id="__window_8cpp_source_1l00060"/><link linkend="_classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064">00060</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064">Window::~Window</link>()
+<anchor xml:id="__window_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>&#32;graphics;
+<anchor xml:id="__window_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DestroyWindow(hwnd);
+<anchor xml:id="__window_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00065"/>00065 
+<anchor xml:id="__window_8cpp_source_1l00066"/>00066 
+<anchor xml:id="__window_8cpp_source_1l00073"/><link linkend="_classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d">00073</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d">Window::create</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;size,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;title,&#32;LONG&#32;style)
+<anchor xml:id="__window_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Create&#32;the&#32;window&#32;first</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WNDCLASSA&#32;wc&#32;=&#32;{};
+<anchor xml:id="__window_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.style&#32;=&#32;CS_HREDRAW&#32;|&#32;CS_VREDRAW;
+<anchor xml:id="__window_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.lpfnWndProc&#32;=&#32;WndProc;
+<anchor xml:id="__window_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.hInstance&#32;=&#32;GetModuleHandle(NULL);
+<anchor xml:id="__window_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.hCursor&#32;=&#32;LoadCursor(NULL,&#32;IDC_ARROW);
+<anchor xml:id="__window_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;className[13];
+<anchor xml:id="__window_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wsprintfA(className,&#32;<emphasis role="stringliteral">&quot;TL%u&quot;</emphasis>,&#32;GetCurrentProcessId());
+<anchor xml:id="__window_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.lpszClassName&#32;=&#32;className;
+<anchor xml:id="__window_8cpp_source_1l00084"/>00084 
+<anchor xml:id="__window_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RegisterClassA(&amp;wc);
+<anchor xml:id="__window_8cpp_source_1l00086"/>00086 
+<anchor xml:id="__window_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RECT&#32;rect&#32;=&#32;{&#32;0,&#32;0,&#32;size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>&#32;};
+<anchor xml:id="__window_8cpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AdjustWindowRect(&amp;rect,&#32;style&#32;|&#32;WS_VISIBLE,&#32;FALSE);
+<anchor xml:id="__window_8cpp_source_1l00089"/>00089 
+<anchor xml:id="__window_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hwnd&#32;=&#32;CreateWindowA(
+<anchor xml:id="__window_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.lpszClassName,&#32;title,
+<anchor xml:id="__window_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;style&#32;|&#32;WS_VISIBLE,
+<anchor xml:id="__window_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CW_USEDEFAULT,&#32;CW_USEDEFAULT,&#32;rect.right&#32;-&#32;rect.left,&#32;rect.bottom&#32;-&#32;rect.top,
+<anchor xml:id="__window_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;NULL,&#32;NULL,&#32;wc.hInstance,&#32;NULL
+<anchor xml:id="__window_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;);
+<anchor xml:id="__window_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__window_8cpp_source_1l00097"/>00097 <emphasis role="preprocessor">#ifdef&#32;GDI_GRAPHICS</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;_GraphicsGDI(hwnd,&#32;size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>);
+<anchor xml:id="__window_8cpp_source_1l00099"/>00099 <emphasis role="preprocessor">#else</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;_Graphics(hwnd,&#32;size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>);
+<anchor xml:id="__window_8cpp_source_1l00101"/>00101 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00102"/>00102 
+<anchor xml:id="__window_8cpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;windowOpen&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ShowWindow(hwnd,&#32;SW_SHOW);
+<anchor xml:id="__window_8cpp_source_1l00105"/>00105 
+<anchor xml:id="__window_8cpp_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowLongPtr(hwnd,&#32;GWLP_USERDATA,&#32;<emphasis role="keyword">reinterpret_cast&lt;</emphasis>LONG_PTR<emphasis role="keyword">&gt;</emphasis>(<emphasis role="keyword">this</emphasis>));
+<anchor xml:id="__window_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00108"/>00108 
+<anchor xml:id="__window_8cpp_source_1l00109"/>00109 
+<anchor xml:id="__window_8cpp_source_1l00115"/><link linkend="_classtl_1_1_window_1acc9900250b03144262deb12fbdb61378">00115</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classtl_1_1_window_1acc9900250b03144262deb12fbdb61378">Window::isOpen</link>()
+<anchor xml:id="__window_8cpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(maxFps&#32;&gt;&#32;0)
+<anchor xml:id="__window_8cpp_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">u64</link>&#32;currentTime&#32;=&#32;<link linkend="_classtl_1_1_time_1a4cc3ff829d334cf59c3aacb0ab181c0e">Time::currentTime</link>();
+<anchor xml:id="__window_8cpp_source_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">u64</link>&#32;frameDuration&#32;=&#32;1000&#32;/&#32;maxFps;
+<anchor xml:id="__window_8cpp_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(currentTime&#32;-&#32;lastFrameTime&#32;&lt;&#32;frameDuration)
+<anchor xml:id="__window_8cpp_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(frameDuration&#32;-&#32;(currentTime&#32;-&#32;lastFrameTime));
+<anchor xml:id="__window_8cpp_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lastFrameTime&#32;=&#32;<link linkend="_classtl_1_1_time_1a4cc3ff829d334cf59c3aacb0ab181c0e">Time::currentTime</link>();
+<anchor xml:id="__window_8cpp_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00125"/>00125 
+<anchor xml:id="__window_8cpp_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;currentEvents&#32;=&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00127"/>00127 
+<anchor xml:id="__window_8cpp_source_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MSG&#32;msg;
+<anchor xml:id="__window_8cpp_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(PeekMessage(&amp;msg,&#32;NULL,&#32;0,&#32;0,&#32;PM_REMOVE))
+<anchor xml:id="__window_8cpp_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00131"/>00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;TranslateMessage(&amp;msg);
+<anchor xml:id="__window_8cpp_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DispatchMessage(&amp;msg);
+<anchor xml:id="__window_8cpp_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00136"/>00136 
+<anchor xml:id="__window_8cpp_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;windowOpen;
+<anchor xml:id="__window_8cpp_source_1l00138"/>00138 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00139"/>00139 
+<anchor xml:id="__window_8cpp_source_1l00140"/>00140 
+<anchor xml:id="__window_8cpp_source_1l00143"/><link linkend="_classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532">00143</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532">Window::draw</link>(<link linkend="_classtl_1_1_rectangle">Rectangle</link>&amp;&#32;rectangle)
+<anchor xml:id="__window_8cpp_source_1l00144"/>00144 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics-&gt;draw(rectangle);
+<anchor xml:id="__window_8cpp_source_1l00146"/>00146 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00147"/>00147 
+<anchor xml:id="__window_8cpp_source_1l00148"/>00148 
+<anchor xml:id="__window_8cpp_source_1l00151"/><link linkend="_classtl_1_1_window_1a9840a8d047b1f9e4b8803e0fef20006a">00151</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532">Window::draw</link>(<link linkend="_classtl_1_1_text">Text</link>&amp;&#32;text)
+<anchor xml:id="__window_8cpp_source_1l00152"/>00152 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics-&gt;draw(text);
+<anchor xml:id="__window_8cpp_source_1l00154"/>00154 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00155"/>00155 
+<anchor xml:id="__window_8cpp_source_1l00156"/>00156 
+<anchor xml:id="__window_8cpp_source_1l00158"/><link linkend="_classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e">00158</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e">Window::close</link>()
+<anchor xml:id="__window_8cpp_source_1l00159"/>00159 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00160"/>00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;windowOpen&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__window_8cpp_source_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DestroyWindow(hwnd);
+<anchor xml:id="__window_8cpp_source_1l00162"/>00162 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00163"/>00163 
+<anchor xml:id="__window_8cpp_source_1l00164"/>00164 
+<anchor xml:id="__window_8cpp_source_1l00167"/><link linkend="_classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1">00167</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1">Window::clear</link>(<link linkend="_structtl_1_1_color">Color</link>&#32;color)
+<anchor xml:id="__window_8cpp_source_1l00168"/>00168 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00169"/>00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics-&gt;clear(color);
+<anchor xml:id="__window_8cpp_source_1l00170"/>00170 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00171"/>00171 
+<anchor xml:id="__window_8cpp_source_1l00172"/>00172 
+<anchor xml:id="__window_8cpp_source_1l00174"/><link linkend="_classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b">00174</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b">Window::display</link>()
+<anchor xml:id="__window_8cpp_source_1l00175"/>00175 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics-&gt;display();
+<anchor xml:id="__window_8cpp_source_1l00177"/>00177 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00178"/>00178 
+<anchor xml:id="__window_8cpp_source_1l00179"/>00179 
+<anchor xml:id="__window_8cpp_source_1l00182"/><link linkend="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e">00182</link> &#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;<link linkend="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e">Window::getSize</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00183"/>00183 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__window_8cpp_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RECT&#32;rect;
+<anchor xml:id="__window_8cpp_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetClientRect(hwnd,&#32;&amp;rect);
+<anchor xml:id="__window_8cpp_source_1l00186"/>00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>(rect.right),&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>(rect.bottom));
+<anchor xml:id="__window_8cpp_source_1l00187"/>00187 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00188"/>00188 
+<anchor xml:id="__window_8cpp_source_1l00189"/>00189 
+<anchor xml:id="__window_8cpp_source_1l00192"/><link linkend="_classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b">00192</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b">Window::setSize</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;size)
+<anchor xml:id="__window_8cpp_source_1l00193"/>00193 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00194"/>00194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowPos(hwnd,&#32;NULL,&#32;0,&#32;0,&#32;size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>,&#32;SWP_NOMOVE&#32;|&#32;SWP_NOZORDER);
+<anchor xml:id="__window_8cpp_source_1l00195"/>00195 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00196"/>00196 
+<anchor xml:id="__window_8cpp_source_1l00197"/>00197 
+<anchor xml:id="__window_8cpp_source_1l00200"/><link linkend="_classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84">00200</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84">Window::setTitle</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;title)
+<anchor xml:id="__window_8cpp_source_1l00201"/>00201 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00202"/>00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowTextA(hwnd,&#32;title);
+<anchor xml:id="__window_8cpp_source_1l00203"/>00203 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00204"/>00204 
+<anchor xml:id="__window_8cpp_source_1l00205"/>00205 
+<anchor xml:id="__window_8cpp_source_1l00208"/><link linkend="_classtl_1_1_window_1a9efb2affce62623dec72f2267704412b">00208</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a9efb2affce62623dec72f2267704412b">Window::setPosition</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;pos)
+<anchor xml:id="__window_8cpp_source_1l00209"/>00209 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00210"/>00210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowPos(hwnd,&#32;NULL,&#32;pos.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;pos.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>,&#32;0,&#32;0,&#32;SWP_NOSIZE&#32;|&#32;SWP_NOZORDER);
+<anchor xml:id="__window_8cpp_source_1l00211"/>00211 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00212"/>00212 
+<anchor xml:id="__window_8cpp_source_1l00213"/>00213 
+<anchor xml:id="__window_8cpp_source_1l00216"/><link linkend="_classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c">00216</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c">Window::move</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;pos)
+<anchor xml:id="__window_8cpp_source_1l00217"/>00217 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00218"/>00218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_window_1a9efb2affce62623dec72f2267704412b">setPosition</link>({&#32;<link linkend="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c">getPosition</link>().<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>&#32;+&#32;pos.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;<link linkend="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c">getPosition</link>().<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>&#32;+&#32;pos.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>&#32;});
+<anchor xml:id="__window_8cpp_source_1l00219"/>00219 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00220"/>00220 
+<anchor xml:id="__window_8cpp_source_1l00221"/>00221 
+<anchor xml:id="__window_8cpp_source_1l00224"/><link linkend="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c">00224</link> &#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;<link linkend="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c">Window::getPosition</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00225"/>00225 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__window_8cpp_source_1l00226"/>00226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RECT&#32;rect;
+<anchor xml:id="__window_8cpp_source_1l00227"/>00227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetWindowRect(hwnd,&#32;&amp;rect);
+<anchor xml:id="__window_8cpp_source_1l00228"/>00228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>(rect.left),&#32;<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>(rect.top));
+<anchor xml:id="__window_8cpp_source_1l00229"/>00229 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00230"/>00230 
+<anchor xml:id="__window_8cpp_source_1l00231"/>00231 
+<anchor xml:id="__window_8cpp_source_1l00236"/><link linkend="_classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d">00236</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d">Window::limitFPS</link>(<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;fps)
+<anchor xml:id="__window_8cpp_source_1l00237"/>00237 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00238"/>00238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;TODO:&#32;FPS&#32;limiter&#32;seems&#32;to&#32;be&#32;off,&#32;I&apos;ll&#32;fix&#32;when&#32;I&#32;do&#32;unix&#32;time.</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00239"/>00239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;maxFps&#32;=&#32;fps;
+<anchor xml:id="__window_8cpp_source_1l00240"/>00240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(maxFps&#32;&gt;&#32;0)
+<anchor xml:id="__window_8cpp_source_1l00241"/>00241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lastFrameTime&#32;=&#32;<link linkend="_classtl_1_1_time_1a4cc3ff829d334cf59c3aacb0ab181c0e">Time::currentTime</link>();
+<anchor xml:id="__window_8cpp_source_1l00242"/>00242 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00243"/>00243 
+<anchor xml:id="__window_8cpp_source_1l00244"/>00244 
+<anchor xml:id="__window_8cpp_source_1l00250"/><link linkend="_classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885">00250</link> &#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link>&#32;<link linkend="_classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885">Window::checkEvent</link>(<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;event)
+<anchor xml:id="__window_8cpp_source_1l00251"/>00251 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__window_8cpp_source_1l00252"/>00252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(currentEvents&#32;&amp;&#32;event)&#32;&gt;&#32;0;
+<anchor xml:id="__window_8cpp_source_1l00253"/>00253 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__window_8cpp_source_1l00254"/>00254 
+<anchor xml:id="__window_8cpp_source_1l00255"/>00255 &#32;&#32;&#32;&#32;<emphasis role="comment">/*</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00256"/>00256 <emphasis role="comment">&#32;&#32;&#32;&#32;void&#32;Window::setScroll(Vec2i&#32;size)</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00257"/>00257 <emphasis role="comment">&#32;&#32;&#32;&#32;{</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00258"/>00258 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetScrollRange(hwnd,&#32;SB_HORZ,&#32;0,&#32;size.x,&#32;TRUE);</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00259"/>00259 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetScrollRange(hwnd,&#32;SB_VERT,&#32;0,&#32;size.y,&#32;TRUE);</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00260"/>00260 <emphasis role="comment">&#32;&#32;&#32;&#32;}</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00261"/>00261 <emphasis role="comment"></emphasis>
+<anchor xml:id="__window_8cpp_source_1l00262"/>00262 <emphasis role="comment"></emphasis>
+<anchor xml:id="__window_8cpp_source_1l00263"/>00263 <emphasis role="comment">&#32;&#32;&#32;&#32;Vec2i&#32;Window::getScroll()</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00264"/>00264 <emphasis role="comment">&#32;&#32;&#32;&#32;{</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00265"/>00265 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Vec2i&#32;size;</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00266"/>00266 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetScrollRange(hwnd,&#32;SB_HORZ,&#32;nullptr,&#32;&amp;size.x);</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00267"/>00267 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetScrollRange(hwnd,&#32;SB_VERT,&#32;nullptr,&#32;&amp;size.y);</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00268"/>00268 <emphasis role="comment"></emphasis>
+<anchor xml:id="__window_8cpp_source_1l00269"/>00269 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;return&#32;size;</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00270"/>00270 <emphasis role="comment">&#32;&#32;&#32;&#32;}</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00271"/>00271 <emphasis role="comment">&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__window_8cpp_source_1l00272"/>00272 }
+</programlisting></section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__win_a_p_i_8h" xml:lang="en-US">
+<title>TinyLib/Base/Win/WinAPI.h File Reference</title>
+<indexterm><primary>TinyLib/Base/Win/WinAPI.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;Windows.h&gt;<?linebreak?>#include &lt;d3d11.h&gt;<?linebreak?>#include &lt;dxgi1_2.h&gt;<?linebreak?>#include &lt;d3dcompiler.h&gt;<?linebreak?>#include &lt;DirectXMath.h&gt;<?linebreak?>#include &lt;wrl/client.h&gt;<?linebreak?>#include &lt;dwrite.h&gt;<?linebreak?>#include &lt;d2d1.h&gt;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__win_a_p_i_8h_1ac50762666aa00bd3a4308158510f1748">_WIN32_WINNT</link>&#160;&#160;&#160;0x0601</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__win_a_p_i_8h_1ac50762666aa00bd3a4308158510f1748"/><section>
+    <title>_WIN32_WINNT</title>
+<indexterm><primary>_WIN32_WINNT</primary><secondary>WinAPI.h</secondary></indexterm>
+<indexterm><primary>WinAPI.h</primary><secondary>_WIN32_WINNT</secondary></indexterm>
+<para><computeroutput>#define _WIN32_WINNT&#160;&#160;&#160;0x0601</computeroutput></para><para>
+Definition at line <link linkend="__win_a_p_i_8h_source_1l00005">5</link> of file <link linkend="__win_a_p_i_8h_source">WinAPI.h</link>.</para>
+</section>
+</section>
+</section>

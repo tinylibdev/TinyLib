@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__text_8h_source" xml:lang="en-US">
+<title>Text.h</title>
+<indexterm><primary>TinyLib/Graphics/Text.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__text_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__text_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__base_category_8h">../Base/BaseCategory.h</link>&quot;</emphasis>
+<anchor xml:id="__text_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__drawable_8h">Drawable.h</link>&quot;</emphasis>
+<anchor xml:id="__text_8h_source_1l00004"/>00004 
+<anchor xml:id="__text_8h_source_1l00005"/>00005 
+<anchor xml:id="__text_8h_source_1l00006"/>00006 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__text_8h_source_1l00007"/>00007 {
+<anchor xml:id="__text_8h_source_1l00008"/><link linkend="_classtl_1_1_text">00008</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classtl_1_1_text">Text</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classtl_1_1_drawable">Drawable</link>
+<anchor xml:id="__text_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8h_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__text_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1aead89526f1134efdbb683662d503ecce">Text</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;=&#32;12,&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;=&#32;{&#32;0,&#32;0&#32;});
+<anchor xml:id="__text_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1a12cfa88d0cea89d2e553d8cbde046f41">~Text</link>();
+<anchor xml:id="__text_8h_source_1l00013"/>00013 
+<anchor xml:id="__text_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae">setString</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*);
+<anchor xml:id="__text_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;<link linkend="_classtl_1_1_text_1a342716a8b9b9f950fed58d3e73eb1035">getString</link>()&#32;<emphasis role="keyword">const</emphasis>;
+<anchor xml:id="__text_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d">setFontSize</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>);
+<anchor xml:id="__text_8h_source_1l00017"/>00017 
+<anchor xml:id="__text_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__text_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;string;
+<anchor xml:id="__text_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__text_8h_source_1l00021"/>00021 }
+</programlisting></section>

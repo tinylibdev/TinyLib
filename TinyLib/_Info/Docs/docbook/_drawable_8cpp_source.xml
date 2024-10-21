@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__drawable_8cpp_source" xml:lang="en-US">
+<title>Drawable.cpp</title>
+<indexterm><primary>TinyLib/Graphics/Drawable.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__drawable_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__drawable_8h">Drawable.h</link>&quot;</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__window_8h">Window.h</link>&quot;</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__drawable_8cpp_source_1l00004"/>00004 
+<anchor xml:id="__drawable_8cpp_source_1l00005"/>00005 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__drawable_8cpp_source_1l00006"/>00006 {
+<anchor xml:id="__drawable_8cpp_source_1l00009"/><link linkend="_classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f">00009</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f">Drawable::Drawable</link>(<link linkend="_structtl_1_1_vec4i">Vec4i</link>&#32;bounds)
+<anchor xml:id="__drawable_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">setSize</link>({&#32;bounds.<link linkend="_structtl_1_1_vec4i_1a17b2afb4b34536cbd6d91541b0bad6ae">width</link>,&#32;bounds.<link linkend="_structtl_1_1_vec4i_1a2f496cf4013092926fe3f63ae95446bf">height</link>&#32;});
+<anchor xml:id="__drawable_8cpp_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">setPosition</link>({bounds.<link linkend="_structtl_1_1_vec4i_1ac6da38a573fbebae04faac771c05ed3c">left</link>,&#32;bounds.<link linkend="_structtl_1_1_vec4i_1a12c7124e0b9fba766527872bb432ed98">top</link>});
+<anchor xml:id="__drawable_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00014"/>00014 
+<anchor xml:id="__drawable_8cpp_source_1l00015"/>00015 
+<anchor xml:id="__drawable_8cpp_source_1l00017"/><link linkend="_classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa">00017</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa">Drawable::~Drawable</link>()
+<anchor xml:id="__drawable_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00019"/>00019 
+<anchor xml:id="__drawable_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00021"/>00021 
+<anchor xml:id="__drawable_8cpp_source_1l00022"/>00022 
+<anchor xml:id="__drawable_8cpp_source_1l00025"/><link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">Drawable::setPosition</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;pos)
+<anchor xml:id="__drawable_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;=&#32;pos.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;=&#32;pos.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>;
+<anchor xml:id="__drawable_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00029"/>00029 
+<anchor xml:id="__drawable_8cpp_source_1l00030"/>00030 
+<anchor xml:id="__drawable_8cpp_source_1l00033"/><link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">Drawable::setSize</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;size)
+<anchor xml:id="__drawable_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link>&#32;=&#32;size.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;<link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link>&#32;=&#32;size.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>;
+<anchor xml:id="__drawable_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00037"/>00037 
+<anchor xml:id="__drawable_8cpp_source_1l00038"/>00038 
+<anchor xml:id="__drawable_8cpp_source_1l00041"/><link linkend="_classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f">00041</link> &#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;<link linkend="_classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f">Drawable::getPosition</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00042"/>00042 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__drawable_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;{&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>,&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;};
+<anchor xml:id="__drawable_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00045"/>00045 
+<anchor xml:id="__drawable_8cpp_source_1l00046"/>00046 
+<anchor xml:id="__drawable_8cpp_source_1l00049"/><link linkend="_classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f">00049</link> &#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;<link linkend="_classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f">Drawable::getSize</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00050"/>00050 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__drawable_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;{&#32;<link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link>,&#32;<link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link>&#32;};
+<anchor xml:id="__drawable_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00053"/>00053 
+<anchor xml:id="__drawable_8cpp_source_1l00054"/>00054 
+<anchor xml:id="__drawable_8cpp_source_1l00059"/><link linkend="_classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293">00059</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293">Drawable::move</link>(<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;pos)
+<anchor xml:id="__drawable_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;+=&#32;pos.<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>,&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;+=&#32;pos.<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>;
+<anchor xml:id="__drawable_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00063"/>00063 
+<anchor xml:id="__drawable_8cpp_source_1l00064"/>00064 
+<anchor xml:id="__drawable_8cpp_source_1l00067"/><link linkend="_classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2">00067</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2">Drawable::setColor</link>(<link linkend="_structtl_1_1_color">Color</link>&#32;color)
+<anchor xml:id="__drawable_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__drawable_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad">r</link>&#32;=&#32;color.<link linkend="_structtl_1_1_color_1a353edd65a9c14c9e9fc12b3a2bd8a8c8">r</link>,&#32;<link linkend="_classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1">g</link>&#32;=&#32;color.<link linkend="_structtl_1_1_color_1acabb8eda91ed6d102b19a6b74f43e206">g</link>,&#32;<link linkend="_classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1">b</link>&#32;=&#32;color.<link linkend="_structtl_1_1_color_1a3bf83204b4a0ed202d04f0c09fac4e95">b</link>,&#32;<link linkend="_classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515">a</link>&#32;=&#32;color.<link linkend="_structtl_1_1_color_1ab1a26f98553d0893174c15971de67a34">a</link>;
+<anchor xml:id="__drawable_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00071"/>00071 
+<anchor xml:id="__drawable_8cpp_source_1l00072"/>00072 
+<anchor xml:id="__drawable_8cpp_source_1l00075"/><link linkend="_classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba">00075</link> &#32;&#32;&#32;&#32;<link linkend="_structtl_1_1_color">Color</link>&#32;<link linkend="_classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba">Drawable::getColor</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00076"/>00076 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__drawable_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;{&#32;<link linkend="_classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad">r</link>,&#32;<link linkend="_classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1">g</link>,&#32;<link linkend="_classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1">b</link>,&#32;<link linkend="_classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515">a</link>&#32;};
+<anchor xml:id="__drawable_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00079"/>00079 
+<anchor xml:id="__drawable_8cpp_source_1l00080"/>00080 
+<anchor xml:id="__drawable_8cpp_source_1l00087"/><link linkend="_classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5">00087</link> &#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link>&#32;<link linkend="_classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5">Drawable::intersects</link>(<link linkend="_classtl_1_1_drawable">Drawable</link>&amp;&#32;other)<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00088"/>00088 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__drawable_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;&lt;&#32;other.<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;+&#32;other.<link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link>&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;+&#32;<link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link>&#32;&gt;&#32;other.<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;&lt;&#32;other.<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;+&#32;other.<link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link>&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;+&#32;<link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link>&#32;&gt;&#32;other.<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>;
+<anchor xml:id="__drawable_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00094"/>00094 
+<anchor xml:id="__drawable_8cpp_source_1l00095"/>00095 
+<anchor xml:id="__drawable_8cpp_source_1l00102"/><link linkend="_classtl_1_1_drawable_1afd87e8323f304ae6dacb8f06057a3963">00102</link> &#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link>&#32;<link linkend="_classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5">Drawable::intersects</link>(<link linkend="_classtl_1_1_window">Window</link>&amp;&#32;window)<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__drawable_8cpp_source_1l00103"/>00103 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__drawable_8cpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;&lt;&#32;window.<link linkend="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e">getSize</link>().<link linkend="_structtl_1_1_vec2i_1a41e041952704574074609118c0427518">x</link>&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link>&#32;+&#32;<link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link>&#32;&gt;&#32;0&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;&lt;&#32;window.<link linkend="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e">getSize</link>().<link linkend="_structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287">y</link>&#32;&amp;&amp;
+<anchor xml:id="__drawable_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link>&#32;+&#32;<link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link>&#32;&gt;&#32;0;
+<anchor xml:id="__drawable_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__drawable_8cpp_source_1l00109"/>00109 }
+</programlisting></section>

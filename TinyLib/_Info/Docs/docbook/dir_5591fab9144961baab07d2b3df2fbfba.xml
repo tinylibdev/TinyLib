@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_5591fab9144961baab07d2b3df2fbfba" xml:lang="en-US">
+<title>TinyLib/Base Directory Reference</title>
+<indexterm><primary>TinyLib/Base Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_501dc578ed3dcf4e7b46c08c3f8bf7ed">Win</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__base_category_8h">BaseCategory.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__memory_8cpp">Memory.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__memory_8h">Memory.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__time_8cpp">Time.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__time_8h">Time.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__types_8h">Types.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__util_8h">Util.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__vector_8h">Vector.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

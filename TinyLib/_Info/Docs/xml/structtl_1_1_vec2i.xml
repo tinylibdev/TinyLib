@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structtl_1_1_vec2i" kind="struct" language="C++" prot="public">
+    <compoundname>tl::Vec2i</compoundname>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtl_1_1_vec2i_1a41e041952704574074609118c0427518" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Vec2i::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>tl::Vec2i::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="66" column="13" bodyfile="TinyLib/Base/Types.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Vec2i::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>tl::Vec2i::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="66" column="15" bodyfile="TinyLib/Base/Types.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tl::Vec2i::Vec2i</definition>
+        <argsstring>(s32 xValue=0, s32 yValue=0)</argsstring>
+        <name>Vec2i</name>
+        <qualifiedname>tl::Vec2i::Vec2i</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+          <declname>xValue</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+          <declname>yValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="68" column="9" bodyfile="TinyLib/Base/Types.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TinyLib/Base/Types.h" line="64" column="5" bodyfile="TinyLib/Base/Types.h" bodystart="65" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structtl_1_1_vec2i_1af14aa499902a9f75b1ec642978fc948e" prot="public" virt="non-virtual"><scope>tl::Vec2i</scope><name>Vec2i</name></member>
+      <member refid="structtl_1_1_vec2i_1a41e041952704574074609118c0427518" prot="public" virt="non-virtual"><scope>tl::Vec2i</scope><name>x</name></member>
+      <member refid="structtl_1_1_vec2i_1a19708a6226be471f6c28cc04ebd16287" prot="public" virt="non-virtual"><scope>tl::Vec2i</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

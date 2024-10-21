@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classtl_1_1_key" kind="class" language="C++" prot="public">
+    <compoundname>tl::Key</compoundname>
+    <includes refid="_key_8h" local="no">Key.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>tl::Key</qualifiedname>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462" prot="public">
+          <name>Space</name>
+          <initializer>= VK_SPACE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02" prot="public">
+          <name>A</name>
+          <initializer>= 0x41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb" prot="public">
+          <name>B</name>
+          <initializer>= 0x42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64" prot="public">
+          <name>C</name>
+          <initializer>= 0x43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33" prot="public">
+          <name>D</name>
+          <initializer>= 0x44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d" prot="public">
+          <name>E</name>
+          <initializer>= 0x45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad" prot="public">
+          <name>F</name>
+          <initializer>= 0x46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b" prot="public">
+          <name>G</name>
+          <initializer>= 0x47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda" prot="public">
+          <name>H</name>
+          <initializer>= 0x48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080" prot="public">
+          <name>I</name>
+          <initializer>= 0x49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6" prot="public">
+          <name>J</name>
+          <initializer>= 0x4A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3" prot="public">
+          <name>K</name>
+          <initializer>= 0x4B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66" prot="public">
+          <name>L</name>
+          <initializer>= 0x4C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a" prot="public">
+          <name>M</name>
+          <initializer>= 0x4D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8" prot="public">
+          <name>N</name>
+          <initializer>= 0x4E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3" prot="public">
+          <name>O</name>
+          <initializer>= 0x4F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852" prot="public">
+          <name>P</name>
+          <initializer>= 0x50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873" prot="public">
+          <name>Q</name>
+          <initializer>= 0x51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63" prot="public">
+          <name>R</name>
+          <initializer>= 0x52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1" prot="public">
+          <name>S</name>
+          <initializer>= 0x53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7" prot="public">
+          <name>T</name>
+          <initializer>= 0x54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53" prot="public">
+          <name>U</name>
+          <initializer>= 0x55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad" prot="public">
+          <name>V</name>
+          <initializer>= 0x56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a" prot="public">
+          <name>W</name>
+          <initializer>= 0x57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744" prot="public">
+          <name>X</name>
+          <initializer>= 0x58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e" prot="public">
+          <name>Y</name>
+          <initializer>= 0x59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990" prot="public">
+          <name>Z</name>
+          <initializer>= 0x5A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b" prot="public">
+          <name>Num0</name>
+          <initializer>= 0x30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342" prot="public">
+          <name>Num1</name>
+          <initializer>= 0x31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a" prot="public">
+          <name>Num2</name>
+          <initializer>= 0x32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143" prot="public">
+          <name>Num3</name>
+          <initializer>= 0x33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c" prot="public">
+          <name>Num4</name>
+          <initializer>= 0x34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63" prot="public">
+          <name>LShift</name>
+          <initializer>= VK_LSHIFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6" prot="public">
+          <name>RShift</name>
+          <initializer>= VK_RSHIFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146" prot="public">
+          <name>LControl</name>
+          <initializer>= VK_LCONTROL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec" prot="public">
+          <name>RControl</name>
+          <initializer>= VK_RCONTROL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050" prot="public">
+          <name>LAlt</name>
+          <initializer>= VK_LMENU</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4" prot="public">
+          <name>RAlt</name>
+          <initializer>= VK_RMENU</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d" prot="public">
+          <name>Up</name>
+          <initializer>= VK_UP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9" prot="public">
+          <name>Down</name>
+          <initializer>= VK_DOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0" prot="public">
+          <name>Left</name>
+          <initializer>= VK_LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a" prot="public">
+          <name>Right</name>
+          <initializer>= VK_RIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Readable version for every standard keyboard key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/System/Key.h" line="16" column="9" bodyfile="TinyLib/System/Key.h" bodystart="17" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtl_1_1_key_1ab2b89f653b520a01e794c9f6a07ee07c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Key::isHeld</definition>
+        <argsstring>(u8 key)</argsstring>
+        <name>isHeld</name>
+        <qualifiedname>tl::Key::isHeld</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Check if this key is currently down. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which key to check, use enum <ref refid="classtl_1_1_key" kindref="compound">tl::Key</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if this key is currently down. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/System/Key.h" line="11" column="20" bodyfile="TinyLib/System/Key.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TinyLib/System/Key.h" line="8" column="5" bodyfile="TinyLib/System/Key.h" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>A</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>B</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>C</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>D</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Down</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>E</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>F</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>G</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>H</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>I</name></member>
+      <member refid="classtl_1_1_key_1ab2b89f653b520a01e794c9f6a07ee07c" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>isHeld</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>J</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>K</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>L</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>LAlt</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>LControl</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Left</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>LShift</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>M</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>N</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Num0</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Num1</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Num2</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Num3</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Num4</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>O</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>P</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Q</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>R</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>RAlt</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>RControl</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Right</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>RShift</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>S</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Space</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>T</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>U</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Up</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>V</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>W</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>X</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Y</name></member>
+      <member refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990" prot="public" virt="non-virtual"><scope>tl::Key</scope><name>Z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

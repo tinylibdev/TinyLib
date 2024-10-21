@@ -1,0 +1,362 @@
+\doxysection{tl\+::Drawable Class Reference}
+\label{classtl_1_1_drawable}\index{tl::Drawable@{tl::Drawable}}
+
+
+{\ttfamily \#include $<$Drawable.\+h$>$}
+
+Inheritance diagram for tl\+::Drawable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtl_1_1_drawable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Drawable} (\textbf{ Vec4i} bounds=\{0, 0, 0, 0\})
+\begin{DoxyCompactList}\small\item\em Creates a new drawable object with it\textquotesingle{}s position and size. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Nothing to clean up for now. \end{DoxyCompactList}\item 
+void \textbf{ set\+Position} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set position of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Get the current position of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Size} () const
+\begin{DoxyCompactList}\small\item\em Get the current size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Color} \textbf{ get\+Color} () const
+\begin{DoxyCompactList}\small\item\em Get the current color of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ move} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Move this drawable object from current position. \end{DoxyCompactList}\item 
+void \textbf{ set\+Color} (\textbf{ Color})
+\begin{DoxyCompactList}\small\item\em Set the color of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Drawable} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is intersecting with another. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Window} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is inside the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ s32} \textbf{ posX}
+\item 
+\textbf{ s32} \textbf{ posY}
+\item 
+\textbf{ s32} \textbf{ sizeX}
+\item 
+\textbf{ s32} \textbf{ sizeY}
+\item 
+\textbf{ u8} \textbf{ r} = 0
+\item 
+\textbf{ u8} \textbf{ g} = 0
+\item 
+\textbf{ u8} \textbf{ b} = 0
+\item 
+\textbf{ u8} \textbf{ a} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 11} of file \textbf{ Drawable.\+h}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{tl::Drawable@{tl::Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{Drawable()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a30ea7ef3cbe247eab261d2cda94dd09f} 
+tl\+::\+Drawable\+::\+Drawable (\begin{DoxyParamCaption}\item[{\textbf{ Vec4i}}]{bounds}{ = {\ttfamily \{0,~0,~0,~0\}}}\end{DoxyParamCaption})}
+
+
+
+Creates a new drawable object with it\textquotesingle{}s position and size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & Boundaries of this drawable, (width, height, left, top). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 9} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!````~Drawable@{$\sim$Drawable}}
+\index{````~Drawable@{$\sim$Drawable}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{$\sim$Drawable()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a2f8eb9b1fdb74f27a08659d19c58dffa} 
+tl\+::\+Drawable\+::$\sim$\+Drawable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Nothing to clean up for now. 
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ Drawable.\+cpp}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{tl::Drawable@{tl::Drawable}!getColor@{getColor}}
+\index{getColor@{getColor}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{getColor()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_acf6f9bbe46b4badaa8d4949a93c818ba} 
+\textbf{ Color} tl\+::\+Drawable\+::get\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the current color of this drawable object. 
+
+\begin{DoxyReturn}{Returns}
+Current color. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 75} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{getPosition()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_ae72500b4134b8187966650dcfc07b27f} 
+\textbf{ Vec2i} tl\+::\+Drawable\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the current position of this drawable object. 
+
+\begin{DoxyReturn}{Returns}
+X-\/position, Y-\/position. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 41} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!getSize@{getSize}}
+\index{getSize@{getSize}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{getSize()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a09bca9a11e2fc75ad5298f5bf0c6399f} 
+\textbf{ Vec2i} tl\+::\+Drawable\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the current size of this drawable object. 
+
+\begin{DoxyReturn}{Returns}
+Width, height. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 49} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!intersects@{intersects}}
+\index{intersects@{intersects}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{intersects()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_ae17a89d83f64f26e01cb5b1371a110c5} 
+\textbf{ bit} tl\+::\+Drawable\+::intersects (\begin{DoxyParamCaption}\item[{\textbf{ Drawable} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Check if this drawable is intersecting with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The drawable object to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both objects intersect.
+\end{DoxyReturn}
+Compares the boundaries of both drawable objects. Using position and size, if they overlap anywhere, then this is true for an intersection. 
+
+Definition at line \textbf{ 87} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!intersects@{intersects}}
+\index{intersects@{intersects}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{intersects()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_afd87e8323f304ae6dacb8f06057a3963} 
+\textbf{ bit} tl\+::\+Drawable\+::intersects (\begin{DoxyParamCaption}\item[{\textbf{ Window} \&}]{window}{}\end{DoxyParamCaption}) const}
+
+
+
+Check if this drawable is inside the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The window to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this drawable is inside window.
+\end{DoxyReturn}
+If this drawable is fully outside window (not visible), then it will return false. Helpful for rendering only on-\/screen objects. 
+
+Definition at line \textbf{ 102} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!move@{move}}
+\index{move@{move}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{move()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_ad680b7ea9995f1c20873d964e8748293} 
+void tl\+::\+Drawable\+::move (\begin{DoxyParamCaption}\item[{\textbf{ Vec2i}}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+Move this drawable object from current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & How far to move the x, y of this \doxyref{Drawable}{p.}{classtl_1_1_drawable}.\\
+\hline
+\end{DoxyParams}
+Sets position relative to current position offset by x and y parameters. 
+
+Definition at line \textbf{ 59} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!setColor@{setColor}}
+\index{setColor@{setColor}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{setColor()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_ae4bea63524c914d624fe1c9f0ef4edd2} 
+void tl\+::\+Drawable\+::set\+Color (\begin{DoxyParamCaption}\item[{\textbf{ Color}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Set the color of this drawable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & New color for this object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 67} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{setPosition()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_aaca2b652b94ac8c14c5e173d15595958} 
+void tl\+::\+Drawable\+::set\+Position (\begin{DoxyParamCaption}\item[{\textbf{ Vec2i}}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+Set position of this drawable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & New x, y position for this drawable. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 25} of file \textbf{ Drawable.\+cpp}.
+
+\index{tl::Drawable@{tl::Drawable}!setSize@{setSize}}
+\index{setSize@{setSize}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{setSize()}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a0bc453f3511224e52e15576ea835873b} 
+void tl\+::\+Drawable\+::set\+Size (\begin{DoxyParamCaption}\item[{\textbf{ Vec2i}}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Set size of this drawable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Set the width, height of this drawable. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 33} of file \textbf{ Drawable.\+cpp}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\index{tl::Drawable@{tl::Drawable}!a@{a}}
+\index{a@{a}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{a}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a2c5bec3ff2fde9d0316571f2ae374515} 
+\textbf{ u8} tl\+::\+Drawable\+::a = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 28} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!b@{b}}
+\index{b@{b}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{b}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_aec88d5f58549c9dedf31f09e684f4ff1} 
+\textbf{ u8} tl\+::\+Drawable\+::b = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 28} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!g@{g}}
+\index{g@{g}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{g}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a4d46800e890cd5d5a62b500fe9c982f1} 
+\textbf{ u8} tl\+::\+Drawable\+::g = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 28} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!posX@{posX}}
+\index{posX@{posX}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{posX}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a005875cab6106fa1c8983884ee3a7072} 
+\textbf{ s32} tl\+::\+Drawable\+::posX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 27} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!posY@{posY}}
+\index{posY@{posY}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{posY}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_adc938c28638d39be3c53207ee625611d} 
+\textbf{ s32} tl\+::\+Drawable\+::posY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 27} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!r@{r}}
+\index{r@{r}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{r}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a848cc01cc9b0ff02528e3c287bcda9ad} 
+\textbf{ u8} tl\+::\+Drawable\+::r = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 28} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!sizeX@{sizeX}}
+\index{sizeX@{sizeX}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{sizeX}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_a06d58589b24ff1ba0d8a0c776a3a0eeb} 
+\textbf{ s32} tl\+::\+Drawable\+::sizeX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 27} of file \textbf{ Drawable.\+h}.
+
+\index{tl::Drawable@{tl::Drawable}!sizeY@{sizeY}}
+\index{sizeY@{sizeY}!tl::Drawable@{tl::Drawable}}
+\doxysubsubsection{sizeY}
+{\footnotesize\ttfamily \label{classtl_1_1_drawable_ad9f165dbfcfff7a16d8e9e3862838675} 
+\textbf{ s32} tl\+::\+Drawable\+::sizeY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \textbf{ 27} of file \textbf{ Drawable.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Lib/\+Graphics/\textbf{ Drawable.\+h}\item 
+Tiny\+Lib/\+Graphics/\textbf{ Drawable.\+cpp}\end{DoxyCompactItemize}

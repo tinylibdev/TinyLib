@@ -1,0 +1,26 @@
+#include <TinyLib.h>
+
+
+int main()
+{
+    // Window takes size as vec2i, then our window title
+    tl::Window window({ 200, 200 }, "Hello window!");
+
+    // Console doesn't need anything for constructor
+    tl::Console console;
+    console.print("Hello console!");
+
+    // Window loop, runs every frame
+    while (window.isOpen())
+    {
+        // Some events are auto, closing must be done manually
+        if (window.checkEvent(tl::Event::Closed))
+            window.close();
+
+        // Although not actually needed here, if you draw anything you will need
+        window.clear();
+        window.display();
+    }
+
+    return 0;
+}

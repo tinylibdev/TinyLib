@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacetl" xml:lang="en-US">
+<title>tl Namespace Reference</title>
+<indexterm><primary>tl</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structtl_1_1_color">Color</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_console">Console</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_drawable">Drawable</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_file">File</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_key">Key</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_mouse">Mouse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_rectangle">Rectangle</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_text">Text</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_time">Time</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec2i">Vec2i</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec3i">Vec3i</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec4i">Vec4i</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_vector">Vector</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classtl_1_1_window">Window</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_namespacetl_1a2b5321f751711d1665cff1914daea4da">s8</link> = signed char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c">s16</link> = signed short</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> = signed int</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">s64</link> = signed long long</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> = unsigned char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a413c6dc972e88526a668913ce1b06b29">u16</link> = unsigned short</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link> = unsigned int</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">u64</link> = unsigned long long</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a6903978f17afa16057594b38fa3602e6">f32</link> = float</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a29d996d8825610815a08c5db10016151">f64</link> = double</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> = char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd">unicode</link> = wchar_t</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> = bool</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654d">Event</link> { <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da5be4e5d266410d4098330ef298d0a590">Closed</link> = 0b1
+, <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654daed0acb15944cd2abce85da77065f7ba0">Moved</link> = 0b10
+, <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da60573197598e5aa232348f6efb3f7066">Resized</link> = 0b100
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308">Style</link> { <?linebreak?><link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ac470c51a77675dff2188539f3dd814d1">Border</link> = WS_BORDER
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a36aa6aca3d046b2750e31acd37ca341b">Title</link> = WS_CAPTION
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a7c7515c26f63d97a9f392debb0affa9c">Background</link> = WS_MINIMIZE
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ad03932612fa61f868ab83759cf89f8bd">Fullscreen</link> = WS_MAXIMIZE
+, <?linebreak?><link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308afe4367e3cf35673f041e46ddcf641c58">Minimize</link> = WS_MINIMIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308aabdd212e2b4673d041c8d9bdf192a6da">Maximize</link> = WS_MAXIMIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a96d5232c5dacb561d06868bddd8662cc">Resize</link> = WS_SIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a37707492d112fc66861dba3bda903db8">Default</link> = WS_OVERLAPPEDWINDOW
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_namespacetl_1a2ac98dd95bdf0b59af459a290354c589">malloc</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacetl_1a27f87676958c34ab5d023c25d954a58a">free</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597"/><section>
+    <title>ascii</title>
+<indexterm><primary>ascii</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>ascii</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">tl::ascii</link> = char</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00053">53</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd"/><section>
+    <title>bit</title>
+<indexterm><primary>bit</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>bit</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">tl::bit</link> = bool</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00061">61</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a6903978f17afa16057594b38fa3602e6"/><section>
+    <title>f32</title>
+<indexterm><primary>f32</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>f32</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a6903978f17afa16057594b38fa3602e6">tl::f32</link> = float</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00047">47</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a29d996d8825610815a08c5db10016151"/><section>
+    <title>f64</title>
+<indexterm><primary>f64</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>f64</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a29d996d8825610815a08c5db10016151">tl::f64</link> = double</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00050">50</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c"/><section>
+    <title>s16</title>
+<indexterm><primary>s16</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>s16</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c">tl::s16</link> = signed short</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00018">18</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195"/><section>
+    <title>s32</title>
+<indexterm><primary>s32</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>s32</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">tl::s32</link> = signed int</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00021">21</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450"/><section>
+    <title>s64</title>
+<indexterm><primary>s64</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>s64</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">tl::s64</link> = signed long long</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00027">27</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a2b5321f751711d1665cff1914daea4da"/><section>
+    <title>s8</title>
+<indexterm><primary>s8</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>s8</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a2b5321f751711d1665cff1914daea4da">tl::s8</link> = signed char</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00015">15</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a413c6dc972e88526a668913ce1b06b29"/><section>
+    <title>u16</title>
+<indexterm><primary>u16</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>u16</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a413c6dc972e88526a668913ce1b06b29">tl::u16</link> = unsigned short</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00034">34</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51"/><section>
+    <title>u32</title>
+<indexterm><primary>u32</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>u32</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">tl::u32</link> = unsigned int</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00037">37</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a904241d60278f00c7d91b31161237d62"/><section>
+    <title>u64</title>
+<indexterm><primary>u64</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>u64</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">tl::u64</link> = unsigned long long</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00043">43</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9"/><section>
+    <title>u8</title>
+<indexterm><primary>u8</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>u8</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">tl::u8</link> = unsigned char</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00031">31</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd"/><section>
+    <title>unicode</title>
+<indexterm><primary>unicode</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>unicode</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd">tl::unicode</link> = wchar_t</computeroutput></para><para>
+Definition at line <link linkend="__types_8h_source_1l00056">56</link> of file <link linkend="__types_8h_source">Types.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespacetl_1a7e2989f2c8039c3f533555e5255c654d"/><section>
+    <title>Event</title>
+<indexterm><primary>Event</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Event</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654d">tl::Event</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Closed</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Closed</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da5be4e5d266410d4098330ef298d0a590"/>Closed</entry><entry></entry></row><row><entry><indexterm><primary>Moved</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Moved</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a7e2989f2c8039c3f533555e5255c654daed0acb15944cd2abce85da77065f7ba0"/>Moved</entry><entry></entry></row><row><entry><indexterm><primary>Resized</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Resized</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da60573197598e5aa232348f6efb3f7066"/>Resized</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__window_8h_source_1l00013">13</link> of file <link linkend="__window_8h_source">Window.h</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308"/><section>
+    <title>Style</title>
+<indexterm><primary>Style</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Style</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308">tl::Style</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Border</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Border</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ac470c51a77675dff2188539f3dd814d1"/>Border</entry><entry></entry></row><row><entry><indexterm><primary>Title</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Title</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a36aa6aca3d046b2750e31acd37ca341b"/>Title</entry><entry></entry></row><row><entry><indexterm><primary>Background</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Background</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a7c7515c26f63d97a9f392debb0affa9c"/>Background</entry><entry></entry></row><row><entry><indexterm><primary>Fullscreen</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Fullscreen</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ad03932612fa61f868ab83759cf89f8bd"/>Fullscreen</entry><entry></entry></row><row><entry><indexterm><primary>Minimize</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Minimize</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308afe4367e3cf35673f041e46ddcf641c58"/>Minimize</entry><entry></entry></row><row><entry><indexterm><primary>Maximize</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Maximize</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308aabdd212e2b4673d041c8d9bdf192a6da"/>Maximize</entry><entry></entry></row><row><entry><indexterm><primary>Resize</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Resize</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a96d5232c5dacb561d06868bddd8662cc"/>Resize</entry><entry></entry></row><row><entry><indexterm><primary>Default</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>Default</secondary></indexterm>
+<anchor xml:id="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a37707492d112fc66861dba3bda903db8"/>Default</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__window_8h_source_1l00021">21</link> of file <link linkend="__window_8h_source">Window.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacetl_1a27f87676958c34ab5d023c25d954a58a"/><section>
+    <title>free()</title>
+<indexterm><primary>free</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>free</secondary></indexterm>
+<para><computeroutput>void tl::free (void * ptr)</computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00011">11</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="_namespacetl_1a2ac98dd95bdf0b59af459a290354c589"/><section>
+    <title>malloc()</title>
+<indexterm><primary>malloc</primary><secondary>tl</secondary></indexterm>
+<indexterm><primary>tl</primary><secondary>malloc</secondary></indexterm>
+<para><computeroutput>void * tl::malloc (size_t size)</computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00005">5</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+</section>
+</section>

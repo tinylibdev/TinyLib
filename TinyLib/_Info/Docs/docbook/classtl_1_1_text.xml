@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_text" xml:lang="en-US">
+<title>tl::Text Class Reference</title>
+<indexterm><primary>tl::Text</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Text.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for tl::Text:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtl_1_1_text.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_text_1aead89526f1134efdbb683662d503ecce">Text</link> (const <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> *=nullptr, <link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>=12, <link linkend="_structtl_1_1_vec2i">Vec2i</link>={ 0, 0 })</para>
+
+<para>Create a new text that can be drawn to screen. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_text_1a12cfa88d0cea89d2e553d8cbde046f41">~Text</link> ()</para>
+
+<para>Clean up string data. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae">setString</link> (const <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> *)</para>
+
+<para>Set the string data. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> * <link linkend="_classtl_1_1_text_1a342716a8b9b9f950fed58d3e73eb1035">getString</link> () const</para>
+
+<para>Get the string data from this text. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d">setFontSize</link> (<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>)</para>
+
+<para>Set the font size for this text. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classtl_1_1_drawable">tl::Drawable</link>        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f">Drawable</link> (<link linkend="_structtl_1_1_vec4i">Vec4i</link> bounds={0, 0, 0, 0})</para>
+
+<para>Creates a new drawable object with it&apos;s position and size. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa">~Drawable</link> ()</para>
+
+<para>Nothing to clean up for now. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">setPosition</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set position of this drawable object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">setSize</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set size of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f">getPosition</link> () const</para>
+
+<para>Get the current position of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f">getSize</link> () const</para>
+
+<para>Get the current size of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_color">Color</link> <link linkend="_classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba">getColor</link> () const</para>
+
+<para>Get the current color of this drawable object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293">move</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Move this drawable object from current position. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2">setColor</link> (<link linkend="_structtl_1_1_color">Color</link>)</para>
+
+<para>Set the color of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5">intersects</link> (<link linkend="_classtl_1_1_drawable">Drawable</link> &amp;) const</para>
+
+<para>Check if this drawable is intersecting with another. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_drawable_1afd87e8323f304ae6dacb8f06057a3963">intersects</link> (<link linkend="_classtl_1_1_window">Window</link> &amp;) const</para>
+
+<para>Check if this drawable is inside the window. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classtl_1_1_drawable">tl::Drawable</link>        <itemizedlist>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad">r</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1">g</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1">b</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515">a</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__text_8h_source_1l00008">8</link> of file <link linkend="__text_8h_source">Text.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtl_1_1_text_1aead89526f1134efdbb683662d503ecce"/><section>
+    <title>Text()</title>
+<indexterm><primary>Text</primary><secondary>tl::Text</secondary></indexterm>
+<indexterm><primary>tl::Text</primary><secondary>Text</secondary></indexterm>
+<para><computeroutput>tl::Text::Text (const <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> * str = <computeroutput>nullptr</computeroutput>
+, <link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link> fontSize = <computeroutput>12</computeroutput>
+, <link linkend="_structtl_1_1_vec2i">Vec2i</link> pos = <computeroutput>{&#160;0,&#160;0&#160;}</computeroutput>
+)</computeroutput></para><para>
+
+<para>Create a new text that can be drawn to screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>str</entry><entry>
+<para>What the text displays. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fontSize</entry><entry>
+<para>How big text is. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pos</entry><entry>
+<para>Where text is.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                The defaults for each parameter, no string data, fonst size 12, position (0, 0). </para>
+<para>
+Definition at line <link linkend="__text_8cpp_source_1l00013">13</link> of file <link linkend="__text_8cpp_source">Text.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_text_1a12cfa88d0cea89d2e553d8cbde046f41"/><section>
+    <title>~Text()</title>
+<indexterm><primary>~Text</primary><secondary>tl::Text</secondary></indexterm>
+<indexterm><primary>tl::Text</primary><secondary>~Text</secondary></indexterm>
+<para><computeroutput>tl::Text::~Text ( )</computeroutput></para><para>
+
+<para>Clean up string data. </para>
+</para>
+<para>
+Definition at line <link linkend="__text_8cpp_source_1l00022">22</link> of file <link linkend="__text_8cpp_source">Text.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtl_1_1_text_1a342716a8b9b9f950fed58d3e73eb1035"/><section>
+    <title>getString()</title>
+<indexterm><primary>getString</primary><secondary>tl::Text</secondary></indexterm>
+<indexterm><primary>tl::Text</primary><secondary>getString</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> * tl::Text::getString ( ) const</computeroutput></para><para>
+
+<para>Get the string data from this text. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Internal string. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__text_8cpp_source_1l00051">51</link> of file <link linkend="__text_8cpp_source">Text.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d"/><section>
+    <title>setFontSize()</title>
+<indexterm><primary>setFontSize</primary><secondary>tl::Text</secondary></indexterm>
+<indexterm><primary>tl::Text</primary><secondary>setFontSize</secondary></indexterm>
+<para><computeroutput>void tl::Text::setFontSize (<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> size)</computeroutput></para><para>
+
+<para>Set the font size for this text. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>size</entry><entry>
+<para>New font size.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                I might change how font size scales later on, it doesn&apos;t seem to be accurate based on pixels when using GDI/DirectX. </para>
+<para>
+Definition at line <link linkend="__text_8cpp_source_1l00062">62</link> of file <link linkend="__text_8cpp_source">Text.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae"/><section>
+    <title>setString()</title>
+<indexterm><primary>setString</primary><secondary>tl::Text</secondary></indexterm>
+<indexterm><primary>tl::Text</primary><secondary>setString</secondary></indexterm>
+<para><computeroutput>void tl::Text::setString (const <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link> * str)</computeroutput></para><para>
+
+<para>Set the string data. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>str</entry><entry>
+<para>New string for text. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__text_8cpp_source_1l00030">30</link> of file <link linkend="__text_8cpp_source">Text.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+TinyLib/Graphics/<link linkend="__text_8h">Text.h</link>TinyLib/Graphics/<link linkend="__text_8cpp">Text.cpp</link></section>
+</section>

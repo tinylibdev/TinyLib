@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_key_8h" kind="file" language="C++">
+    <compoundname>Key.h</compoundname>
+    <includes refid="_win_a_p_i_8h" local="yes">../Base/Win/WinAPI.h</includes>
+    <includes refid="_types_8h" local="yes">../Base/Types.h</includes>
+    <includedby refid="_key_8cpp" local="yes">TinyLib/System/Key.cpp</includedby>
+    <includedby refid="_system_category_8h" local="yes">TinyLib/System/SystemCategory.h</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>../Base/Types.h</label>
+        <link refid="_types_8h"/>
+      </node>
+      <node id="2">
+        <label>../Base/Win/WinAPI.h</label>
+        <link refid="_win_a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TinyLib/System/Key.h</label>
+        <link refid="_key_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>DirectXMath.h</label>
+      </node>
+      <node id="3">
+        <label>Windows.h</label>
+      </node>
+      <node id="10">
+        <label>d2d1.h</label>
+      </node>
+      <node id="4">
+        <label>d3d11.h</label>
+      </node>
+      <node id="6">
+        <label>d3dcompiler.h</label>
+      </node>
+      <node id="9">
+        <label>dwrite.h</label>
+      </node>
+      <node id="5">
+        <label>dxgi1_2.h</label>
+      </node>
+      <node id="8">
+        <label>wrl/client.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>TinyLib/System/Key.cpp</label>
+        <link refid="_key_8cpp"/>
+      </node>
+      <node id="1">
+        <label>TinyLib/System/Key.h</label>
+        <link refid="_key_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TinyLib/System/SystemCategory.h</label>
+        <link refid="_system_category_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TinyLib/TinyLib.h</label>
+        <link refid="_tiny_lib_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtl_1_1_key" prot="public">tl::Key</innerclass>
+    <innernamespace refid="namespacetl">tl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_win_a_p_i_8h" kindref="compound">../Base/Win/WinAPI.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_types_8h" kindref="compound">../Base/Types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetl" kindref="compound">tl</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="classtl_1_1_key" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtl_1_1_key" kindref="compound">Key</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref><sp/><ref refid="classtl_1_1_key_1ab2b89f653b520a01e794c9f6a07ee07c" kindref="member">isHeld</ref>(<ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref><sp/>key);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//static<sp/>bit<sp/>isPressed(u8<sp/>key);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//static<sp/>bit<sp/>isReleased(u8<sp/>key);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462" kindref="member">Space</ref><sp/>=<sp/>VK_SPACE,</highlight></codeline>
+<codeline lineno="19" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02" kindref="member">A</ref><sp/>=<sp/>0x41,</highlight></codeline>
+<codeline lineno="20" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb" kindref="member">B</ref><sp/>=<sp/>0x42,</highlight></codeline>
+<codeline lineno="21" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64" kindref="member">C</ref><sp/>=<sp/>0x43,</highlight></codeline>
+<codeline lineno="22" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33" kindref="member">D</ref><sp/>=<sp/>0x44,</highlight></codeline>
+<codeline lineno="23" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d" kindref="member">E</ref><sp/>=<sp/>0x45,</highlight></codeline>
+<codeline lineno="24" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad" kindref="member">F</ref><sp/>=<sp/>0x46,</highlight></codeline>
+<codeline lineno="25" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b" kindref="member">G</ref><sp/>=<sp/>0x47,</highlight></codeline>
+<codeline lineno="26" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda" kindref="member">H</ref><sp/>=<sp/>0x48,</highlight></codeline>
+<codeline lineno="27" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080" kindref="member">I</ref><sp/>=<sp/>0x49,</highlight></codeline>
+<codeline lineno="28" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6" kindref="member">J</ref><sp/>=<sp/>0x4A,</highlight></codeline>
+<codeline lineno="29" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3" kindref="member">K</ref><sp/>=<sp/>0x4B,</highlight></codeline>
+<codeline lineno="30" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66" kindref="member">L</ref><sp/>=<sp/>0x4C,</highlight></codeline>
+<codeline lineno="31" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a" kindref="member">M</ref><sp/>=<sp/>0x4D,</highlight></codeline>
+<codeline lineno="32" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8" kindref="member">N</ref><sp/>=<sp/>0x4E,</highlight></codeline>
+<codeline lineno="33" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3" kindref="member">O</ref><sp/>=<sp/>0x4F,</highlight></codeline>
+<codeline lineno="34" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852" kindref="member">P</ref><sp/>=<sp/>0x50,</highlight></codeline>
+<codeline lineno="35" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873" kindref="member">Q</ref><sp/>=<sp/>0x51,</highlight></codeline>
+<codeline lineno="36" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63" kindref="member">R</ref><sp/>=<sp/>0x52,</highlight></codeline>
+<codeline lineno="37" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1" kindref="member">S</ref><sp/>=<sp/>0x53,</highlight></codeline>
+<codeline lineno="38" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7" kindref="member">T</ref><sp/>=<sp/>0x54,</highlight></codeline>
+<codeline lineno="39" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53" kindref="member">U</ref><sp/>=<sp/>0x55,</highlight></codeline>
+<codeline lineno="40" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad" kindref="member">V</ref><sp/>=<sp/>0x56,</highlight></codeline>
+<codeline lineno="41" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a" kindref="member">W</ref><sp/>=<sp/>0x57,</highlight></codeline>
+<codeline lineno="42" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744" kindref="member">X</ref><sp/>=<sp/>0x58,</highlight></codeline>
+<codeline lineno="43" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e" kindref="member">Y</ref><sp/>=<sp/>0x59,</highlight></codeline>
+<codeline lineno="44" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990" kindref="member">Z</ref><sp/>=<sp/>0x5A,</highlight></codeline>
+<codeline lineno="45" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b" kindref="member">Num0</ref><sp/>=<sp/>0x30,</highlight></codeline>
+<codeline lineno="46" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342" kindref="member">Num1</ref><sp/>=<sp/>0x31,</highlight></codeline>
+<codeline lineno="47" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a" kindref="member">Num2</ref><sp/>=<sp/>0x32,</highlight></codeline>
+<codeline lineno="48" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143" kindref="member">Num3</ref><sp/>=<sp/>0x33,</highlight></codeline>
+<codeline lineno="49" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c" kindref="member">Num4</ref><sp/>=<sp/>0x34,</highlight></codeline>
+<codeline lineno="50" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63" kindref="member">LShift</ref><sp/>=<sp/>VK_LSHIFT,</highlight></codeline>
+<codeline lineno="51" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6" kindref="member">RShift</ref><sp/>=<sp/>VK_RSHIFT,</highlight></codeline>
+<codeline lineno="52" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146" kindref="member">LControl</ref><sp/>=<sp/>VK_LCONTROL,</highlight></codeline>
+<codeline lineno="53" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec" kindref="member">RControl</ref><sp/>=<sp/>VK_RCONTROL,</highlight></codeline>
+<codeline lineno="54" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050" kindref="member">LAlt</ref><sp/>=<sp/>VK_LMENU,</highlight></codeline>
+<codeline lineno="55" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4" kindref="member">RAlt</ref><sp/>=<sp/>VK_RMENU,</highlight></codeline>
+<codeline lineno="56" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d" kindref="member">Up</ref><sp/>=<sp/>VK_UP,</highlight></codeline>
+<codeline lineno="57" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9" kindref="member">Down</ref><sp/>=<sp/>VK_DOWN,</highlight></codeline>
+<codeline lineno="58" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0" kindref="member">Left</ref><sp/>=<sp/>VK_LEFT,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a" kindref="member">Right</ref><sp/>=<sp/>VK_RIGHT</highlight></codeline>
+<codeline lineno="60" refid="classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="TinyLib/System/Key.h"/>
+  </compounddef>
+</doxygen>

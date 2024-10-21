@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classtl_1_1_drawable" kind="class" language="C++" prot="public">
+    <compoundname>tl::Drawable</compoundname>
+    <derivedcompoundref refid="classtl_1_1_rectangle" prot="public" virt="non-virtual">tl::Rectangle</derivedcompoundref>
+    <derivedcompoundref refid="classtl_1_1_text" prot="public" virt="non-virtual">tl::Text</derivedcompoundref>
+    <includes refid="_drawable_8h" local="no">Drawable.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Drawable::posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <qualifiedname>tl::Drawable::posX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="27" column="11" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Drawable::posY</definition>
+        <argsstring></argsstring>
+        <name>posY</name>
+        <qualifiedname>tl::Drawable::posY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="27" column="16" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Drawable::sizeX</definition>
+        <argsstring></argsstring>
+        <name>sizeX</name>
+        <qualifiedname>tl::Drawable::sizeX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="27" column="21" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Drawable::sizeY</definition>
+        <argsstring></argsstring>
+        <name>sizeY</name>
+        <qualifiedname>tl::Drawable::sizeY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="27" column="27" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+        <definition>u8 tl::Drawable::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>tl::Drawable::r</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="28" column="10" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+        <definition>u8 tl::Drawable::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <qualifiedname>tl::Drawable::g</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="28" column="13" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+        <definition>u8 tl::Drawable::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>tl::Drawable::b</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="28" column="16" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+        <definition>u8 tl::Drawable::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>tl::Drawable::a</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="28" column="19" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Drawable::Drawable</definition>
+        <argsstring>(Vec4i bounds={0, 0, 0, 0})</argsstring>
+        <name>Drawable</name>
+        <qualifiedname>tl::Drawable::Drawable</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec4i" kindref="compound">Vec4i</ref></type>
+          <declname>bounds</declname>
+          <defval>{0, 0, 0, 0}</defval>
+        </param>
+        <briefdescription>
+<para>Creates a new drawable object with it&apos;s position and size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boundaries of this drawable, (width, height, left, top). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="14" column="7" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Drawable::~Drawable</definition>
+        <argsstring>()</argsstring>
+        <name>~Drawable</name>
+        <qualifiedname>tl::Drawable::~Drawable</qualifiedname>
+        <briefdescription>
+<para>Nothing to clean up for now. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="15" column="7" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Drawable::setPosition</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>tl::Drawable::setPosition</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+<para>Set position of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New x, y position for this drawable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="16" column="12" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Drawable::setSize</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>setSize</name>
+        <qualifiedname>tl::Drawable::setSize</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+<para>Set size of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the width, height of this drawable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="17" column="12" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+        <definition>Vec2i tl::Drawable::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>tl::Drawable::getPosition</qualifiedname>
+        <briefdescription>
+<para>Get the current position of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>X-position, Y-position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="18" column="13" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+        <definition>Vec2i tl::Drawable::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>tl::Drawable::getSize</qualifiedname>
+        <briefdescription>
+<para>Get the current size of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Width, height. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="19" column="13" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtl_1_1_color" kindref="compound">Color</ref></type>
+        <definition>Color tl::Drawable::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <qualifiedname>tl::Drawable::getColor</qualifiedname>
+        <briefdescription>
+<para>Get the current color of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="20" column="13" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Drawable::move</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>move</name>
+        <qualifiedname>tl::Drawable::move</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+<para>Move this drawable object from current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How far to move the x, y of this <ref refid="classtl_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets position relative to current position offset by x and y parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="21" column="12" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Drawable::setColor</definition>
+        <argsstring>(Color)</argsstring>
+        <name>setColor</name>
+        <qualifiedname>tl::Drawable::setColor</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_color" kindref="compound">Color</ref></type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+<para>Set the color of this drawable object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New color for this object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="22" column="12" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Drawable::intersects</definition>
+        <argsstring>(Drawable &amp;) const</argsstring>
+        <name>intersects</name>
+        <qualifiedname>tl::Drawable::intersects</qualifiedname>
+        <param>
+          <type><ref refid="classtl_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+<para>Check if this drawable is intersecting with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The drawable object to compare with this one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if both objects intersect.</para>
+</simplesect>
+Compares the boundaries of both drawable objects. Using position and size, if they overlap anywhere, then this is true for an intersection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="23" column="11" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_drawable_1afd87e8323f304ae6dacb8f06057a3963" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Drawable::intersects</definition>
+        <argsstring>(Window &amp;) const</argsstring>
+        <name>intersects</name>
+        <qualifiedname>tl::Drawable::intersects</qualifiedname>
+        <param>
+          <type><ref refid="classtl_1_1_window" kindref="compound">Window</ref> &amp;</type>
+          <defname>window</defname>
+        </param>
+        <briefdescription>
+<para>Check if this drawable is inside the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to compare with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if this drawable is inside window.</para>
+</simplesect>
+If this drawable is fully outside window (not visible), then it will return false. Helpful for rendering only on-screen objects. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Drawable.h" line="24" column="11" bodyfile="TinyLib/Graphics/Drawable.cpp" bodystart="102" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tl::Drawable</label>
+        <link refid="classtl_1_1_drawable"/>
+      </node>
+      <node id="2">
+        <label>tl::Rectangle</label>
+        <link refid="classtl_1_1_rectangle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tl::Text</label>
+        <link refid="classtl_1_1_text"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="TinyLib/Graphics/Drawable.h" line="11" column="3" bodyfile="TinyLib/Graphics/Drawable.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>a</name></member>
+      <member refid="classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>b</name></member>
+      <member refid="classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>Drawable</name></member>
+      <member refid="classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>g</name></member>
+      <member refid="classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>getColor</name></member>
+      <member refid="classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>getPosition</name></member>
+      <member refid="classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>getSize</name></member>
+      <member refid="classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>intersects</name></member>
+      <member refid="classtl_1_1_drawable_1afd87e8323f304ae6dacb8f06057a3963" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>intersects</name></member>
+      <member refid="classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>move</name></member>
+      <member refid="classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>posX</name></member>
+      <member refid="classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>posY</name></member>
+      <member refid="classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>r</name></member>
+      <member refid="classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>setColor</name></member>
+      <member refid="classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>setPosition</name></member>
+      <member refid="classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>setSize</name></member>
+      <member refid="classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>sizeX</name></member>
+      <member refid="classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675" prot="protected" virt="non-virtual"><scope>tl::Drawable</scope><name>sizeY</name></member>
+      <member refid="classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa" prot="public" virt="non-virtual"><scope>tl::Drawable</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

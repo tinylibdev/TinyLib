@@ -1,0 +1,279 @@
+.TH "tl::Drawable" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tl::Drawable
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Drawable\&.h>\fP
+.PP
+Inherited by \fBtl::Rectangle\fP, and \fBtl::Text\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDrawable\fP (\fBVec4i\fP bounds={0, 0, 0, 0})"
+.br
+.RI "Creates a new drawable object with it's position and size\&. "
+.ti -1c
+.RI "\fB~Drawable\fP ()"
+.br
+.RI "Nothing to clean up for now\&. "
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBVec2i\fP)"
+.br
+.RI "Set position of this drawable object\&. "
+.ti -1c
+.RI "void \fBsetSize\fP (\fBVec2i\fP)"
+.br
+.RI "Set size of this drawable object\&. "
+.ti -1c
+.RI "\fBVec2i\fP \fBgetPosition\fP () const"
+.br
+.RI "Get the current position of this drawable object\&. "
+.ti -1c
+.RI "\fBVec2i\fP \fBgetSize\fP () const"
+.br
+.RI "Get the current size of this drawable object\&. "
+.ti -1c
+.RI "\fBColor\fP \fBgetColor\fP () const"
+.br
+.RI "Get the current color of this drawable object\&. "
+.ti -1c
+.RI "void \fBmove\fP (\fBVec2i\fP)"
+.br
+.RI "Move this drawable object from current position\&. "
+.ti -1c
+.RI "void \fBsetColor\fP (\fBColor\fP)"
+.br
+.RI "Set the color of this drawable object\&. "
+.ti -1c
+.RI "\fBbit\fP \fBintersects\fP (\fBDrawable\fP &) const"
+.br
+.RI "Check if this drawable is intersecting with another\&. "
+.ti -1c
+.RI "\fBbit\fP \fBintersects\fP (\fBWindow\fP &) const"
+.br
+.RI "Check if this drawable is inside the window\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBs32\fP \fBposX\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBposY\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBsizeX\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBsizeY\fP"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBr\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBg\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBb\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBa\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB11\fP of file \fBDrawable\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "tl::Drawable::Drawable (\fBVec4i\fP bounds = \fR{0, 0, 0, 0}\fP)"
+
+.PP
+Creates a new drawable object with it's position and size\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbounds\fP Boundaries of this drawable, (width, height, left, top)\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB9\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "tl::Drawable::~Drawable ()"
+
+.PP
+Nothing to clean up for now\&. 
+.PP
+Definition at line \fB17\fP of file \fBDrawable\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBColor\fP tl::Drawable::getColor () const"
+
+.PP
+Get the current color of this drawable object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Current color\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB75\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "\fBVec2i\fP tl::Drawable::getPosition () const"
+
+.PP
+Get the current position of this drawable object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+X-position, Y-position\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB41\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "\fBVec2i\fP tl::Drawable::getSize () const"
+
+.PP
+Get the current size of this drawable object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Width, height\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB49\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "\fBbit\fP tl::Drawable::intersects (\fBDrawable\fP & other) const"
+
+.PP
+Check if this drawable is intersecting with another\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP The drawable object to compare with this one\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if both objects intersect\&.
+.RE
+.PP
+Compares the boundaries of both drawable objects\&. Using position and size, if they overlap anywhere, then this is true for an intersection\&. 
+.PP
+Definition at line \fB87\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "\fBbit\fP tl::Drawable::intersects (\fBWindow\fP & window) const"
+
+.PP
+Check if this drawable is inside the window\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwindow\fP The window to compare with\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if this drawable is inside window\&.
+.RE
+.PP
+If this drawable is fully outside window (not visible), then it will return false\&. Helpful for rendering only on-screen objects\&. 
+.PP
+Definition at line \fB102\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "void tl::Drawable::move (\fBVec2i\fP pos)"
+
+.PP
+Move this drawable object from current position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP How far to move the x, y of this \fBDrawable\fP\&.
+.RE
+.PP
+Sets position relative to current position offset by x and y parameters\&. 
+.PP
+Definition at line \fB59\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "void tl::Drawable::setColor (\fBColor\fP color)"
+
+.PP
+Set the color of this drawable object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP New color for this object\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB67\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "void tl::Drawable::setPosition (\fBVec2i\fP pos)"
+
+.PP
+Set position of this drawable object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP New x, y position for this drawable\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB25\fP of file \fBDrawable\&.cpp\fP\&.
+.SS "void tl::Drawable::setSize (\fBVec2i\fP size)"
+
+.PP
+Set size of this drawable object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsize\fP Set the width, height of this drawable\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB33\fP of file \fBDrawable\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBu8\fP tl::Drawable::a = 0\fR [protected]\fP"
+
+.PP
+Definition at line \fB28\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBu8\fP tl::Drawable::b = 0\fR [protected]\fP"
+
+.PP
+Definition at line \fB28\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBu8\fP tl::Drawable::g = 0\fR [protected]\fP"
+
+.PP
+Definition at line \fB28\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBs32\fP tl::Drawable::posX\fR [protected]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBs32\fP tl::Drawable::posY\fR [protected]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBu8\fP tl::Drawable::r = 0\fR [protected]\fP"
+
+.PP
+Definition at line \fB28\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBs32\fP tl::Drawable::sizeX\fR [protected]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBDrawable\&.h\fP\&.
+.SS "\fBs32\fP tl::Drawable::sizeY\fR [protected]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBDrawable\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

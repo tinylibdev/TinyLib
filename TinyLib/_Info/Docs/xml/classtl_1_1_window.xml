@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classtl_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>tl::Window</compoundname>
+    <includes refid="_window_8h" local="no">Window.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtl_1_1_window_1af5d241bb353da75f3b57d234e31821cd" prot="private" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND tl::Window::hwnd</definition>
+        <argsstring></argsstring>
+        <name>hwnd</name>
+        <qualifiedname>tl::Window::hwnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="60" column="14" bodyfile="TinyLib/Graphics/Window.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_window_1afac99b3e487c106260b99ed51d34af5a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tl::Window::windowOpen</definition>
+        <argsstring></argsstring>
+        <name>windowOpen</name>
+        <qualifiedname>tl::Window::windowOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="61" column="14" bodyfile="TinyLib/Graphics/Window.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_window_1a0f1ca386a9fd301b8004fcbf74f5acaf" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a413c6dc972e88526a668913ce1b06b29" kindref="member">u16</ref></type>
+        <definition>u16 tl::Window::maxFps</definition>
+        <argsstring></argsstring>
+        <name>maxFps</name>
+        <qualifiedname>tl::Window::maxFps</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="63" column="13" bodyfile="TinyLib/Graphics/Window.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_window_1ac4501714962fe816ec9cda1f738a3422" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a904241d60278f00c7d91b31161237d62" kindref="member">u64</ref></type>
+        <definition>u64 tl::Window::lastFrameTime</definition>
+        <argsstring></argsstring>
+        <name>lastFrameTime</name>
+        <qualifiedname>tl::Window::lastFrameTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="64" column="13" bodyfile="TinyLib/Graphics/Window.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_window_1aba24ef67844df6a708dd90ddd9db5357" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+        <definition>u8 tl::Window::currentEvents</definition>
+        <argsstring></argsstring>
+        <name>currentEvents</name>
+        <qualifiedname>tl::Window::currentEvents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="65" column="12" bodyfile="TinyLib/Graphics/Window.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtl_1_1_window_1a3b0a70077b4b9c5c7be21451486358e4" prot="private" static="no" mutable="no">
+        <type>_Graphics *</type>
+        <definition>_Graphics* tl::Window::graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <qualifiedname>tl::Window::graphics</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="69" column="19" bodyfile="TinyLib/Graphics/Window.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Window::Window</definition>
+        <argsstring>(Vec2i={800, 600}, const char *=&quot;Window&quot;, LONG style=WS_OVERLAPPEDWINDOW)</argsstring>
+        <name>Window</name>
+        <qualifiedname>tl::Window::Window</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>size</defname>
+          <defval>{800, 600}</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>title</defname>
+          <defval>&quot;Window&quot;</defval>
+        </param>
+        <param>
+          <type>LONG</type>
+          <declname>style</declname>
+          <defval>WS_OVERLAPPEDWINDOW</defval>
+        </param>
+        <briefdescription>
+<para>Create a new window, all parameters are optional. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width, height of this window in pixels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional window style flags.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Size is optional, default is 800x600. Title is optional, default is &quot;Window&quot;. Style is optional, default is <ref refid="namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a37707492d112fc66861dba3bda903db8" kindref="member">tl::Style::Default</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="38" column="9" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tl::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <qualifiedname>tl::Window::~Window</qualifiedname>
+        <briefdescription>
+<para>Clean up window resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="39" column="9" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::create</definition>
+        <argsstring>(Vec2i={800, 600}, const char *=&quot;Window&quot;, LONG style=WS_OVERLAPPEDWINDOW)</argsstring>
+        <name>create</name>
+        <qualifiedname>tl::Window::create</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>size</defname>
+          <defval>{800, 600}</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>title</defname>
+          <defval>&quot;Window&quot;</defval>
+        </param>
+        <param>
+          <type>LONG</type>
+          <declname>style</declname>
+          <defval>WS_OVERLAPPEDWINDOW</defval>
+        </param>
+        <briefdescription>
+<para>Recreate the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width, height of this window in pixels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title of the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional window style flags.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+All parameters are optional, any you don&apos;t provide will stay the same. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="41" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="73" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1acc9900250b03144262deb12fbdb61378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tl::Window::isOpen</definition>
+        <argsstring>()</argsstring>
+        <name>isOpen</name>
+        <qualifiedname>tl::Window::isOpen</qualifiedname>
+        <briefdescription>
+<para>Check if the window is open. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if window is open.</para>
+</simplesect>
+This method also makes sure the program doesn&apos;t go past the FPS cap if set with <ref refid="classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d" kindref="member">Window::limitFPS()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="42" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="115" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::draw</definition>
+        <argsstring>(Rectangle &amp;rectangle)</argsstring>
+        <name>draw</name>
+        <qualifiedname>tl::Window::draw</qualifiedname>
+        <param>
+          <type><ref refid="classtl_1_1_rectangle" kindref="compound">Rectangle</ref> &amp;</type>
+          <declname>rectangle</declname>
+        </param>
+        <briefdescription>
+<para>Draw a rectangle to the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rectangle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to draw. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="43" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a9840a8d047b1f9e4b8803e0fef20006a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::draw</definition>
+        <argsstring>(Text &amp;text)</argsstring>
+        <name>draw</name>
+        <qualifiedname>tl::Window::draw</qualifiedname>
+        <param>
+          <type><ref refid="classtl_1_1_text" kindref="compound">Text</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Draw text to the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text you want to draw. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="44" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>tl::Window::close</qualifiedname>
+        <briefdescription>
+<para>Close this window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="45" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::clear</definition>
+        <argsstring>(Color color=Color(255, 255, 255, 255))</argsstring>
+        <name>clear</name>
+        <qualifiedname>tl::Window::clear</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+          <defval><ref refid="structtl_1_1_color" kindref="compound">Color</ref>(255, 255, 255, 255)</defval>
+        </param>
+        <briefdescription>
+<para>Clear the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structtl_1_1_color" kindref="compound">Color</ref> to clear window with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="46" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+        <definition>Vec2i tl::Window::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>tl::Window::getSize</qualifiedname>
+        <briefdescription>
+<para>Get size of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Width, height. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="47" column="15" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="182" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::setSize</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>setSize</name>
+        <qualifiedname>tl::Window::setSize</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+<para>Set the size of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the width, height of this window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="48" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::setTitle</definition>
+        <argsstring>(const char *title)</argsstring>
+        <name>setTitle</name>
+        <qualifiedname>tl::Window::setTitle</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Change the window title. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="49" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a9efb2affce62623dec72f2267704412b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::setPosition</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>tl::Window::setPosition</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+<para>Set the window&apos;s position on screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New x, y position for the window. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="50" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::move</definition>
+        <argsstring>(Vec2i)</argsstring>
+        <name>move</name>
+        <qualifiedname>tl::Window::move</qualifiedname>
+        <param>
+          <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+<para>Move the window from current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Move the window by x, y. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="51" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtl_1_1_vec2i" kindref="compound">Vec2i</ref></type>
+        <definition>Vec2i tl::Window::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>tl::Window::getPosition</qualifiedname>
+        <briefdescription>
+<para>Get the current position of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>X-position, y-position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="52" column="15" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="224" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <qualifiedname>tl::Window::display</qualifiedname>
+        <briefdescription>
+<para>Display what you&apos;ve drawn to the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="53" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tl::Window::limitFPS</definition>
+        <argsstring>(u32 fps)</argsstring>
+        <name>limitFPS</name>
+        <qualifiedname>tl::Window::limitFPS</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51" kindref="member">u32</ref></type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+<para>Caps the framerate to given value, 0 for unlimited. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Framerate cap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+FPS cap is enforced in <ref refid="classtl_1_1_window_1acc9900250b03144262deb12fbdb61378" kindref="member">Window::isOpen()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="54" column="14" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="236" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd" kindref="member">bit</ref></type>
+        <definition>bit tl::Window::checkEvent</definition>
+        <argsstring>(u8 event)</argsstring>
+        <name>checkEvent</name>
+        <qualifiedname>tl::Window::checkEvent</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9" kindref="member">u8</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Check if a window event activated this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtl_1_1_window" kindref="compound">Window</ref> event to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if specified event activated this frame.</para>
+</simplesect>
+Events are an enum defined in <ref refid="_window_8h" kindref="compound">Window.h</ref>, <ref refid="namespacetl_1a7e2989f2c8039c3f533555e5255c654d" kindref="member">tl::Event</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="55" column="13" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtl_1_1_window_1a2d45e4bc931cb15a013f4e8e985d2eb6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>LRESULT CALLBACK tl::Window::WndProc</definition>
+        <argsstring>(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>WndProc</name>
+        <qualifiedname>tl::Window::WndProc</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>Windows API specific message processor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hwnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtl_1_1_window" kindref="compound">Window</ref> receiving event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The specific event to process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+This requires a pointer back to the window, because otherwise we cannot implement this as part of the <ref refid="classtl_1_1_window" kindref="compound">Window</ref> class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Graphics/Window.h" line="62" column="33" bodyfile="TinyLib/Graphics/Window.cpp" bodystart="15" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TinyLib/Graphics/Window.h" line="35" column="5" bodyfile="TinyLib/Graphics/Window.h" bodystart="36" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>checkEvent</name></member>
+      <member refid="classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>clear</name></member>
+      <member refid="classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>close</name></member>
+      <member refid="classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>create</name></member>
+      <member refid="classtl_1_1_window_1aba24ef67844df6a708dd90ddd9db5357" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>currentEvents</name></member>
+      <member refid="classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>display</name></member>
+      <member refid="classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>draw</name></member>
+      <member refid="classtl_1_1_window_1a9840a8d047b1f9e4b8803e0fef20006a" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>draw</name></member>
+      <member refid="classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>getPosition</name></member>
+      <member refid="classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>getSize</name></member>
+      <member refid="classtl_1_1_window_1a3b0a70077b4b9c5c7be21451486358e4" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>graphics</name></member>
+      <member refid="classtl_1_1_window_1af5d241bb353da75f3b57d234e31821cd" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>hwnd</name></member>
+      <member refid="classtl_1_1_window_1acc9900250b03144262deb12fbdb61378" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>isOpen</name></member>
+      <member refid="classtl_1_1_window_1ac4501714962fe816ec9cda1f738a3422" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>lastFrameTime</name></member>
+      <member refid="classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>limitFPS</name></member>
+      <member refid="classtl_1_1_window_1a0f1ca386a9fd301b8004fcbf74f5acaf" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>maxFps</name></member>
+      <member refid="classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>move</name></member>
+      <member refid="classtl_1_1_window_1a9efb2affce62623dec72f2267704412b" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>setPosition</name></member>
+      <member refid="classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>setSize</name></member>
+      <member refid="classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>setTitle</name></member>
+      <member refid="classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>Window</name></member>
+      <member refid="classtl_1_1_window_1afac99b3e487c106260b99ed51d34af5a" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>windowOpen</name></member>
+      <member refid="classtl_1_1_window_1a2d45e4bc931cb15a013f4e8e985d2eb6" prot="private" virt="non-virtual"><scope>tl::Window</scope><name>WndProc</name></member>
+      <member refid="classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064" prot="public" virt="non-virtual"><scope>tl::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

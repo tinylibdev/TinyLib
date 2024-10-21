@@ -1,0 +1,39 @@
+\doxysection{Tiny\+Lib/\+Graphics/\+Window.h File Reference}
+\label{_window_8h}\index{TinyLib/Graphics/Window.h@{TinyLib/Graphics/Window.h}}
+{\ttfamily \#include "{}../\+Base/\+Win/\+Win\+API.\+h"{}}\newline
+{\ttfamily \#include "{}Drawable.\+h"{}}\newline
+{\ttfamily \#include "{}Rectangle.\+h"{}}\newline
+{\ttfamily \#include "{}Graphics.\+h"{}}\newline
+{\ttfamily \#include "{}GDI.\+h"{}}\newline
+{\ttfamily \#include "{}Text.\+h"{}}\newline
+{\ttfamily \#include "{}../\+Base/\+Base\+Category.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ tl\+::\+Window}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \textbf{ tl}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ tl\+::\+Event} \{ \textbf{ tl\+::\+Closed} = 0b1
+, \textbf{ tl\+::\+Moved} = 0b10
+, \textbf{ tl\+::\+Resized} = 0b100
+ \}
+\item 
+enum \textbf{ tl\+::\+Style} \{ \newline
+\textbf{ tl\+::\+Border} = WS\+\_\+\+BORDER
+, \textbf{ tl\+::\+Title} = WS\+\_\+\+CAPTION
+, \textbf{ tl\+::\+Background} = WS\+\_\+\+MINIMIZE
+, \textbf{ tl\+::\+Fullscreen} = WS\+\_\+\+MAXIMIZE
+, \newline
+\textbf{ tl\+::\+Minimize} = WS\+\_\+\+MINIMIZEBOX
+, \textbf{ tl\+::\+Maximize} = WS\+\_\+\+MAXIMIZEBOX
+, \textbf{ tl\+::\+Resize} = WS\+\_\+\+SIZEBOX
+, \textbf{ tl\+::\+Default} = WS\+\_\+\+OVERLAPPEDWINDOW
+ \}
+\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structtl_1_1_vec3i" kind="struct" language="C++" prot="public">
+    <compoundname>tl::Vec3i</compoundname>
+    <includes refid="_types_8h" local="no">Types.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Vec3i::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>tl::Vec3i::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="79" column="13" bodyfile="TinyLib/Base/Types.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Vec3i::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>tl::Vec3i::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="79" column="15" bodyfile="TinyLib/Base/Types.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+        <definition>s32 tl::Vec3i::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>tl::Vec3i::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="79" column="17" bodyfile="TinyLib/Base/Types.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tl::Vec3i::Vec3i</definition>
+        <argsstring>(s32 xValue=0, s32 yValue=0, s32 zValue=0)</argsstring>
+        <name>Vec3i</name>
+        <qualifiedname>tl::Vec3i::Vec3i</qualifiedname>
+        <param>
+          <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+          <declname>xValue</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+          <declname>yValue</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetl_1a265a9f7c42ef723ea69373d72f9cf195" kindref="member">s32</ref></type>
+          <declname>zValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Types.h" line="81" column="9" bodyfile="TinyLib/Base/Types.h" bodystart="81" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TinyLib/Base/Types.h" line="77" column="5" bodyfile="TinyLib/Base/Types.h" bodystart="78" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structtl_1_1_vec3i_1af6461379b5a15b3c3dd098deddd9dbb6" prot="public" virt="non-virtual"><scope>tl::Vec3i</scope><name>Vec3i</name></member>
+      <member refid="structtl_1_1_vec3i_1a02a1f2ca39aef67993540a544bab8856" prot="public" virt="non-virtual"><scope>tl::Vec3i</scope><name>x</name></member>
+      <member refid="structtl_1_1_vec3i_1a7a92050183a837edc7c4de9290436795" prot="public" virt="non-virtual"><scope>tl::Vec3i</scope><name>y</name></member>
+      <member refid="structtl_1_1_vec3i_1a8c9b9a6bf5d2e2995958b6c5064f62fc" prot="public" virt="non-virtual"><scope>tl::Vec3i</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

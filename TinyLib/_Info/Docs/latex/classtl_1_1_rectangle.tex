@@ -1,0 +1,113 @@
+\doxysection{tl\+::Rectangle Class Reference}
+\label{classtl_1_1_rectangle}\index{tl::Rectangle@{tl::Rectangle}}
+
+
+{\ttfamily \#include $<$Rectangle.\+h$>$}
+
+Inheritance diagram for tl\+::Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtl_1_1_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Rectangle} (\textbf{ Vec4i} bounds=\{0, 0, 0, 0\})
+\begin{DoxyCompactList}\small\item\em Creates a new rectangle with drawable constructor. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Rectangle} ()
+\begin{DoxyCompactList}\small\item\em Nothing to clean up for now. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ tl\+::\+Drawable}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Drawable} (\textbf{ Vec4i} bounds=\{0, 0, 0, 0\})
+\begin{DoxyCompactList}\small\item\em Creates a new drawable object with it\textquotesingle{}s position and size. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Nothing to clean up for now. \end{DoxyCompactList}\item 
+void \textbf{ set\+Position} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set position of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ set\+Size} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Set size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Position} () const
+\begin{DoxyCompactList}\small\item\em Get the current position of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Vec2i} \textbf{ get\+Size} () const
+\begin{DoxyCompactList}\small\item\em Get the current size of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ Color} \textbf{ get\+Color} () const
+\begin{DoxyCompactList}\small\item\em Get the current color of this drawable object. \end{DoxyCompactList}\item 
+void \textbf{ move} (\textbf{ Vec2i})
+\begin{DoxyCompactList}\small\item\em Move this drawable object from current position. \end{DoxyCompactList}\item 
+void \textbf{ set\+Color} (\textbf{ Color})
+\begin{DoxyCompactList}\small\item\em Set the color of this drawable object. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Drawable} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is intersecting with another. \end{DoxyCompactList}\item 
+\textbf{ bit} \textbf{ intersects} (\textbf{ Window} \&) const
+\begin{DoxyCompactList}\small\item\em Check if this drawable is inside the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \textbf{ tl\+::\+Drawable}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ s32} \textbf{ posX}
+\item 
+\textbf{ s32} \textbf{ posY}
+\item 
+\textbf{ s32} \textbf{ sizeX}
+\item 
+\textbf{ s32} \textbf{ sizeY}
+\item 
+\textbf{ u8} \textbf{ r} = 0
+\item 
+\textbf{ u8} \textbf{ g} = 0
+\item 
+\textbf{ u8} \textbf{ b} = 0
+\item 
+\textbf{ u8} \textbf{ a} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 10} of file \textbf{ Rectangle.\+h}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{tl::Rectangle@{tl::Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!tl::Rectangle@{tl::Rectangle}}
+\doxysubsubsection{Rectangle()}
+{\footnotesize\ttfamily \label{classtl_1_1_rectangle_a6d3da05eade9abd326dd2834da1e2c47} 
+tl\+::\+Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{\textbf{ Vec4i}}]{bounds}{ = {\ttfamily \{0,~0,~0,~0\}}}\end{DoxyParamCaption})}
+
+
+
+Creates a new rectangle with drawable constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & Boundaries of this rectangle, (width, height, left, top). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 8} of file \textbf{ Rectangle.\+cpp}.
+
+\index{tl::Rectangle@{tl::Rectangle}!````~Rectangle@{$\sim$Rectangle}}
+\index{````~Rectangle@{$\sim$Rectangle}!tl::Rectangle@{tl::Rectangle}}
+\doxysubsubsection{$\sim$Rectangle()}
+{\footnotesize\ttfamily \label{classtl_1_1_rectangle_a08933cdce31f6b38b206007564474354} 
+tl\+::\+Rectangle\+::$\sim$\+Rectangle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Nothing to clean up for now. 
+
+
+
+Definition at line \textbf{ 16} of file \textbf{ Rectangle.\+cpp}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Lib/\+Graphics/\textbf{ Rectangle.\+h}\item 
+Tiny\+Lib/\+Graphics/\textbf{ Rectangle.\+cpp}\end{DoxyCompactItemize}

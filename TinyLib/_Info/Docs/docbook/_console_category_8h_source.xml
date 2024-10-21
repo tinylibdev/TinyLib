@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__console_category_8h_source" xml:lang="en-US">
+<title>ConsoleCategory.h</title>
+<indexterm><primary>TinyLib/Console/ConsoleCategory.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__console_category_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__console_8h">Console.h</link>&quot;</emphasis>
+</programlisting></section>

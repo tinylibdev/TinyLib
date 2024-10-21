@@ -1,0 +1,108 @@
+\doxysection{Tiny\+Lib/\+Base/\+Memory.cpp File Reference}
+\label{_memory_8cpp}\index{TinyLib/Base/Memory.cpp@{TinyLib/Base/Memory.cpp}}
+{\ttfamily \#include "{}Memory.\+h"{}}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \textbf{ tl}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \textbf{ tl\+::malloc} (size\+\_\+t size)
+\item 
+void \textbf{ tl\+::free} (void $\ast$ptr)
+\item 
+void $\ast$\+\_\+\+\_\+cdecl \textbf{ memset} (void $\ast$ptr, int value, size\+\_\+t size)
+\item 
+void $\ast$ \textbf{ operator new} (size\+\_\+t size) noexcept
+\item 
+void \textbf{ operator delete} (void $\ast$ptr) noexcept
+\item 
+void $\ast$ \textbf{ operator new[$\,$]} (size\+\_\+t size) noexcept
+\item 
+void \textbf{ operator delete[$\,$]} (void $\ast$ptr) noexcept
+\item 
+void \textbf{ operator delete} (void $\ast$ptr, unsigned int size) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ \+\_\+fltused} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\index{Memory.cpp@{Memory.cpp}!memset@{memset}}
+\index{memset@{memset}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{memset()}
+{\footnotesize\ttfamily \label{_memory_8cpp_a00d6f69015f4868522db5fa267282022} 
+void $\ast$\+\_\+\+\_\+cdecl memset (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr}{, }\item[{int}]{value}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \textbf{ 22} of file \textbf{ Memory.\+cpp}.
+
+\index{Memory.cpp@{Memory.cpp}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{operator delete()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_memory_8cpp_afa145befcf5e7b83424408ca503c8637} 
+void operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \textbf{ 41} of file \textbf{ Memory.\+cpp}.
+
+\index{Memory.cpp@{Memory.cpp}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{operator delete()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_memory_8cpp_a91e676caef3a7611d29e053ed1789a1a} 
+void operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr}{, }\item[{unsigned int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \textbf{ 61} of file \textbf{ Memory.\+cpp}.
+
+\index{Memory.cpp@{Memory.cpp}!operator delete[]@{operator delete[]}}
+\index{operator delete[]@{operator delete[]}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{operator delete[]()}
+{\footnotesize\ttfamily \label{_memory_8cpp_a22aea74a1155aa798d6032da46da2391} 
+void operator delete[$\,$] (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \textbf{ 55} of file \textbf{ Memory.\+cpp}.
+
+\index{Memory.cpp@{Memory.cpp}!operator new@{operator new}}
+\index{operator new@{operator new}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{operator new()}
+{\footnotesize\ttfamily \label{_memory_8cpp_a1a7f24760c8c7ad3bfcd54856d906fc2} 
+void $\ast$ operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \textbf{ 33} of file \textbf{ Memory.\+cpp}.
+
+\index{Memory.cpp@{Memory.cpp}!operator new[]@{operator new[]}}
+\index{operator new[]@{operator new[]}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{operator new[]()}
+{\footnotesize\ttfamily \label{_memory_8cpp_aa75472ab4b765cf6f6b5b0ebcd4a28c8} 
+void $\ast$ operator new[$\,$] (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line \textbf{ 47} of file \textbf{ Memory.\+cpp}.
+
+
+
+\doxysubsection{Variable Documentation}
+\index{Memory.cpp@{Memory.cpp}!\_fltused@{\_fltused}}
+\index{\_fltused@{\_fltused}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{\_fltused}
+{\footnotesize\ttfamily \label{_memory_8cpp_a4cf04c7a2389a90415c8032ce5e58e50} 
+int \+\_\+fltused = 1}
+
+
+
+Definition at line \textbf{ 18} of file \textbf{ Memory.\+cpp}.
+

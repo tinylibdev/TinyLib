@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_key" xml:lang="en-US">
+<title>tl::Key Class Reference</title>
+<indexterm><primary>tl::Key</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Key.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum { <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462">Space</link> = VK_SPACE
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02">A</link> = 0x41
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb">B</link> = 0x42
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64">C</link> = 0x43
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33">D</link> = 0x44
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d">E</link> = 0x45
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad">F</link> = 0x46
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b">G</link> = 0x47
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda">H</link> = 0x48
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080">I</link> = 0x49
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6">J</link> = 0x4A
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3">K</link> = 0x4B
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66">L</link> = 0x4C
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a">M</link> = 0x4D
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8">N</link> = 0x4E
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3">O</link> = 0x4F
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852">P</link> = 0x50
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873">Q</link> = 0x51
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63">R</link> = 0x52
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1">S</link> = 0x53
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7">T</link> = 0x54
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53">U</link> = 0x55
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad">V</link> = 0x56
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a">W</link> = 0x57
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744">X</link> = 0x58
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e">Y</link> = 0x59
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990">Z</link> = 0x5A
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b">Num0</link> = 0x30
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342">Num1</link> = 0x31
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a">Num2</link> = 0x32
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143">Num3</link> = 0x33
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c">Num4</link> = 0x34
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63">LShift</link> = VK_LSHIFT
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6">RShift</link> = VK_RSHIFT
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146">LControl</link> = VK_LCONTROL
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec">RControl</link> = VK_RCONTROL
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050">LAlt</link> = VK_LMENU
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4">RAlt</link> = VK_RMENU
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d">Up</link> = VK_UP
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9">Down</link> = VK_DOWN
+, <?linebreak?><link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0">Left</link> = VK_LEFT
+, <link linkend="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a">Right</link> = VK_RIGHT
+ }</para>
+
+<para>Readable version for every standard keyboard key. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_key_1ab2b89f653b520a01e794c9f6a07ee07c">isHeld</link> (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> key)</para>
+
+<para>Check if this key is currently down. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__key_8h_source_1l00008">8</link> of file <link linkend="__key_8h_source">Key.h</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum</computeroutput></para><para>
+
+<para>Readable version for every standard keyboard key. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Space</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Space</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a788a522f2333a53bab29b8dadf606462"/>Space</entry><entry></entry></row><row><entry><indexterm><primary>A</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>A</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aad7332d2b536d1bdd7fd61d6cf57eb02"/>A</entry><entry></entry></row><row><entry><indexterm><primary>B</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>B</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9d6976bbf4e5f389e4fd6f72764a1dfb"/>B</entry><entry></entry></row><row><entry><indexterm><primary>C</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>C</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a60eb837e37366e83930eab30c0482e64"/>C</entry><entry></entry></row><row><entry><indexterm><primary>D</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>D</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9725f2c279ad15df80647283ed6fdb33"/>D</entry><entry></entry></row><row><entry><indexterm><primary>E</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>E</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab4f7c99d3d3c4b38a493b6e15214492d"/>E</entry><entry></entry></row><row><entry><indexterm><primary>F</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>F</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aca55804c731526a8b53cf4a21cd0e2ad"/>F</entry><entry></entry></row><row><entry><indexterm><primary>G</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>G</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a8b20a16f18c262ca15d9ada11bc8100b"/>G</entry><entry></entry></row><row><entry><indexterm><primary>H</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>H</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a984951eb667381895c6607262e59bdda"/>H</entry><entry></entry></row><row><entry><indexterm><primary>I</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>I</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a96d123d06c84e36f4cf6cbfc275aa080"/>I</entry><entry></entry></row><row><entry><indexterm><primary>J</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>J</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a88e56c6832ffe671d9c18f82d6a511a6"/>J</entry><entry></entry></row><row><entry><indexterm><primary>K</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>K</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a5f9e01d43e3bece9e8d1efcc804512f3"/>K</entry><entry></entry></row><row><entry><indexterm><primary>L</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>L</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae68e4cae4744310826b60c04b7cd8a66"/>L</entry><entry></entry></row><row><entry><indexterm><primary>M</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>M</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a00785d0e943fef77581a8a144ba04f9a"/>M</entry><entry></entry></row><row><entry><indexterm><primary>N</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>N</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a446ed38f17a9292f5d44abf9836e5cc8"/>N</entry><entry></entry></row><row><entry><indexterm><primary>O</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>O</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aed9a757e1e5bdd9e8e7bc81dfffad7c3"/>O</entry><entry></entry></row><row><entry><indexterm><primary>P</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>P</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4411e0a419658b0b17316e618ae03852"/>P</entry><entry></entry></row><row><entry><indexterm><primary>Q</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Q</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1c9dddac77df097ad5dd55d8e5ec4873"/>Q</entry><entry></entry></row><row><entry><indexterm><primary>R</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>R</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acb4e9474d5cb4b31aa3dbeaaaa40ac63"/>R</entry><entry></entry></row><row><entry><indexterm><primary>S</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>S</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ac26a7f9ba6923c5aad7f443a55e1edc1"/>S</entry><entry></entry></row><row><entry><indexterm><primary>T</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>T</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a734fb35a0c4cadf6af86367a1b927da7"/>T</entry><entry></entry></row><row><entry><indexterm><primary>U</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>U</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a819271e3d5e0cfc4846b0d375bc34f53"/>U</entry><entry></entry></row><row><entry><indexterm><primary>V</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>V</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad0572bb16e9ebe07171a17c4c618a0ad"/>V</entry><entry></entry></row><row><entry><indexterm><primary>W</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>W</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a6a3e66045da1203bc05555375958507a"/>W</entry><entry></entry></row><row><entry><indexterm><primary>X</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>X</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ab40cb4ae00ee2e1df0c1e9b2258c3744"/>X</entry><entry></entry></row><row><entry><indexterm><primary>Y</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Y</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a189d85a131dd7500366496586caa4a3e"/>Y</entry><entry></entry></row><row><entry><indexterm><primary>Z</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Z</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ae0ac5a69db0386da8fc3deaebea91990"/>Z</entry><entry></entry></row><row><entry><indexterm><primary>Num0</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Num0</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a76d83b8a5bc3e68d82968774bc62418b"/>Num0</entry><entry></entry></row><row><entry><indexterm><primary>Num1</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Num1</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9abf27658b285d5cb24d6cce1de6c5c342"/>Num1</entry><entry></entry></row><row><entry><indexterm><primary>Num2</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Num2</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acedf395cf2071d196c6cd21dbcd2842a"/>Num2</entry><entry></entry></row><row><entry><indexterm><primary>Num3</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Num3</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9af889cf2bf2488160f0a4fc0600f3b143"/>Num3</entry><entry></entry></row><row><entry><indexterm><primary>Num4</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Num4</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a099c63e62124a47e2256bbe3c17b792c"/>Num4</entry><entry></entry></row><row><entry><indexterm><primary>LShift</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>LShift</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a1d8a4dba70b3fdfbb664b8af0472de63"/>LShift</entry><entry></entry></row><row><entry><indexterm><primary>RShift</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>RShift</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9ad334f4f805bdf28e194549ae8993a1c6"/>RShift</entry><entry></entry></row><row><entry><indexterm><primary>LControl</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>LControl</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a65801ca66dd071b119138effd8f19146"/>LControl</entry><entry></entry></row><row><entry><indexterm><primary>RControl</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>RControl</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a9ff635fc3ce2f77f964b0e00f38163ec"/>RControl</entry><entry></entry></row><row><entry><indexterm><primary>LAlt</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>LAlt</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9aa0163ca2a333ddfebe91babc17054050"/>LAlt</entry><entry></entry></row><row><entry><indexterm><primary>RAlt</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>RAlt</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9acda3e36ad31354db1ddb776054cb49f4"/>RAlt</entry><entry></entry></row><row><entry><indexterm><primary>Up</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Up</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a4e18b4a659ee059ea4bb2cb473576f3d"/>Up</entry><entry></entry></row><row><entry><indexterm><primary>Down</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Down</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a965e6d6bd718bbbea250aadd35d278e9"/>Down</entry><entry></entry></row><row><entry><indexterm><primary>Left</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Left</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9afe21130658937534c22a064dd946b3a0"/>Left</entry><entry></entry></row><row><entry><indexterm><primary>Right</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>Right</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_key_1a3de4b80c835a6f88f4f5e84cd8f260a9a049f02556cbc54a3dd8424a210add08a"/>Right</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__key_8h_source_1l00016">16</link> of file <link linkend="__key_8h_source">Key.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtl_1_1_key_1ab2b89f653b520a01e794c9f6a07ee07c"/><section>
+    <title>isHeld()</title>
+<indexterm><primary>isHeld</primary><secondary>tl::Key</secondary></indexterm>
+<indexterm><primary>tl::Key</primary><secondary>isHeld</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> tl::Key::isHeld (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> key)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Check if this key is currently down. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>key</entry><entry>
+<para>Which key to check, use enum <link linkend="_classtl_1_1_key">tl::Key</link>. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if this key is currently down. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__key_8cpp_source_1l00009">9</link> of file <link linkend="__key_8cpp_source">Key.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+TinyLib/System/<link linkend="__key_8h">Key.h</link>TinyLib/System/<link linkend="__key_8cpp">Key.cpp</link></section>
+</section>

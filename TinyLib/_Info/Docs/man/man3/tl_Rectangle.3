@@ -1,0 +1,130 @@
+.TH "tl::Rectangle" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tl::Rectangle
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Rectangle\&.h>\fP
+.PP
+Inherits \fBtl::Drawable\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRectangle\fP (\fBVec4i\fP bounds={0, 0, 0, 0})"
+.br
+.RI "Creates a new rectangle with drawable constructor\&. "
+.ti -1c
+.RI "\fB~Rectangle\fP ()"
+.br
+.RI "Nothing to clean up for now\&. "
+.in -1c
+
+Public Member Functions inherited from \fBtl::Drawable\fP
+.in +1c
+.ti -1c
+.RI "\fBDrawable\fP (\fBVec4i\fP bounds={0, 0, 0, 0})"
+.br
+.RI "Creates a new drawable object with it's position and size\&. "
+.ti -1c
+.RI "\fB~Drawable\fP ()"
+.br
+.RI "Nothing to clean up for now\&. "
+.ti -1c
+.RI "void \fBsetPosition\fP (\fBVec2i\fP)"
+.br
+.RI "Set position of this drawable object\&. "
+.ti -1c
+.RI "void \fBsetSize\fP (\fBVec2i\fP)"
+.br
+.RI "Set size of this drawable object\&. "
+.ti -1c
+.RI "\fBVec2i\fP \fBgetPosition\fP () const"
+.br
+.RI "Get the current position of this drawable object\&. "
+.ti -1c
+.RI "\fBVec2i\fP \fBgetSize\fP () const"
+.br
+.RI "Get the current size of this drawable object\&. "
+.ti -1c
+.RI "\fBColor\fP \fBgetColor\fP () const"
+.br
+.RI "Get the current color of this drawable object\&. "
+.ti -1c
+.RI "void \fBmove\fP (\fBVec2i\fP)"
+.br
+.RI "Move this drawable object from current position\&. "
+.ti -1c
+.RI "void \fBsetColor\fP (\fBColor\fP)"
+.br
+.RI "Set the color of this drawable object\&. "
+.ti -1c
+.RI "\fBbit\fP \fBintersects\fP (\fBDrawable\fP &) const"
+.br
+.RI "Check if this drawable is intersecting with another\&. "
+.ti -1c
+.RI "\fBbit\fP \fBintersects\fP (\fBWindow\fP &) const"
+.br
+.RI "Check if this drawable is inside the window\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBtl::Drawable\fP
+.in +1c
+.ti -1c
+.RI "\fBs32\fP \fBposX\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBposY\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBsizeX\fP"
+.br
+.ti -1c
+.RI "\fBs32\fP \fBsizeY\fP"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBr\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBg\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBb\fP = 0"
+.br
+.ti -1c
+.RI "\fBu8\fP \fBa\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB10\fP of file \fBRectangle\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "tl::Rectangle::Rectangle (\fBVec4i\fP bounds = \fR{0, 0, 0, 0}\fP)"
+
+.PP
+Creates a new rectangle with drawable constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbounds\fP Boundaries of this rectangle, (width, height, left, top)\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB8\fP of file \fBRectangle\&.cpp\fP\&.
+.SS "tl::Rectangle::~Rectangle ()"
+
+.PP
+Nothing to clean up for now\&. 
+.PP
+Definition at line \fB16\fP of file \fBRectangle\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

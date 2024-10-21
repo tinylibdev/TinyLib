@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__text_8cpp_source" xml:lang="en-US">
+<title>Text.cpp</title>
+<indexterm><primary>TinyLib/Graphics/Text.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__text_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__text_8h">Text.h</link>&quot;</emphasis>
+<anchor xml:id="__text_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__text_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__text_8cpp_source_1l00004"/>00004 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__text_8cpp_source_1l00005"/>00005 {
+<anchor xml:id="__text_8cpp_source_1l00013"/><link linkend="_classtl_1_1_text_1aead89526f1134efdbb683662d503ecce">00013</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1aead89526f1134efdbb683662d503ecce">Text::Text</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;str,&#32;<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;fontSize,&#32;<link linkend="_structtl_1_1_vec2i">Vec2i</link>&#32;pos)
+<anchor xml:id="__text_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae">setString</link>(str);
+<anchor xml:id="__text_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d">setFontSize</link>(fontSize);
+<anchor xml:id="__text_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">setPosition</link>(pos);
+<anchor xml:id="__text_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00019"/>00019 
+<anchor xml:id="__text_8cpp_source_1l00020"/>00020 
+<anchor xml:id="__text_8cpp_source_1l00022"/><link linkend="_classtl_1_1_text_1a12cfa88d0cea89d2e553d8cbde046f41">00022</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_text_1a12cfa88d0cea89d2e553d8cbde046f41">Text::~Text</link>()
+<anchor xml:id="__text_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>[]&#32;string;
+<anchor xml:id="__text_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00026"/>00026 
+<anchor xml:id="__text_8cpp_source_1l00027"/>00027 
+<anchor xml:id="__text_8cpp_source_1l00030"/><link linkend="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae">00030</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_text_1a32191037254d9cf575cb9677be4536ae">Text::setString</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;str)
+<anchor xml:id="__text_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>[]&#32;string;
+<anchor xml:id="__text_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+<anchor xml:id="__text_8cpp_source_1l00034"/>00034 
+<anchor xml:id="__text_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(str)
+<anchor xml:id="__text_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;length&#32;=&#32;strlen(str);
+<anchor xml:id="__text_8cpp_source_1l00038"/>00038 
+<anchor xml:id="__text_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Allocate&#32;new&#32;memory&#32;and&#32;copy&#32;the&#32;string</emphasis>
+<anchor xml:id="__text_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>[length&#32;+&#32;1];
+<anchor xml:id="__text_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;=&#32;length;&#32;i++)
+<anchor xml:id="__text_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>[i]&#32;=&#32;str[i];
+<anchor xml:id="__text_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00047"/>00047 
+<anchor xml:id="__text_8cpp_source_1l00048"/>00048 
+<anchor xml:id="__text_8cpp_source_1l00051"/><link linkend="_classtl_1_1_text_1a342716a8b9b9f950fed58d3e73eb1035">00051</link> &#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">ascii</link>*&#32;<link linkend="_classtl_1_1_text_1a342716a8b9b9f950fed58d3e73eb1035">Text::getString</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="__text_8cpp_source_1l00052"/>00052 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="__text_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;string;
+<anchor xml:id="__text_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00055"/>00055 
+<anchor xml:id="__text_8cpp_source_1l00056"/>00056 
+<anchor xml:id="__text_8cpp_source_1l00062"/><link linkend="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_text_1af448df96815b0aa650eec8a2cf5bcc0d">Text::setFontSize</link>(<link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link>&#32;size)
+<anchor xml:id="__text_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__text_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">setSize</link>({&#32;2000,&#32;size&#32;*&#32;2&#32;});
+<anchor xml:id="__text_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__text_8cpp_source_1l00066"/>00066 }
+</programlisting></section>

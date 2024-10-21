@@ -1,0 +1,89 @@
+#include <TinyLib.h>
+
+
+// Custom function for a random value -5 <> 5
+tl::s8 randomY();
+
+
+int main()
+{
+    // Limit window to 60 FPS for consistent physics
+    // Alternative for any FPS is using delta time
+    tl::Window window({ 800, 600 }, "Pong");
+    window.limitFPS(60);
+
+    tl::Color objectColor(255, 255, 255);
+
+    // Setup our players and ball
+    tl::Rectangle player1({ 10, 100, 10, 250 });
+    tl::Rectangle player2({ 10, 100, 780, 250 });
+    tl::Rectangle ball({ 10, 10, 395, 295 });
+    player1.setColor(objectColor);
+    player2.setColor(objectColor);
+    ball.setColor(objectColor);
+
+    // Ball moves this much each frame.
+    tl::Vec2i ballSpeed(2, randomY());
+
+    // Now our game loop.
+    while (window.isOpen())
+    {
+        if (window.checkEvent(tl::Event::Closed))
+            window.close();
+
+        // Player 1 controls.
+        // Only move that direction if it's within the window.
+        if (tl::Key::isHeld(tl::Key::W) && player1.getPosition().y > 0)
+            player1.move({ 0, -5 });
+        if (tl::Key::isHeld(tl::Key::S) && player1.getPosition().y < window.getSize().y - player1.getSize().y)
+            player1.move({ 0, 5 });
+
+        // Player 2 controls.
+        // Only move that direction if it's within the window.
+        if (tl::Key::isHeld(tl::Key::Up) && player2.getPosition().y > 0)
+            player2.move({ 0, -5 });
+        if (tl::Key::isHeld(tl::Key::Down) && player2.getPosition().y < window.getSize().y - player2.getSize().y)
+            player2.move({ 0, 5 });
+
+        // Move the ball and check if it hit the top or bottom.
+        ball.move({ ballSpeed.x, ballSpeed.y });
+        if (ball.getPosition().y <= 0)
+            ballSpeed.y = -ballSpeed.y;
+        if (ball.getPosition().y >= window.getSize().y - ball.getSize().y)
+            ballSpeed.y = -ballSpeed.y;
+
+        // Bounce if the ball hit either player.
+        // Increase horizontal speed by one each time it does.
+        if (ball.intersects(player1) || ball.intersects(player2))
+        {
+            ballSpeed.x = -ballSpeed.x;
+            ballSpeed.y = randomY();
+        }
+        if (ball.intersects(player1))
+            ballSpeed.x += 1;
+        if (ball.intersects(player2))
+            ballSpeed.x -= 1;
+
+        // Reset the ball if it goes past a player.
+        if (!ball.intersects(window))
+        {
+            ball.setPosition({ window.getSize().x / 2 - ball.getSize().x / 2, window.getSize().y / 2 - ball.getSize().y / 2 });
+            ballSpeed = tl::Vec2i(2, randomY());
+        }
+
+        // Draw everything.
+        window.clear(tl::Color(0, 0, 0));
+        window.draw(player1);
+        window.draw(player2);
+        window.draw(ball);
+        window.display();
+    }
+
+    return 0;
+}
+
+
+tl::s8 randomY()
+{
+    return (tl::random() % 11) - 5;
+}

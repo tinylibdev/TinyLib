@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__window_8h" xml:lang="en-US">
+<title>TinyLib/Graphics/Window.h File Reference</title>
+<indexterm><primary>TinyLib/Graphics/Window.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../Base/Win/WinAPI.h&quot;<?linebreak?>#include &quot;Drawable.h&quot;<?linebreak?>#include &quot;Rectangle.h&quot;<?linebreak?>#include &quot;Graphics.h&quot;<?linebreak?>#include &quot;GDI.h&quot;<?linebreak?>#include &quot;Text.h&quot;<?linebreak?>#include &quot;../Base/BaseCategory.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classtl_1_1_window">tl::Window</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetl">tl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654d">tl::Event</link> { <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da5be4e5d266410d4098330ef298d0a590">tl::Closed</link> = 0b1
+, <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654daed0acb15944cd2abce85da77065f7ba0">tl::Moved</link> = 0b10
+, <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654da60573197598e5aa232348f6efb3f7066">tl::Resized</link> = 0b100
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308">tl::Style</link> { <?linebreak?><link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ac470c51a77675dff2188539f3dd814d1">tl::Border</link> = WS_BORDER
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a36aa6aca3d046b2750e31acd37ca341b">tl::Title</link> = WS_CAPTION
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a7c7515c26f63d97a9f392debb0affa9c">tl::Background</link> = WS_MINIMIZE
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308ad03932612fa61f868ab83759cf89f8bd">tl::Fullscreen</link> = WS_MAXIMIZE
+, <?linebreak?><link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308afe4367e3cf35673f041e46ddcf641c58">tl::Minimize</link> = WS_MINIMIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308aabdd212e2b4673d041c8d9bdf192a6da">tl::Maximize</link> = WS_MAXIMIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a96d5232c5dacb561d06868bddd8662cc">tl::Resize</link> = WS_SIZEBOX
+, <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a37707492d112fc66861dba3bda903db8">tl::Default</link> = WS_OVERLAPPEDWINDOW
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

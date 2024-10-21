@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__memory_8h_source" xml:lang="en-US">
+<title>Memory.h</title>
+<indexterm><primary>TinyLib/Base/Memory.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__memory_8h_source_1l00001"/>00001 <emphasis role="comment">//&#32;Deadly&#32;zone&#32;of&#32;death,&#32;beware.</emphasis>
+<anchor xml:id="__memory_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__memory_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__win_a_p_i_8h">../Base/Win/WinAPI.h</link>&quot;</emphasis>
+<anchor xml:id="__memory_8h_source_1l00004"/>00004 
+<anchor xml:id="__memory_8h_source_1l00005"/>00005 
+<anchor xml:id="__memory_8h_source_1l00006"/>00006 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>&#32;{
+<anchor xml:id="__memory_8h_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Custom&#32;malloc&#32;and&#32;free&#32;can&#32;go&#32;in&#32;namespace.</emphasis>
+<anchor xml:id="__memory_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>*&#32;<link linkend="_namespacetl_1a2ac98dd95bdf0b59af459a290354c589">malloc</link>(<emphasis role="keywordtype">size_t</emphasis>&#32;size);
+<anchor xml:id="__memory_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_namespacetl_1a27f87676958c34ab5d023c25d954a58a">free</link>(<emphasis role="keywordtype">void</emphasis>*&#32;ptr);
+<anchor xml:id="__memory_8h_source_1l00010"/>00010 }
+<anchor xml:id="__memory_8h_source_1l00011"/>00011 
+<anchor xml:id="__memory_8h_source_1l00012"/>00012 
+<anchor xml:id="__memory_8h_source_1l00013"/>00013 <emphasis role="preprocessor">#ifndef&#32;FLOAT_SUPPORT_H</emphasis>
+<anchor xml:id="__memory_8h_source_1l00014"/><link linkend="__memory_8h_1ad53e3688505c50e73a25b9de46f9f083">00014</link> <emphasis role="preprocessor">#define&#32;FLOAT_SUPPORT_H</emphasis>
+<anchor xml:id="__memory_8h_source_1l00015"/>00015 
+<anchor xml:id="__memory_8h_source_1l00016"/>00016 <emphasis role="comment">//&#32;Need&#32;this&#32;to&#32;support&#32;float&#32;numbers&#32;throughout&#32;the&#32;library.</emphasis>
+<anchor xml:id="__memory_8h_source_1l00017"/><link linkend="__memory_8h_1a4cf04c7a2389a90415c8032ce5e58e50">00017</link> <emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__memory_8h_1a4cf04c7a2389a90415c8032ce5e58e50">_fltused</link>;
+<anchor xml:id="__memory_8h_source_1l00018"/>00018 
+<anchor xml:id="__memory_8h_source_1l00019"/>00019 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;FLOAT_SUPPORT_H</emphasis>
+<anchor xml:id="__memory_8h_source_1l00020"/>00020 
+<anchor xml:id="__memory_8h_source_1l00021"/>00021 
+<anchor xml:id="__memory_8h_source_1l00022"/>00022 <emphasis role="comment">//&#32;The&#32;compiler&#32;tries&#32;to&#32;optimize&#32;with&#32;memset,&#32;so&#32;we&#32;need&#32;to&#32;overwrite&#32;it.</emphasis>
+<anchor xml:id="__memory_8h_source_1l00023"/>00023 <emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>*&#32;__cdecl&#32;<link linkend="__memory_8h_1a60ed7fe786cba3286c6ba182199163fa">memset</link>(<emphasis role="keywordtype">void</emphasis>*,&#32;<emphasis role="keywordtype">int</emphasis>,&#32;<emphasis role="keywordtype">size_t</emphasis>);
+<anchor xml:id="__memory_8h_source_1l00024"/>00024 <emphasis role="preprocessor">#pragma&#32;intrinsic(memset)</emphasis>
+<anchor xml:id="__memory_8h_source_1l00025"/>00025 
+<anchor xml:id="__memory_8h_source_1l00026"/>00026 <emphasis role="comment">//&#32;Also&#32;overloading&#32;new&#32;and&#32;delete.</emphasis>
+<anchor xml:id="__memory_8h_source_1l00027"/>00027 <emphasis role="keywordtype">void</emphasis>*&#32;<emphasis role="keyword">operator</emphasis>&#32;<emphasis role="keyword">new</emphasis>(<emphasis role="keywordtype">size_t</emphasis>&#32;size)&#32;<emphasis role="keyword">noexcept</emphasis>;
+<anchor xml:id="__memory_8h_source_1l00028"/>00028 <emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">operator</emphasis>&#32;<emphasis role="keyword">delete</emphasis>(<emphasis role="keywordtype">void</emphasis>*&#32;ptr)&#32;<emphasis role="keyword">noexcept</emphasis>;
+<anchor xml:id="__memory_8h_source_1l00029"/>00029 <emphasis role="keywordtype">void</emphasis>*&#32;<emphasis role="keyword">operator</emphasis>&#32;<emphasis role="keyword">new</emphasis>[](<emphasis role="keywordtype">size_t</emphasis>&#32;size)&#32;<emphasis role="keyword">noexcept</emphasis>;
+<anchor xml:id="__memory_8h_source_1l00030"/>00030 <emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">operator</emphasis>&#32;<emphasis role="keyword">delete</emphasis>[](<emphasis role="keywordtype">void</emphasis>*&#32;ptr)&#32;<emphasis role="keyword">noexcept</emphasis>;
+<anchor xml:id="__memory_8h_source_1l00031"/>00031 <emphasis role="keywordtype">void</emphasis>&#32;<emphasis role="keyword">operator</emphasis>&#32;<emphasis role="keyword">delete</emphasis>(<emphasis role="keywordtype">void</emphasis>*&#32;ptr,&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;<emphasis role="keyword">noexcept</emphasis>;
+</programlisting></section>

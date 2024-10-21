@@ -1,0 +1,652 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_vector" xml:lang="en-US">
+<title>tl::Vector&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Vector.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_vector_1a6c294b7b39a334eaec4367060e529aee">Vector</link> ()</para>
+
+<para>Create a new empty vector. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_vector_1a3c0310b3d978ddf803d7aeaf9e82e698">~Vector</link> ()</para>
+
+<para>Clean up vector data. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_vector_1acdb3986c49b9e8e803ac5078c68eea96">push</link> (const T &amp;value)</para>
+
+<para>Adds a new element to the end of the vector. </para>
+</listitem>
+            <listitem><para>T <link linkend="_classtl_1_1_vector_1afb1123fd76e8b6b308a6c25999086afa">pop</link> ()</para>
+
+<para>Get the last element and remove it from the vector. </para>
+</listitem>
+            <listitem><para>T &amp; <link linkend="_classtl_1_1_vector_1a7eb4dfa2eaf5b8df36fa3aea54c76b17">operator[]</link> (size_t index)</para>
+
+<para>Write access to elements. </para>
+</listitem>
+            <listitem><para>const T &amp; <link linkend="_classtl_1_1_vector_1aee2285df44f5b04a4a6bbb9cad9fcc37">operator[]</link> (size_t index) const</para>
+
+<para>Read access to elements. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_vector_1a07f7c6c116240b55639be24b8bdf142e">resize</link> (size_t new_capacity)</para>
+
+<para>Resize the max capacity for this vector. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_vector_1af14e7f588cf809b751c27e54ca4d4c62">clear</link> ()</para>
+
+<para>Clear vector size for most vector methods. </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classtl_1_1_vector_1a7a59cdb82916ebab5ae46f1b8f1efec6">getSize</link> () const</para>
+
+<para>Get the size of this vector. </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classtl_1_1_vector_1abdd4105bc63e8757f0bf76162b3f61e2">getCapacity</link> () const</para>
+
+<para>Get the capacity of this vector. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_vector_1a0453ee154d99303001476eb3e3abe6fc">insert</link> (size_t pos, const T &amp;value)</para>
+
+<para>Insert an element anywhere in the vector. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_vector_1ad694a236bd7afe82a1c0ee4b6a4229a9">erase</link> (size_t pos)</para>
+
+<para>Delete an element and shift the rest of the vector to fit. </para>
+</listitem>
+            <listitem><para>T * <link linkend="_classtl_1_1_vector_1adaad456fcc042885c805175e9331964d">begin</link> ()</para>
+</listitem>
+            <listitem><para>T * <link linkend="_classtl_1_1_vector_1a496a89b7576a53b1b6d0101beb350991">end</link> ()</para>
+</listitem>
+            <listitem><para>const T * <link linkend="_classtl_1_1_vector_1a25f606e3214498664047c52437802f60">begin</link> () const</para>
+</listitem>
+            <listitem><para>const T * <link linkend="_classtl_1_1_vector_1a06dd5aa9e15b7e51dac4cf2a768c70ad">end</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;typename T&gt;<?linebreak?>class tl::Vector&lt; T &gt;</title></simplesect>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00007">7</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtl_1_1_vector_1a6c294b7b39a334eaec4367060e529aee"/><section>
+    <title>Vector()</title>
+<indexterm><primary>Vector</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>Vector</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::Vector ( )</computeroutput></para><para>
+
+<para>Create a new empty vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>What type this vector will hold. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00038">38</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a3c0310b3d978ddf803d7aeaf9e82e698"/><section>
+    <title>~Vector()</title>
+<indexterm><primary>~Vector</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>~Vector</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::~<link linkend="_classtl_1_1_vector">Vector</link> ( )</computeroutput></para><para>
+
+<para>Clean up vector data. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>How much memory is freed depends on the data type you used. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00049">49</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtl_1_1_vector_1adaad456fcc042885c805175e9331964d"/><section>
+    <title>begin()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>begin</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>begin</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T * <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::begin ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__vector_8h_source_1l00023">23</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a25f606e3214498664047c52437802f60"/><section>
+    <title>begin()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>begin</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>begin</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>const T * <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::begin ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__vector_8h_source_1l00025">25</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1af14e7f588cf809b751c27e54ca4d4c62"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>clear</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::clear ( )</computeroutput></para><para>
+
+<para>Clear vector size for most vector methods. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00132">132</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a496a89b7576a53b1b6d0101beb350991"/><section>
+    <title>end()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>end</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>end</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T * <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::end ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__vector_8h_source_1l00024">24</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a06dd5aa9e15b7e51dac4cf2a768c70ad"/><section>
+    <title>end()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>end</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>end</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>const T * <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::end ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__vector_8h_source_1l00026">26</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1ad694a236bd7afe82a1c0ee4b6a4229a9"/><section>
+    <title>erase()</title>
+<indexterm><primary>erase</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>erase</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::erase (size_t pos)</computeroutput></para><para>
+
+<para>Delete an element and shift the rest of the vector to fit. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>T Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pos</entry><entry>
+<para>Index of element to delete.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                When you erase an element, everything to the right of that element will be shifted left in the vector to not leave an empty space. </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00187">187</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1abdd4105bc63e8757f0bf76162b3f61e2"/><section>
+    <title>getCapacity()</title>
+<indexterm><primary>getCapacity</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>getCapacity</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>size_t <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::getCapacity ( ) const</computeroutput></para><para>
+
+<para>Get the capacity of this vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Current capacity of vector.</para>
+</formalpara>
+Capacity is how big the internal array is for this vector. Good to check to make sure you don&apos;t go out of bounds with []. </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00157">157</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a7a59cdb82916ebab5ae46f1b8f1efec6"/><section>
+    <title>getSize()</title>
+<indexterm><primary>getSize</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>getSize</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>size_t <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::getSize ( ) const</computeroutput></para><para>
+
+<para>Get the size of this vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Current size of vector.</para>
+</formalpara>
+Size is based on how many elements actually exist in the vector. </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00144">144</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a0453ee154d99303001476eb3e3abe6fc"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>insert</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::insert (size_t pos, const T &amp; value)</computeroutput></para><para>
+
+<para>Insert an element anywhere in the vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>T Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pos</entry><entry>
+<para>Position to insert element at. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>value</entry><entry>
+<para>Element to insert. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00168">168</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a7eb4dfa2eaf5b8df36fa3aea54c76b17"/><section>
+    <title>operator[]()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator[]</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>operator[]</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T &amp; <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::operator[] (size_t index)</computeroutput></para><para>
+
+<para>Write access to elements. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>Element to overwrite. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reference to element to overwrite. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00090">90</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1aee2285df44f5b04a4a6bbb9cad9fcc37"/><section>
+    <title>operator[]()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator[]</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>operator[]</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>const T &amp; <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::operator[] (size_t index) const</computeroutput></para><para>
+
+<para>Read access to elements. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>Element to read. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Reference to element to read. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00101">101</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1afb1123fd76e8b6b308a6c25999086afa"/><section>
+    <title>pop()</title>
+<indexterm><primary>pop</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>pop</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::pop ( )</computeroutput></para><para>
+
+<para>Get the last element and remove it from the vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The removed element. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00075">75</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1acdb3986c49b9e8e803ac5078c68eea96"/><section>
+    <title>push()</title>
+<indexterm><primary>push</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>push</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::push (const T &amp; value)</computeroutput></para><para>
+
+<para>Adds a new element to the end of the vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>value</entry><entry>
+<para>Element to add. <?linebreak?> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00062">62</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_vector_1a07f7c6c116240b55639be24b8bdf142e"/><section>
+    <title>resize()</title>
+<indexterm><primary>resize</primary><secondary>tl::Vector&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>tl::Vector&lt; T &gt;</primary><secondary>resize</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_classtl_1_1_vector">tl::Vector</link>&lt; T &gt;::resize (size_t new_capacity)</computeroutput></para><para>
+
+<para>Resize the max capacity for this vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>Must match the type for this vector. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_capacity</entry><entry>
+<para>New capacity.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                If you don&apos;t use push or pop, you can also manually resize the vector with this, and can then access elements within capacity using []. </para>
+<para>
+Definition at line <link linkend="__vector_8h_source_1l00114">114</link> of file <link linkend="__vector_8h_source">Vector.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+TinyLib/Base/<link linkend="__vector_8h">Vector.h</link></section>
+</section>

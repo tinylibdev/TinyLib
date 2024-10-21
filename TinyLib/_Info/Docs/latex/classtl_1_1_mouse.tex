@@ -1,0 +1,125 @@
+\doxysection{tl\+::Mouse Class Reference}
+\label{classtl_1_1_mouse}\index{tl::Mouse@{tl::Mouse}}
+
+
+{\ttfamily \#include $<$Mouse.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \textbf{ Left} = VK\+\_\+\+LBUTTON
+, \textbf{ Right} = VK\+\_\+\+RBUTTON
+, \textbf{ Middle} = VK\+\_\+\+MBUTTON
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ bit} \textbf{ is\+Held} (\textbf{ u8})
+\begin{DoxyCompactList}\small\item\em Check if a mouse button is currently down. \end{DoxyCompactList}\item 
+static \textbf{ Vec2i} \textbf{ get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Get current position of the mouse cursor. \end{DoxyCompactList}\item 
+static \textbf{ bit} \textbf{ intersects} (\textbf{ Drawable} \&)
+\begin{DoxyCompactList}\small\item\em Check if the mouse cursor is inside a drawable object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 9} of file \textbf{ Mouse.\+h}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\doxysubsubsection{anonymous enum}
+{\footnotesize\ttfamily \label{classtl_1_1_mouse_a877221c88693de70b3642f63d341596d} 
+anonymous enum}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!tl::Mouse@{tl::Mouse}}\index{tl::Mouse@{tl::Mouse}!Left@{Left}}}\label{classtl_1_1_mouse_a877221c88693de70b3642f63d341596d} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!tl::Mouse@{tl::Mouse}}\index{tl::Mouse@{tl::Mouse}!Right@{Right}}}\label{classtl_1_1_mouse_a877221c88693de70b3642f63d341596d} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Middle@{Middle}!tl::Mouse@{tl::Mouse}}\index{tl::Mouse@{tl::Mouse}!Middle@{Middle}}}\label{classtl_1_1_mouse_a877221c88693de70b3642f63d341596d} 
+Middle&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \textbf{ 13} of file \textbf{ Mouse.\+h}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{tl::Mouse@{tl::Mouse}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!tl::Mouse@{tl::Mouse}}
+\doxysubsubsection{getPosition()}
+{\footnotesize\ttfamily \label{classtl_1_1_mouse_a0414734ff08c547927abbcfd7f0a55e5} 
+\textbf{ Vec2i} tl\+::\+Mouse\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get current position of the mouse cursor. 
+
+\begin{DoxyReturn}{Returns}
+X-\/position, Y-\/position. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 19} of file \textbf{ Mouse.\+cpp}.
+
+\index{tl::Mouse@{tl::Mouse}!intersects@{intersects}}
+\index{intersects@{intersects}!tl::Mouse@{tl::Mouse}}
+\doxysubsubsection{intersects()}
+{\footnotesize\ttfamily \label{classtl_1_1_mouse_a53c02c329b76bbba0e8977b5ff58a397} 
+\textbf{ bit} tl\+::\+Mouse\+::intersects (\begin{DoxyParamCaption}\item[{\textbf{ Drawable} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if the mouse cursor is inside a drawable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxyref{Drawable}{p.}{classtl_1_1_drawable} to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the mouse cursor is pointed at the parameter. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 34} of file \textbf{ Mouse.\+cpp}.
+
+\index{tl::Mouse@{tl::Mouse}!isHeld@{isHeld}}
+\index{isHeld@{isHeld}!tl::Mouse@{tl::Mouse}}
+\doxysubsubsection{isHeld()}
+{\footnotesize\ttfamily \label{classtl_1_1_mouse_a66ae27d1871cf18a5b4d527fa9e09121} 
+\textbf{ bit} tl\+::\+Mouse\+::is\+Held (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{button}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a mouse button is currently down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Which mouse button to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if that mouse button is down.
+\end{DoxyReturn}
+\doxyref{tl\+::\+Mouse}{p.}{classtl_1_1_mouse} has an enum for different mouse buttons. 
+
+Definition at line \textbf{ 11} of file \textbf{ Mouse.\+cpp}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Lib/\+System/\textbf{ Mouse.\+h}\item 
+Tiny\+Lib/\+System/\textbf{ Mouse.\+cpp}\end{DoxyCompactItemize}

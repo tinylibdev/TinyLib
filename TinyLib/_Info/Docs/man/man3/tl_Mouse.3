@@ -1,0 +1,106 @@
+.TH "tl::Mouse" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tl::Mouse
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Mouse\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBLeft\fP = VK_LBUTTON, \fBRight\fP = VK_RBUTTON, \fBMiddle\fP = VK_MBUTTON }"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBbit\fP \fBisHeld\fP (\fBu8\fP)"
+.br
+.RI "Check if a mouse button is currently down\&. "
+.ti -1c
+.RI "static \fBVec2i\fP \fBgetPosition\fP ()"
+.br
+.RI "Get current position of the mouse cursor\&. "
+.ti -1c
+.RI "static \fBbit\fP \fBintersects\fP (\fBDrawable\fP &)"
+.br
+.RI "Check if the mouse cursor is inside a drawable object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB9\fP of file \fBMouse\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BILeft \fP
+.TP
+\f(BIRight \fP
+.TP
+\f(BIMiddle \fP
+.PP
+Definition at line \fB13\fP of file \fBMouse\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBVec2i\fP tl::Mouse::getPosition ()\fR [static]\fP"
+
+.PP
+Get current position of the mouse cursor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+X-position, Y-position\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB19\fP of file \fBMouse\&.cpp\fP\&.
+.SS "\fBbit\fP tl::Mouse::intersects (\fBDrawable\fP & other)\fR [static]\fP"
+
+.PP
+Check if the mouse cursor is inside a drawable object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP \fBDrawable\fP to check\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if the mouse cursor is pointed at the parameter\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB34\fP of file \fBMouse\&.cpp\fP\&.
+.SS "\fBbit\fP tl::Mouse::isHeld (\fBu8\fP button)\fR [static]\fP"
+
+.PP
+Check if a mouse button is currently down\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbutton\fP Which mouse button to check\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if that mouse button is down\&.
+.RE
+.PP
+\fBtl::Mouse\fP has an enum for different mouse buttons\&. 
+.PP
+Definition at line \fB11\fP of file \fBMouse\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

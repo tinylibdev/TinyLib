@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__system_category_8h_source" xml:lang="en-US">
+<title>SystemCategory.h</title>
+<indexterm><primary>TinyLib/System/SystemCategory.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__system_category_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__file_8h">File.h</link>&quot;</emphasis>
+<anchor xml:id="__system_category_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__key_8h">Key.h</link>&quot;</emphasis>
+<anchor xml:id="__system_category_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__mouse_8h">Mouse.h</link>&quot;</emphasis>
+</programlisting></section>

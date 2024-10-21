@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_501dc578ed3dcf4e7b46c08c3f8bf7ed" xml:lang="en-US">
+<title>TinyLib/Base/Win Directory Reference</title>
+<indexterm><primary>TinyLib/Base/Win Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__win_a_p_i_8h">WinAPI.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

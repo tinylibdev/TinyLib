@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_win_a_p_i_8h" kind="file" language="C++">
+    <compoundname>WinAPI.h</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">d3d11.h</includes>
+    <includes local="no">dxgi1_2.h</includes>
+    <includes local="no">d3dcompiler.h</includes>
+    <includes local="no">DirectXMath.h</includes>
+    <includes local="no">wrl/client.h</includes>
+    <includes local="no">dwrite.h</includes>
+    <includes local="no">d2d1.h</includes>
+    <includedby refid="_memory_8h" local="yes">TinyLib/Base/Memory.h</includedby>
+    <includedby refid="_time_8h" local="yes">TinyLib/Base/Time.h</includedby>
+    <includedby refid="_util_8h" local="yes">TinyLib/Base/Util.h</includedby>
+    <includedby refid="_console_8h" local="yes">TinyLib/Console/Console.h</includedby>
+    <includedby refid="_drawable_8h" local="yes">TinyLib/Graphics/Drawable.h</includedby>
+    <includedby refid="_rectangle_8h" local="yes">TinyLib/Graphics/Rectangle.h</includedby>
+    <includedby refid="_window_8h" local="yes">TinyLib/Graphics/Window.h</includedby>
+    <includedby refid="_file_8h" local="yes">TinyLib/System/File.h</includedby>
+    <includedby refid="_key_8h" local="yes">TinyLib/System/Key.h</includedby>
+    <includedby refid="_mouse_8h" local="yes">TinyLib/System/Mouse.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>TinyLib/Base/Win/WinAPI.h</label>
+        <link refid="_win_a_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DirectXMath.h</label>
+      </node>
+      <node id="2">
+        <label>Windows.h</label>
+      </node>
+      <node id="9">
+        <label>d2d1.h</label>
+      </node>
+      <node id="3">
+        <label>d3d11.h</label>
+      </node>
+      <node id="5">
+        <label>d3dcompiler.h</label>
+      </node>
+      <node id="8">
+        <label>dwrite.h</label>
+      </node>
+      <node id="4">
+        <label>dxgi1_2.h</label>
+      </node>
+      <node id="7">
+        <label>wrl/client.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>TinyLib/Base/BaseCategory.h</label>
+        <link refid="_base_category_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>TinyLib/Base/Memory.cpp</label>
+        <link refid="_memory_8cpp"/>
+      </node>
+      <node id="2">
+        <label>TinyLib/Base/Memory.h</label>
+        <link refid="_memory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>TinyLib/Base/Time.cpp</label>
+        <link refid="_time_8cpp"/>
+      </node>
+      <node id="23">
+        <label>TinyLib/Base/Time.h</label>
+        <link refid="_time_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>TinyLib/Base/Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>TinyLib/Base/Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TinyLib/Base/Win/WinAPI.h</label>
+        <link refid="_win_a_p_i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TinyLib/Console/Console.cpp</label>
+        <link refid="_console_8cpp"/>
+      </node>
+      <node id="4">
+        <label>TinyLib/Console/Console.h</label>
+        <link refid="_console_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TinyLib/Console/ConsoleCategory.h</label>
+        <link refid="_console_category_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TinyLib/Graphics/Drawable.cpp</label>
+        <link refid="_drawable_8cpp"/>
+      </node>
+      <node id="26">
+        <label>TinyLib/Graphics/Drawable.h</label>
+        <link refid="_drawable_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TinyLib/Graphics/GraphicsCategory.h</label>
+        <link refid="_graphics_category_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>TinyLib/Graphics/Rectangle.cpp</label>
+        <link refid="_rectangle_8cpp"/>
+      </node>
+      <node id="8">
+        <label>TinyLib/Graphics/Rectangle.h</label>
+        <link refid="_rectangle_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>TinyLib/Graphics/Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="14">
+        <label>TinyLib/Graphics/Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>TinyLib/Graphics/Window.cpp</label>
+        <link refid="_window_8cpp"/>
+      </node>
+      <node id="11">
+        <label>TinyLib/Graphics/Window.h</label>
+        <link refid="_window_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>TinyLib/System/File.cpp</label>
+        <link refid="_file_8cpp"/>
+      </node>
+      <node id="16">
+        <label>TinyLib/System/File.h</label>
+        <link refid="_file_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>TinyLib/System/Key.cpp</label>
+        <link refid="_key_8cpp"/>
+      </node>
+      <node id="27">
+        <label>TinyLib/System/Key.h</label>
+        <link refid="_key_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>TinyLib/System/Mouse.cpp</label>
+        <link refid="_mouse_8cpp"/>
+      </node>
+      <node id="19">
+        <label>TinyLib/System/Mouse.h</label>
+        <link refid="_mouse_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>TinyLib/System/SystemCategory.h</label>
+        <link refid="_system_category_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TinyLib/TinyLib.h</label>
+        <link refid="_tiny_lib_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_win_a_p_i_8h_1ac50762666aa00bd3a4308158510f1748" prot="public" static="no">
+        <name>_WIN32_WINNT</name>
+        <initializer>0x0601</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TinyLib/Base/Win/WinAPI.h" line="5" column="9" bodyfile="TinyLib/Base/Win/WinAPI.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>an<sp/>advanced<sp/>windows.h<sp/>definition<sp/>so<sp/>that<sp/>I<sp/>can<sp/>customize.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GetTickCount<sp/>needs<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_win_a_p_i_8h_1ac50762666aa00bd3a4308158510f1748" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_WINNT<sp/>0x0601</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d11.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dxgi1_2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3dcompiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DirectXMath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wrl/client.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dwrite.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d2d1.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Needed<sp/>for<sp/>DirectX.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,<sp/>&quot;d3d11.lib&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,<sp/>&quot;d2d1.lib&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,<sp/>&quot;dwrite.lib&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,<sp/>&quot;dxgi.lib&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Encryption</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,<sp/>&quot;Advapi32.lib&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stop<sp/>Windows<sp/>Rectangle<sp/>from<sp/>interfering<sp/>with<sp/>mine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>Rectangle</highlight></codeline>
+    </programlisting>
+    <location file="TinyLib/Base/Win/WinAPI.h"/>
+  </compounddef>
+</doxygen>

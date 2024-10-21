@@ -1,0 +1,88 @@
+.TH "TinyLib/Base/Memory.cpp" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TinyLib/Base/Memory.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'Memory\&.h'\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBtl\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void * \fBtl::malloc\fP (size_t size)"
+.br
+.ti -1c
+.RI "void \fBtl::free\fP (void *ptr)"
+.br
+.ti -1c
+.RI "void *__cdecl \fBmemset\fP (void *ptr, int value, size_t size)"
+.br
+.ti -1c
+.RI "void * \fBoperator new\fP (size_t size) noexcept"
+.br
+.ti -1c
+.RI "void \fBoperator delete\fP (void *ptr) noexcept"
+.br
+.ti -1c
+.RI "void * \fBoperator new[]\fP (size_t size) noexcept"
+.br
+.ti -1c
+.RI "void \fBoperator delete[]\fP (void *ptr) noexcept"
+.br
+.ti -1c
+.RI "void \fBoperator delete\fP (void *ptr, unsigned int size) noexcept"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fB_fltused\fP = 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void *__cdecl memset (void * ptr, int value, size_t size)"
+
+.PP
+Definition at line \fB22\fP of file \fBMemory\&.cpp\fP\&.
+.SS "void operator delete (void * ptr)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB41\fP of file \fBMemory\&.cpp\fP\&.
+.SS "void operator delete (void * ptr, unsigned int size)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB61\fP of file \fBMemory\&.cpp\fP\&.
+.SS "void operator delete[] (void * ptr)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB55\fP of file \fBMemory\&.cpp\fP\&.
+.SS "void * operator new (size_t size)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB33\fP of file \fBMemory\&.cpp\fP\&.
+.SS "void * operator new[] (size_t size)\fR [noexcept]\fP"
+
+.PP
+Definition at line \fB47\fP of file \fBMemory\&.cpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int _fltused = 1"
+
+.PP
+Definition at line \fB18\fP of file \fBMemory\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

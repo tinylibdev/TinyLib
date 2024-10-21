@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__types_8h" xml:lang="en-US">
+<title>TinyLib/Base/Types.h File Reference</title>
+<indexterm><primary>TinyLib/Base/Types.h</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec2i">tl::Vec2i</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec3i">tl::Vec3i</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_vec4i">tl::Vec4i</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtl_1_1_color">tl::Color</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetl">tl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_namespacetl_1a2b5321f751711d1665cff1914daea4da">tl::s8</link> = signed char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a4a14ec5f8ff07f086064f520c972079c">tl::s16</link> = signed short</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">tl::s32</link> = signed int</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1ad9a92397991f53b6250d01dbd9c54450">tl::s64</link> = signed long long</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">tl::u8</link> = unsigned char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a413c6dc972e88526a668913ce1b06b29">tl::u16</link> = unsigned short</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">tl::u32</link> = unsigned int</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a904241d60278f00c7d91b31161237d62">tl::u64</link> = unsigned long long</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a6903978f17afa16057594b38fa3602e6">tl::f32</link> = float</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a29d996d8825610815a08c5db10016151">tl::f64</link> = double</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a7e58a76ef30d76bdb4c2a4678b875597">tl::ascii</link> = char</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a0559c4dc1615ef2ec600f58fb18506bd">tl::unicode</link> = wchar_t</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">tl::bit</link> = bool</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

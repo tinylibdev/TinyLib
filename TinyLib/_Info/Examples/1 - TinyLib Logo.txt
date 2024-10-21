@@ -1,0 +1,35 @@
+#include <TinyLib.h>
+
+
+int main()
+{
+    // For this example, I'll scale everything with this value
+    const tl::u8 SCALE = 25;
+    tl::Window window({ 9 * SCALE, 9 * SCALE }, "Tiny Logo");
+
+    // An array of rectangle so we can set them all easily
+    tl::Rectangle dots[4];
+    for (tl::u8 i = 0; i < 4; i++)
+    {
+        dots[i].setPosition({ (1 + (i * 2)) * SCALE, 4 * SCALE });
+        dots[i].setSize({ SCALE, SCALE });
+        dots[i].setColor({ 255, 255, 255 });
+    }
+
+    while (window.isOpen())
+    {
+        if (window.checkEvent(tl::Event::Closed))
+            window.close();
+
+        // I want a light blue background color so I do so with clear
+        window.clear({ 0, 162, 232 });
+
+        // Simple for loop to draw our rectangles from earlier
+        for (tl::u8 i = 0; i < 4; i++)
+            window.draw(dots[i]);
+
+        window.display();
+    }
+
+    return 0;
+}

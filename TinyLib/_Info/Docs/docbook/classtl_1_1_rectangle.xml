@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_rectangle" xml:lang="en-US">
+<title>tl::Rectangle Class Reference</title>
+<indexterm><primary>tl::Rectangle</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Rectangle.h&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for tl::Rectangle:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtl_1_1_rectangle.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_rectangle_1a6d3da05eade9abd326dd2834da1e2c47">Rectangle</link> (<link linkend="_structtl_1_1_vec4i">Vec4i</link> bounds={0, 0, 0, 0})</para>
+
+<para>Creates a new rectangle with drawable constructor. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_rectangle_1a08933cdce31f6b38b206007564474354">~Rectangle</link> ()</para>
+
+<para>Nothing to clean up for now. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classtl_1_1_drawable">tl::Drawable</link>        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_drawable_1a30ea7ef3cbe247eab261d2cda94dd09f">Drawable</link> (<link linkend="_structtl_1_1_vec4i">Vec4i</link> bounds={0, 0, 0, 0})</para>
+
+<para>Creates a new drawable object with it&apos;s position and size. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_drawable_1a2f8eb9b1fdb74f27a08659d19c58dffa">~Drawable</link> ()</para>
+
+<para>Nothing to clean up for now. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1aaca2b652b94ac8c14c5e173d15595958">setPosition</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set position of this drawable object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1a0bc453f3511224e52e15576ea835873b">setSize</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set size of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_drawable_1ae72500b4134b8187966650dcfc07b27f">getPosition</link> () const</para>
+
+<para>Get the current position of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_drawable_1a09bca9a11e2fc75ad5298f5bf0c6399f">getSize</link> () const</para>
+
+<para>Get the current size of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_color">Color</link> <link linkend="_classtl_1_1_drawable_1acf6f9bbe46b4badaa8d4949a93c818ba">getColor</link> () const</para>
+
+<para>Get the current color of this drawable object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1ad680b7ea9995f1c20873d964e8748293">move</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Move this drawable object from current position. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_drawable_1ae4bea63524c914d624fe1c9f0ef4edd2">setColor</link> (<link linkend="_structtl_1_1_color">Color</link>)</para>
+
+<para>Set the color of this drawable object. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_drawable_1ae17a89d83f64f26e01cb5b1371a110c5">intersects</link> (<link linkend="_classtl_1_1_drawable">Drawable</link> &amp;) const</para>
+
+<para>Check if this drawable is intersecting with another. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_drawable_1afd87e8323f304ae6dacb8f06057a3963">intersects</link> (<link linkend="_classtl_1_1_window">Window</link> &amp;) const</para>
+
+<para>Check if this drawable is inside the window. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classtl_1_1_drawable">tl::Drawable</link>        <itemizedlist>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1a005875cab6106fa1c8983884ee3a7072">posX</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1adc938c28638d39be3c53207ee625611d">posY</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1a06d58589b24ff1ba0d8a0c776a3a0eeb">sizeX</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a265a9f7c42ef723ea69373d72f9cf195">s32</link> <link linkend="_classtl_1_1_drawable_1ad9f165dbfcfff7a16d8e9e3862838675">sizeY</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a848cc01cc9b0ff02528e3c287bcda9ad">r</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a4d46800e890cd5d5a62b500fe9c982f1">g</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1aec88d5f58549c9dedf31f09e684f4ff1">b</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> <link linkend="_classtl_1_1_drawable_1a2c5bec3ff2fde9d0316571f2ae374515">a</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__rectangle_8h_source_1l00010">10</link> of file <link linkend="__rectangle_8h_source">Rectangle.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtl_1_1_rectangle_1a6d3da05eade9abd326dd2834da1e2c47"/><section>
+    <title>Rectangle()</title>
+<indexterm><primary>Rectangle</primary><secondary>tl::Rectangle</secondary></indexterm>
+<indexterm><primary>tl::Rectangle</primary><secondary>Rectangle</secondary></indexterm>
+<para><computeroutput>tl::Rectangle::Rectangle (<link linkend="_structtl_1_1_vec4i">Vec4i</link> bounds = <computeroutput>{0,&#160;0,&#160;0,&#160;0}</computeroutput>
+)</computeroutput></para><para>
+
+<para>Creates a new rectangle with drawable constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>bounds</entry><entry>
+<para>Boundaries of this rectangle, (width, height, left, top). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__rectangle_8cpp_source_1l00008">8</link> of file <link linkend="__rectangle_8cpp_source">Rectangle.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_rectangle_1a08933cdce31f6b38b206007564474354"/><section>
+    <title>~Rectangle()</title>
+<indexterm><primary>~Rectangle</primary><secondary>tl::Rectangle</secondary></indexterm>
+<indexterm><primary>tl::Rectangle</primary><secondary>~Rectangle</secondary></indexterm>
+<para><computeroutput>tl::Rectangle::~Rectangle ( )</computeroutput></para><para>
+
+<para>Nothing to clean up for now. </para>
+</para>
+<para>
+Definition at line <link linkend="__rectangle_8cpp_source_1l00016">16</link> of file <link linkend="__rectangle_8cpp_source">Rectangle.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+TinyLib/Graphics/<link linkend="__rectangle_8h">Rectangle.h</link>TinyLib/Graphics/<link linkend="__rectangle_8cpp">Rectangle.cpp</link></section>
+</section>

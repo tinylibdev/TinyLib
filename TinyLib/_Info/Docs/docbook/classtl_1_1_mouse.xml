@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_mouse" xml:lang="en-US">
+<title>tl::Mouse Class Reference</title>
+<indexterm><primary>tl::Mouse</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Mouse.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596da23824b19a887d01b845bf8a8c5dd560d">Left</link> = VK_LBUTTON
+, <link linkend="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596da5a066c49508975d1b13fb28dbbecf7ca">Right</link> = VK_RBUTTON
+, <link linkend="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596dab194fa310a596d66c184b5c24b108e68">Middle</link> = VK_MBUTTON
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_mouse_1a66ae27d1871cf18a5b4d527fa9e09121">isHeld</link> (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>)</para>
+
+<para>Check if a mouse button is currently down. </para>
+</listitem>
+            <listitem><para>static <link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_mouse_1a0414734ff08c547927abbcfd7f0a55e5">getPosition</link> ()</para>
+
+<para>Get current position of the mouse cursor. </para>
+</listitem>
+            <listitem><para>static <link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_mouse_1a53c02c329b76bbba0e8977b5ff58a397">intersects</link> (<link linkend="_classtl_1_1_drawable">Drawable</link> &amp;)</para>
+
+<para>Check if the mouse cursor is inside a drawable object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__mouse_8h_source_1l00009">9</link> of file <link linkend="__mouse_8h_source">Mouse.h</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596d"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Left</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>Left</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596da23824b19a887d01b845bf8a8c5dd560d"/>Left</entry><entry></entry></row><row><entry><indexterm><primary>Right</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>Right</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596da5a066c49508975d1b13fb28dbbecf7ca"/>Right</entry><entry></entry></row><row><entry><indexterm><primary>Middle</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>Middle</secondary></indexterm>
+<anchor xml:id="_classtl_1_1_mouse_1a877221c88693de70b3642f63d341596dab194fa310a596d66c184b5c24b108e68"/>Middle</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__mouse_8h_source_1l00013">13</link> of file <link linkend="__mouse_8h_source">Mouse.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtl_1_1_mouse_1a0414734ff08c547927abbcfd7f0a55e5"/><section>
+    <title>getPosition()</title>
+<indexterm><primary>getPosition</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>getPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_structtl_1_1_vec2i">Vec2i</link> tl::Mouse::getPosition ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Get current position of the mouse cursor. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>X-position, Y-position. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__mouse_8cpp_source_1l00019">19</link> of file <link linkend="__mouse_8cpp_source">Mouse.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_mouse_1a53c02c329b76bbba0e8977b5ff58a397"/><section>
+    <title>intersects()</title>
+<indexterm><primary>intersects</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>intersects</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> tl::Mouse::intersects (<link linkend="_classtl_1_1_drawable">Drawable</link> &amp; other)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Check if the mouse cursor is inside a drawable object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>other</entry><entry>
+<para><link linkend="_classtl_1_1_drawable">Drawable</link> to check. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if the mouse cursor is pointed at the parameter. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__mouse_8cpp_source_1l00034">34</link> of file <link linkend="__mouse_8cpp_source">Mouse.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_mouse_1a66ae27d1871cf18a5b4d527fa9e09121"/><section>
+    <title>isHeld()</title>
+<indexterm><primary>isHeld</primary><secondary>tl::Mouse</secondary></indexterm>
+<indexterm><primary>tl::Mouse</primary><secondary>isHeld</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> tl::Mouse::isHeld (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> button)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Check if a mouse button is currently down. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>button</entry><entry>
+<para>Which mouse button to check. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if that mouse button is down.</para>
+</formalpara>
+<link linkend="_classtl_1_1_mouse">tl::Mouse</link> has an enum for different mouse buttons. </para>
+<para>
+Definition at line <link linkend="__mouse_8cpp_source_1l00011">11</link> of file <link linkend="__mouse_8cpp_source">Mouse.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+TinyLib/System/<link linkend="__mouse_8h">Mouse.h</link>TinyLib/System/<link linkend="__mouse_8cpp">Mouse.cpp</link></section>
+</section>

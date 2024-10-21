@@ -1,0 +1,199 @@
+.TH "tl::Console" 3 "Version 0.1.0" "TinyLib" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tl::Console
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Console\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBDefault\fP = 0, \fBDec\fP = 1, \fBHex\fP = 2 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConsole\fP ()"
+.br
+.RI "Opens up a new console window\&. "
+.ti -1c
+.RI "\fB~Console\fP ()"
+.br
+.RI "Automatically closes the console when object is destroyed\&. "
+.ti -1c
+.RI "void \fBcreate\fP ()"
+.br
+.RI "Recreate the console window\&. "
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.RI "Manually close the console window\&. "
+.ti -1c
+.RI "void \fBprint\fP (const char *)"
+.br
+.RI "Display a C-string in console\&. "
+.ti -1c
+.RI "void \fBprintln\fP (const char *)"
+.br
+.RI "Display a C-string in console with a new line after\&. "
+.ti -1c
+.RI "void \fBprint\fP (\fBu32\fP)"
+.br
+.RI "Display a number in console\&. "
+.ti -1c
+.RI "void \fBprintln\fP (\fBu32\fP)"
+.br
+.RI "Display a number in console with a newline after\&. "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "Clear the console\&. "
+.ti -1c
+.RI "void \fBset\fP (\fBu8\fP)"
+.br
+.RI "Set certain settings for the console\&. "
+.ti -1c
+.RI "\fBbit\fP \fBisOpen\fP ()"
+.br
+.RI "Check if console is still open\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB8\fP of file \fBConsole\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIDefault \fP
+.TP
+\f(BIDec \fP
+.TP
+\f(BIHex \fP
+.PP
+Definition at line \fB24\fP of file \fBConsole\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "tl::Console::Console ()"
+
+.PP
+Opens up a new console window\&. 
+.PP
+Definition at line \fB7\fP of file \fBConsole\&.cpp\fP\&.
+.SS "tl::Console::~Console ()"
+
+.PP
+Automatically closes the console when object is destroyed\&. 
+.PP
+Definition at line \fB14\fP of file \fBConsole\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void tl::Console::clear ()"
+
+.PP
+Clear the console\&. 
+.PP
+Definition at line \fB79\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::close ()"
+
+.PP
+Manually close the console window\&. 
+.PP
+Definition at line \fB29\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::create ()"
+
+.PP
+Recreate the console window\&. 
+.PP
+Definition at line \fB21\fP of file \fBConsole\&.cpp\fP\&.
+.SS "\fBbit\fP tl::Console::isOpen ()"
+
+.PP
+Check if console is still open\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if console is open\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB108\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::print (const char * text)"
+
+.PP
+Display a C-string in console\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP What text to display\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB37\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::print (\fBu32\fP num)"
+
+.PP
+Display a number in console\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInum\fP What number to display\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB58\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::println (const char * text)"
+
+.PP
+Display a C-string in console with a new line after\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItext\fP What text to display\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB49\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::println (\fBu32\fP num)"
+
+.PP
+Display a number in console with a newline after\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInum\fP What number to display\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB71\fP of file \fBConsole\&.cpp\fP\&.
+.SS "void tl::Console::set (\fBu8\fP index)"
+
+.PP
+Set certain settings for the console\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP \fBConsole\fP enum for setting\&.
+.RE
+.PP
+\fBConsole\fP has an enum with settings you can pass here to change some settings such as displaying numbers in decimal or hex format\&. 
+.PP
+Definition at line \fB97\fP of file \fBConsole\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TinyLib from the source code\&.

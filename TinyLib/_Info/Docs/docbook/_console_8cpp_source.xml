@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__console_8cpp_source" xml:lang="en-US">
+<title>Console.cpp</title>
+<indexterm><primary>TinyLib/Console/Console.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__console_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__console_8h">Console.h</link>&quot;</emphasis>
+<anchor xml:id="__console_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__console_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__console_8cpp_source_1l00004"/>00004 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacetl">tl</link>
+<anchor xml:id="__console_8cpp_source_1l00005"/>00005 {
+<anchor xml:id="__console_8cpp_source_1l00007"/><link linkend="_classtl_1_1_console_1ac0c7008acd6d093950b86703b4b5de12">00007</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1ac0c7008acd6d093950b86703b4b5de12">Console::Console</link>()
+<anchor xml:id="__console_8cpp_source_1l00008"/>00008 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a28cbea123d31ecac8d40bc7a85ba2038">create</link>();
+<anchor xml:id="__console_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00011"/>00011 
+<anchor xml:id="__console_8cpp_source_1l00012"/>00012 
+<anchor xml:id="__console_8cpp_source_1l00014"/><link linkend="_classtl_1_1_console_1a3a77a1046ea91222aea9725d64420bff">00014</link> &#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a3a77a1046ea91222aea9725d64420bff">Console::~Console</link>()
+<anchor xml:id="__console_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1ab3d7e7bb288351089364bd2f90087ba8">close</link>();
+<anchor xml:id="__console_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00018"/>00018 
+<anchor xml:id="__console_8cpp_source_1l00019"/>00019 
+<anchor xml:id="__console_8cpp_source_1l00021"/><link linkend="_classtl_1_1_console_1a28cbea123d31ecac8d40bc7a85ba2038">00021</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1a28cbea123d31ecac8d40bc7a85ba2038">Console::create</link>()
+<anchor xml:id="__console_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;AllocConsole();
+<anchor xml:id="__console_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stdOut&#32;=&#32;GetStdHandle(STD_OUTPUT_HANDLE);
+<anchor xml:id="__console_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00026"/>00026 
+<anchor xml:id="__console_8cpp_source_1l00027"/>00027 
+<anchor xml:id="__console_8cpp_source_1l00029"/><link linkend="_classtl_1_1_console_1ab3d7e7bb288351089364bd2f90087ba8">00029</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1ab3d7e7bb288351089364bd2f90087ba8">Console::close</link>()
+<anchor xml:id="__console_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;FreeConsole();
+<anchor xml:id="__console_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00033"/>00033 
+<anchor xml:id="__console_8cpp_source_1l00034"/>00034 
+<anchor xml:id="__console_8cpp_source_1l00037"/><link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">00037</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">Console::print</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;text)
+<anchor xml:id="__console_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(stdOut&#32;!=&#32;NULL&#32;&amp;&amp;&#32;stdOut&#32;!=&#32;INVALID_HANDLE_VALUE)
+<anchor xml:id="__console_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;written&#32;=&#32;0;
+<anchor xml:id="__console_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteConsoleA(stdOut,&#32;text,&#32;strlen(text),&#32;&amp;written,&#32;NULL);
+<anchor xml:id="__console_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00045"/>00045 
+<anchor xml:id="__console_8cpp_source_1l00046"/>00046 
+<anchor xml:id="__console_8cpp_source_1l00049"/><link linkend="_classtl_1_1_console_1ab1b9665ba361a679f9c08ab4572d1669">00049</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1ab1b9665ba361a679f9c08ab4572d1669">Console::println</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;text)
+<anchor xml:id="__console_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">print</link>(text);
+<anchor xml:id="__console_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">print</link>(<emphasis role="stringliteral">&quot;\n&quot;</emphasis>);
+<anchor xml:id="__console_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00054"/>00054 
+<anchor xml:id="__console_8cpp_source_1l00055"/>00055 
+<anchor xml:id="__console_8cpp_source_1l00058"/><link linkend="_classtl_1_1_console_1a91d5c96f0cae60dff60530e6376f9804">00058</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">Console::print</link>(<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;num)
+<anchor xml:id="__console_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;str[10];
+<anchor xml:id="__console_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(hexMode)
+<anchor xml:id="__console_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wsprintfA(str,&#32;<emphasis role="stringliteral">&quot;%X&quot;</emphasis>,&#32;num);
+<anchor xml:id="__console_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__console_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wsprintfA(str,&#32;<emphasis role="stringliteral">&quot;%u&quot;</emphasis>,&#32;num);
+<anchor xml:id="__console_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">print</link>(str);
+<anchor xml:id="__console_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00067"/>00067 
+<anchor xml:id="__console_8cpp_source_1l00068"/>00068 
+<anchor xml:id="__console_8cpp_source_1l00071"/><link linkend="_classtl_1_1_console_1a0b20510a491cb2ce72c2586161d78bb2">00071</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1ab1b9665ba361a679f9c08ab4572d1669">Console::println</link>(<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link>&#32;num)
+<anchor xml:id="__console_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">print</link>(num);
+<anchor xml:id="__console_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classtl_1_1_console_1a2664a8eef4e6510ccd4890f2d0bc8d57">print</link>(<emphasis role="stringliteral">&quot;\n&quot;</emphasis>);
+<anchor xml:id="__console_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00076"/>00076 
+<anchor xml:id="__console_8cpp_source_1l00077"/>00077 
+<anchor xml:id="__console_8cpp_source_1l00079"/><link linkend="_classtl_1_1_console_1a0b4ecfd95f4b4d11f84a2ff8d2047c7d">00079</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1a0b4ecfd95f4b4d11f84a2ff8d2047c7d">Console::clear</link>()
+<anchor xml:id="__console_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(stdOut&#32;!=&#32;NULL&#32;&amp;&amp;&#32;stdOut&#32;!=&#32;INVALID_HANDLE_VALUE)
+<anchor xml:id="__console_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DWORD&#32;mode;
+<anchor xml:id="__console_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetConsoleMode(stdOut,&#32;&amp;mode);
+<anchor xml:id="__console_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetConsoleMode(stdOut,&#32;mode&#32;|&#32;4);
+<anchor xml:id="__console_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;written&#32;=&#32;0;
+<anchor xml:id="__console_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WriteConsoleA(stdOut,&#32;<emphasis role="stringliteral">&quot;\x1b[2J\x1b[H&quot;</emphasis>,&#32;7,&#32;&amp;written,&#32;NULL);
+<anchor xml:id="__console_8cpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00090"/>00090 
+<anchor xml:id="__console_8cpp_source_1l00091"/>00091 
+<anchor xml:id="__console_8cpp_source_1l00097"/><link linkend="_classtl_1_1_console_1a4264551a1d9018934ffe9d3046a9b31c">00097</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classtl_1_1_console_1a4264551a1d9018934ffe9d3046a9b31c">Console::set</link>(<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link>&#32;index)
+<anchor xml:id="__console_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(index&#32;==&#32;<link linkend="_classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a64adb1d58c397edebef237f579be0364">Dec</link>&#32;||&#32;index&#32;==&#32;<link linkend="_classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a3329fdffb6147c571e247eeac0d3df82">Default</link>)
+<anchor xml:id="__console_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hexMode&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__console_8cpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(index&#32;==&#32;<link linkend="_classtl_1_1_console_1a38a9fa2929a4729faaf8115beaf57247a0e555b0fc424baadfbb68139c4553498">Hex</link>)
+<anchor xml:id="__console_8cpp_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hexMode&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__console_8cpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00104"/>00104 
+<anchor xml:id="__console_8cpp_source_1l00105"/>00105 
+<anchor xml:id="__console_8cpp_source_1l00108"/><link linkend="_classtl_1_1_console_1ae4d0cfc755e22969589c1e746594333a">00108</link> &#32;&#32;&#32;&#32;<link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link>&#32;<link linkend="_classtl_1_1_console_1ae4d0cfc755e22969589c1e746594333a">Console::isOpen</link>()
+<anchor xml:id="__console_8cpp_source_1l00109"/>00109 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;GetConsoleWindow()&#32;!=&#32;NULL;
+<anchor xml:id="__console_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_8cpp_source_1l00112"/>00112 }
+</programlisting></section>

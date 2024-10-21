@@ -1,0 +1,138 @@
+\doxysection{tl\+::Time Class Reference}
+\label{classtl_1_1_time}\index{tl::Time@{tl::Time}}
+
+
+{\ttfamily \#include $<$Time.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Time} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Time}{p.}{classtl_1_1_time} value gets set right away upon creation. \end{DoxyCompactList}\item 
+\textbf{ Time} (\textbf{ u64} time\+Value)
+\begin{DoxyCompactList}\small\item\em Probably avoid this for now lol. -\/ I plan to change it later. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Time} ()
+\begin{DoxyCompactList}\small\item\em Nothing to clean up here for now. \end{DoxyCompactList}\item 
+\textbf{ u64} \textbf{ get\+Time} ()
+\begin{DoxyCompactList}\small\item\em Get the current time data from this object. \end{DoxyCompactList}\item 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Update the time data to what it should be right now. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ u64} \textbf{ current\+Time} ()
+\begin{DoxyCompactList}\small\item\em Static way to get a current time value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 8} of file \textbf{ Time.\+h}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{tl::Time@{tl::Time}!Time@{Time}}
+\index{Time@{Time}!tl::Time@{tl::Time}}
+\doxysubsubsection{Time()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtl_1_1_time_a34f8675ccfa9e803c9ce72a837ecfe51} 
+tl\+::\+Time\+::\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxyref{Time}{p.}{classtl_1_1_time} value gets set right away upon creation. 
+
+
+
+Definition at line \textbf{ 7} of file \textbf{ Time.\+cpp}.
+
+\index{tl::Time@{tl::Time}!Time@{Time}}
+\index{Time@{Time}!tl::Time@{tl::Time}}
+\doxysubsubsection{Time()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtl_1_1_time_a3e69fca7e1810f6c904dd66a8045d743} 
+tl\+::\+Time\+::\+Time (\begin{DoxyParamCaption}\item[{\textbf{ u64}}]{time\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Probably avoid this for now lol. -\/ I plan to change it later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Value} & What number you want the internal time data as. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 15} of file \textbf{ Time.\+cpp}.
+
+\index{tl::Time@{tl::Time}!````~Time@{$\sim$Time}}
+\index{````~Time@{$\sim$Time}!tl::Time@{tl::Time}}
+\doxysubsubsection{$\sim$Time()}
+{\footnotesize\ttfamily \label{classtl_1_1_time_afaed444aa23b96b0c0070e55e9821d9a} 
+tl\+::\+Time\+::$\sim$\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Nothing to clean up here for now. 
+
+
+
+Definition at line \textbf{ 22} of file \textbf{ Time.\+cpp}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\index{tl::Time@{tl::Time}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!tl::Time@{tl::Time}}
+\doxysubsubsection{currentTime()}
+{\footnotesize\ttfamily \label{classtl_1_1_time_a4cc3ff829d334cf59c3aacb0ab181c0e} 
+\textbf{ u64} tl\+::\+Time\+::current\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static way to get a current time value. 
+
+\begin{DoxyReturn}{Returns}
+Current time value. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 45} of file \textbf{ Time.\+cpp}.
+
+\index{tl::Time@{tl::Time}!getTime@{getTime}}
+\index{getTime@{getTime}!tl::Time@{tl::Time}}
+\doxysubsubsection{getTime()}
+{\footnotesize\ttfamily \label{classtl_1_1_time_a69a320e7414645c62a9f63d52d907a02} 
+\textbf{ u64} tl\+::\+Time\+::get\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the current time data from this object. 
+
+\begin{DoxyReturn}{Returns}
+\doxyref{Time}{p.}{classtl_1_1_time} data. 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 30} of file \textbf{ Time.\+cpp}.
+
+\index{tl::Time@{tl::Time}!update@{update}}
+\index{update@{update}!tl::Time@{tl::Time}}
+\doxysubsubsection{update()}
+{\footnotesize\ttfamily \label{classtl_1_1_time_ac23bdcb12fe6d39a370f2d35c588ef30} 
+void tl\+::\+Time\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Update the time data to what it should be right now. 
+
+
+
+Definition at line \textbf{ 37} of file \textbf{ Time.\+cpp}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Lib/\+Base/\textbf{ Time.\+h}\item 
+Tiny\+Lib/\+Base/\textbf{ Time.\+cpp}\end{DoxyCompactItemize}

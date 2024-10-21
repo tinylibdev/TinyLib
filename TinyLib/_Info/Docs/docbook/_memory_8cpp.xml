@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__memory_8cpp" xml:lang="en-US">
+<title>TinyLib/Base/Memory.cpp File Reference</title>
+<indexterm><primary>TinyLib/Base/Memory.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;Memory.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetl">tl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_namespacetl_1a2ac98dd95bdf0b59af459a290354c589">tl::malloc</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacetl_1a27f87676958c34ab5d023c25d954a58a">tl::free</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void *__cdecl <link linkend="__memory_8cpp_1a00d6f69015f4868522db5fa267282022">memset</link> (void *ptr, int value, size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="__memory_8cpp_1a1a7f24760c8c7ad3bfcd54856d906fc2">operator new</link> (size_t size) noexcept</para>
+</listitem>
+            <listitem><para>void <link linkend="__memory_8cpp_1afa145befcf5e7b83424408ca503c8637">operator delete</link> (void *ptr) noexcept</para>
+</listitem>
+            <listitem><para>void * <link linkend="__memory_8cpp_1aa75472ab4b765cf6f6b5b0ebcd4a28c8">operator new[]</link> (size_t size) noexcept</para>
+</listitem>
+            <listitem><para>void <link linkend="__memory_8cpp_1a22aea74a1155aa798d6032da46da2391">operator delete[]</link> (void *ptr) noexcept</para>
+</listitem>
+            <listitem><para>void <link linkend="__memory_8cpp_1a91e676caef3a7611d29e053ed1789a1a">operator delete</link> (void *ptr, unsigned int size) noexcept</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__memory_8cpp_1a4cf04c7a2389a90415c8032ce5e58e50">_fltused</link> = 1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__memory_8cpp_1a00d6f69015f4868522db5fa267282022"/><section>
+    <title>memset()</title>
+<indexterm><primary>memset</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>memset</secondary></indexterm>
+<para><computeroutput>void *__cdecl memset (void * ptr, int value, size_t size)</computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00022">22</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="__memory_8cpp_1afa145befcf5e7b83424408ca503c8637"/><section>
+    <title>operator delete()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator delete</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator delete</secondary></indexterm>
+<para><computeroutput>void operator delete (void * ptr)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00041">41</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="__memory_8cpp_1a91e676caef3a7611d29e053ed1789a1a"/><section>
+    <title>operator delete()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator delete</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator delete</secondary></indexterm>
+<para><computeroutput>void operator delete (void * ptr, unsigned int size)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00061">61</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="__memory_8cpp_1a22aea74a1155aa798d6032da46da2391"/><section>
+    <title>operator delete[]()</title>
+<indexterm><primary>operator delete[]</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator delete[]</secondary></indexterm>
+<para><computeroutput>void operator delete[] (void * ptr)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00055">55</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="__memory_8cpp_1a1a7f24760c8c7ad3bfcd54856d906fc2"/><section>
+    <title>operator new()</title>
+<indexterm><primary>operator new</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator new</secondary></indexterm>
+<para><computeroutput>void * operator new (size_t size)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00033">33</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+<anchor xml:id="__memory_8cpp_1aa75472ab4b765cf6f6b5b0ebcd4a28c8"/><section>
+    <title>operator new[]()</title>
+<indexterm><primary>operator new[]</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>operator new[]</secondary></indexterm>
+<para><computeroutput>void * operator new[] (size_t size)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00047">47</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="__memory_8cpp_1a4cf04c7a2389a90415c8032ce5e58e50"/><section>
+    <title>_fltused</title>
+<indexterm><primary>_fltused</primary><secondary>Memory.cpp</secondary></indexterm>
+<indexterm><primary>Memory.cpp</primary><secondary>_fltused</secondary></indexterm>
+<para><computeroutput>int _fltused = 1</computeroutput></para><para>
+Definition at line <link linkend="__memory_8cpp_source_1l00018">18</link> of file <link linkend="__memory_8cpp_source">Memory.cpp</link>.</para>
+</section>
+</section>
+</section>

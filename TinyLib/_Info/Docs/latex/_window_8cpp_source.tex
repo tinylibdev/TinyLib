@@ -1,0 +1,220 @@
+\doxysection{Window.\+cpp}
+\label{_window_8cpp_source}\index{TinyLib/Graphics/Window.cpp@{TinyLib/Graphics/Window.cpp}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}Window.h"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }tl}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ LRESULT\ CALLBACK\ Window::WndProc(HWND\ hwnd,\ UINT\ msg,\ WPARAM\ wParam,\ LPARAM\ lParam)}
+\DoxyCodeLine{00016\ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ Window*\ window\ =\ \textcolor{keyword}{reinterpret\_cast<}Window*\textcolor{keyword}{>}(GetWindowLongPtr(hwnd,\ GWLP\_USERDATA));}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (window\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DefWindowProc(hwnd,\ msg,\ wParam,\ lParam);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (msg)}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_CLOSE:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ window-\/>currentEvents\ |=\ Event::Closed;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_DESTROY:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ PostQuitMessage(0);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_MOVE:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ window-\/>currentEvents\ |=\ Event::Moved;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_SIZE:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ window-\/>currentEvents\ |=\ Event::Resized;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DefWindowProc(hwnd,\ msg,\ wParam,\ lParam);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \ \ \ \ Window::Window(Vec2i\ size,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ title,\ LONG\ style)}
+\DoxyCodeLine{00054\ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ create(\{size.x,\ size.y\},\ title,\ style);}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \ \ \ \ Window::\string~Window()}
+\DoxyCodeLine{00061\ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ graphics;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ DestroyWindow(hwnd);}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::create(Vec2i\ size,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ title,\ LONG\ style)}
+\DoxyCodeLine{00074\ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ the\ window\ first}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ WNDCLASSA\ wc\ =\ \{\};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ wc.style\ =\ CS\_HREDRAW\ |\ CS\_VREDRAW;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ wc.lpfnWndProc\ =\ WndProc;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ wc.hInstance\ =\ GetModuleHandle(NULL);}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ wc.hCursor\ =\ LoadCursor(NULL,\ IDC\_ARROW);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ className[13];}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ wsprintfA(className,\ \textcolor{stringliteral}{"{}TL\%u"{}},\ GetCurrentProcessId());}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ wc.lpszClassName\ =\ className;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ RegisterClassA(\&wc);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ RECT\ rect\ =\ \{\ 0,\ 0,\ size.x,\ size.y\ \};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ AdjustWindowRect(\&rect,\ style\ |\ WS\_VISIBLE,\ FALSE);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ hwnd\ =\ CreateWindowA(}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ wc.lpszClassName,\ title,}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ style\ |\ WS\_VISIBLE,}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ CW\_USEDEFAULT,\ CW\_USEDEFAULT,\ rect.right\ -\/\ rect.left,\ rect.bottom\ -\/\ rect.top,}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ NULL,\ NULL,\ wc.hInstance,\ NULL}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#ifdef\ GDI\_GRAPHICS}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ graphics\ =\ \textcolor{keyword}{new}\ \_GraphicsGDI(hwnd,\ size.x,\ size.y);}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ graphics\ =\ \textcolor{keyword}{new}\ \_Graphics(hwnd,\ size.x,\ size.y);}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ windowOpen\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ ShowWindow(hwnd,\ SW\_SHOW);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ SetWindowLongPtr(hwnd,\ GWLP\_USERDATA,\ \textcolor{keyword}{reinterpret\_cast<}LONG\_PTR\textcolor{keyword}{>}(\textcolor{keyword}{this}));}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{bool}\ Window::isOpen()}
+\DoxyCodeLine{00116\ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (maxFps\ >\ 0)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ u64\ currentTime\ =\ Time::currentTime();}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ u64\ frameDuration\ =\ 1000\ /\ maxFps;}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (currentTime\ -\/\ lastFrameTime\ <\ frameDuration)}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Sleep(frameDuration\ -\/\ (currentTime\ -\/\ lastFrameTime));}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ lastFrameTime\ =\ Time::currentTime();}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ currentEvents\ =\ 0;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ MSG\ msg;}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (PeekMessage(\&msg,\ NULL,\ 0,\ 0,\ PM\_REMOVE))}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TranslateMessage(\&msg);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DispatchMessage(\&msg);}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ windowOpen;}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::draw(Rectangle\&\ rectangle)}
+\DoxyCodeLine{00144\ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ graphics-\/>draw(rectangle);}
+\DoxyCodeLine{00146\ \ \ \ \ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::draw(Text\&\ text)}
+\DoxyCodeLine{00152\ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ graphics-\/>draw(text);}
+\DoxyCodeLine{00154\ \ \ \ \ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::close()}
+\DoxyCodeLine{00159\ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ windowOpen\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ DestroyWindow(hwnd);}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::clear(Color\ color)}
+\DoxyCodeLine{00168\ \ \ \ \ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ graphics-\/>clear(color);}
+\DoxyCodeLine{00170\ \ \ \ \ \}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::display()}
+\DoxyCodeLine{00175\ \ \ \ \ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ graphics-\/>display();}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00182\ \ \ \ \ Vec2i\ Window::getSize()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00183\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ RECT\ rect;}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ GetClientRect(hwnd,\ \&rect);}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Vec2i(s32(rect.right),\ s32(rect.bottom));}
+\DoxyCodeLine{00187\ \ \ \ \ \}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::setSize(Vec2i\ size)}
+\DoxyCodeLine{00193\ \ \ \ \ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ SetWindowPos(hwnd,\ NULL,\ 0,\ 0,\ size.x,\ size.y,\ SWP\_NOMOVE\ |\ SWP\_NOZORDER);}
+\DoxyCodeLine{00195\ \ \ \ \ \}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::setTitle(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ title)}
+\DoxyCodeLine{00201\ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ SetWindowTextA(hwnd,\ title);}
+\DoxyCodeLine{00203\ \ \ \ \ \}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::setPosition(Vec2i\ pos)}
+\DoxyCodeLine{00209\ \ \ \ \ \{}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ SetWindowPos(hwnd,\ NULL,\ pos.x,\ pos.y,\ 0,\ 0,\ SWP\_NOSIZE\ |\ SWP\_NOZORDER);}
+\DoxyCodeLine{00211\ \ \ \ \ \}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::move(Vec2i\ pos)}
+\DoxyCodeLine{00217\ \ \ \ \ \{}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ setPosition(\{\ getPosition().x\ +\ pos.x,\ getPosition().y\ +\ pos.y\ \});}
+\DoxyCodeLine{00219\ \ \ \ \ \}}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00224\ \ \ \ \ Vec2i\ Window::getPosition()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00225\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ RECT\ rect;}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ GetWindowRect(hwnd,\ \&rect);}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Vec2i(s32(rect.left),\ s32(rect.top));}
+\DoxyCodeLine{00229\ \ \ \ \ \}}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordtype}{void}\ Window::limitFPS(u32\ fps)}
+\DoxyCodeLine{00237\ \ \ \ \ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ FPS\ limiter\ seems\ to\ be\ off,\ I'll\ fix\ when\ I\ do\ unix\ time.}}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ maxFps\ =\ fps;}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (maxFps\ >\ 0)}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ lastFrameTime\ =\ Time::currentTime();}
+\DoxyCodeLine{00242\ \ \ \ \ \}}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00250\ \ \ \ \ bit\ Window::checkEvent(u8\ event)}
+\DoxyCodeLine{00251\ \ \ \ \ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (currentEvents\ \&\ event)\ >\ 0;}
+\DoxyCodeLine{00253\ \ \ \ \ \}}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00256\ \textcolor{comment}{\ \ \ \ void\ Window::setScroll(Vec2i\ size)}}
+\DoxyCodeLine{00257\ \textcolor{comment}{\ \ \ \ \{}}
+\DoxyCodeLine{00258\ \textcolor{comment}{\ \ \ \ \ \ \ \ SetScrollRange(hwnd,\ SB\_HORZ,\ 0,\ size.x,\ TRUE);}}
+\DoxyCodeLine{00259\ \textcolor{comment}{\ \ \ \ \ \ \ \ SetScrollRange(hwnd,\ SB\_VERT,\ 0,\ size.y,\ TRUE);}}
+\DoxyCodeLine{00260\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00261\ \textcolor{comment}{}}
+\DoxyCodeLine{00262\ \textcolor{comment}{}}
+\DoxyCodeLine{00263\ \textcolor{comment}{\ \ \ \ Vec2i\ Window::getScroll()}}
+\DoxyCodeLine{00264\ \textcolor{comment}{\ \ \ \ \{}}
+\DoxyCodeLine{00265\ \textcolor{comment}{\ \ \ \ \ \ \ \ Vec2i\ size;}}
+\DoxyCodeLine{00266\ \textcolor{comment}{\ \ \ \ \ \ \ \ GetScrollRange(hwnd,\ SB\_HORZ,\ nullptr,\ \&size.x);}}
+\DoxyCodeLine{00267\ \textcolor{comment}{\ \ \ \ \ \ \ \ GetScrollRange(hwnd,\ SB\_VERT,\ nullptr,\ \&size.y);}}
+\DoxyCodeLine{00268\ \textcolor{comment}{}}
+\DoxyCodeLine{00269\ \textcolor{comment}{\ \ \ \ \ \ \ \ return\ size;}}
+\DoxyCodeLine{00270\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00271\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00272\ \}}
+
+\end{DoxyCode}

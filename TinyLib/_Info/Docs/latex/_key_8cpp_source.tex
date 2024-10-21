@@ -1,0 +1,16 @@
+\doxysection{Key.\+cpp}
+\label{_key_8cpp_source}\index{TinyLib/System/Key.cpp@{TinyLib/System/Key.cpp}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}Key.h"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }tl}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ bit\ Key::isHeld(u8\ key)}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (GetAsyncKeyState(key)\ \&\ 0x8000)\ >\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \}}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}

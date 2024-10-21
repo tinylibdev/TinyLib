@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__text_8cpp" xml:lang="en-US">
+<title>TinyLib/Graphics/Text.cpp File Reference</title>
+<indexterm><primary>TinyLib/Graphics/Text.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;Text.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetl">tl</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

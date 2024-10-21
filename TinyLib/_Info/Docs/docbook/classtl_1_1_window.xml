@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtl_1_1_window" xml:lang="en-US">
+<title>tl::Window Class Reference</title>
+<indexterm><primary>tl::Window</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Window.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a">Window</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>={800, 600}, const char *=&quot;Window&quot;, LONG style=WS_OVERLAPPEDWINDOW)</para>
+
+<para>Create a new window, all parameters are optional. </para>
+</listitem>
+            <listitem><para><link linkend="_classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064">~Window</link> ()</para>
+
+<para>Clean up window resources. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d">create</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>={800, 600}, const char *=&quot;Window&quot;, LONG style=WS_OVERLAPPEDWINDOW)</para>
+
+<para>Recreate the window. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classtl_1_1_window_1acc9900250b03144262deb12fbdb61378">isOpen</link> ()</para>
+
+<para>Check if the window is open. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532">draw</link> (<link linkend="_classtl_1_1_rectangle">Rectangle</link> &amp;rectangle)</para>
+
+<para>Draw a rectangle to the screen. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a9840a8d047b1f9e4b8803e0fef20006a">draw</link> (<link linkend="_classtl_1_1_text">Text</link> &amp;text)</para>
+
+<para>Draw text to the screen. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e">close</link> ()</para>
+
+<para>Close this window. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1">clear</link> (<link linkend="_structtl_1_1_color">Color</link> color=<link linkend="_structtl_1_1_color">Color</link>(255, 255, 255, 255))</para>
+
+<para>Clear the window. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e">getSize</link> () const</para>
+
+<para>Get size of the window. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b">setSize</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set the size of the window. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84">setTitle</link> (const char *title)</para>
+
+<para>Change the window title. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a9efb2affce62623dec72f2267704412b">setPosition</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Set the window&apos;s position on screen. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c">move</link> (<link linkend="_structtl_1_1_vec2i">Vec2i</link>)</para>
+
+<para>Move the window from current position. </para>
+</listitem>
+            <listitem><para><link linkend="_structtl_1_1_vec2i">Vec2i</link> <link linkend="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c">getPosition</link> () const</para>
+
+<para>Get the current position of the window. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b">display</link> ()</para>
+
+<para>Display what you&apos;ve drawn to the window. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d">limitFPS</link> (<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link> fps)</para>
+
+<para>Caps the framerate to given value, 0 for unlimited. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> <link linkend="_classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885">checkEvent</link> (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> event)</para>
+
+<para>Check if a window event activated this frame. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__window_8h_source_1l00035">35</link> of file <link linkend="__window_8h_source">Window.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtl_1_1_window_1af7f03b9993b5f71524d989d41c3b429a"/><section>
+    <title>Window()</title>
+<indexterm><primary>Window</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>Window</secondary></indexterm>
+<para><computeroutput>tl::Window::Window (<link linkend="_structtl_1_1_vec2i">Vec2i</link> size = <computeroutput>{800,&#160;600}</computeroutput>
+, const char * title = <computeroutput>&quot;Window&quot;</computeroutput>
+, LONG style = <computeroutput>WS_OVERLAPPEDWINDOW</computeroutput>
+)</computeroutput></para><para>
+
+<para>Create a new window, all parameters are optional. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>size</entry><entry>
+<para>The width, height of this window in pixels. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>title</entry><entry>
+<para>The title of the window. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>style</entry><entry>
+<para>Additional window style flags.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                Size is optional, default is 800x600. Title is optional, default is &quot;Window&quot;. Style is optional, default is <link linkend="_namespacetl_1a36ce4a17d54a1939d694bf6d68cf0308a37707492d112fc66861dba3bda903db8">tl::Style::Default</link>. </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00053">53</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a3b64b0fe1dea00402c96b692d0014064"/><section>
+    <title>~Window()</title>
+<indexterm><primary>~Window</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>~Window</secondary></indexterm>
+<para><computeroutput>tl::Window::~Window ( )</computeroutput></para><para>
+
+<para>Clean up window resources. </para>
+</para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00060">60</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtl_1_1_window_1a7f8a9802a81f62d796bae1d0b91ab885"/><section>
+    <title>checkEvent()</title>
+<indexterm><primary>checkEvent</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>checkEvent</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetl_1a4c8bdcbc2193d28b2c445bc8e895d6cd">bit</link> tl::Window::checkEvent (<link linkend="_namespacetl_1a7d0bc20d8f81c8896790b9438e88bfb9">u8</link> event)</computeroutput></para><para>
+
+<para>Check if a window event activated this frame. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>event</entry><entry>
+<para><link linkend="_classtl_1_1_window">Window</link> event to check. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if specified event activated this frame.</para>
+</formalpara>
+Events are an enum defined in <link linkend="__window_8h">Window.h</link>, <link linkend="_namespacetl_1a7e2989f2c8039c3f533555e5255c654d">tl::Event</link>. </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00250">250</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a0898a946e4f5e6b7351ee99bb5aff7a1"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>clear</secondary></indexterm>
+<para><computeroutput>void tl::Window::clear (<link linkend="_structtl_1_1_color">Color</link> color = <computeroutput><link linkend="_structtl_1_1_color">Color</link>(255,&#160;255,&#160;255,&#160;255)</computeroutput>
+)</computeroutput></para><para>
+
+<para>Clear the window. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>color</entry><entry>
+<para><link linkend="_structtl_1_1_color">Color</link> to clear window with. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00167">167</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a26241beb4219594aabbe85cc23db868e"/><section>
+    <title>close()</title>
+<indexterm><primary>close</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>close</secondary></indexterm>
+<para><computeroutput>void tl::Window::close ( )</computeroutput></para><para>
+
+<para>Close this window. </para>
+</para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00158">158</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a23b3c5ad850d5bfb99c2bc720a38646d"/><section>
+    <title>create()</title>
+<indexterm><primary>create</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>create</secondary></indexterm>
+<para><computeroutput>void tl::Window::create (<link linkend="_structtl_1_1_vec2i">Vec2i</link> size = <computeroutput>{800,&#160;600}</computeroutput>
+, const char * title = <computeroutput>&quot;Window&quot;</computeroutput>
+, LONG style = <computeroutput>WS_OVERLAPPEDWINDOW</computeroutput>
+)</computeroutput></para><para>
+
+<para>Recreate the window. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>size</entry><entry>
+<para>The width, height of this window in pixels. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>title</entry><entry>
+<para>The title of the window. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>style</entry><entry>
+<para>Additional window style flags.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                All parameters are optional, any you don&apos;t provide will stay the same. </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00073">73</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a8c1af3d08005bd7bffdf6ddde719303b"/><section>
+    <title>display()</title>
+<indexterm><primary>display</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>display</secondary></indexterm>
+<para><computeroutput>void tl::Window::display ( )</computeroutput></para><para>
+
+<para>Display what you&apos;ve drawn to the window. </para>
+</para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00174">174</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a6eea31ce5f9396a8761bac6ab2024532"/><section>
+    <title>draw()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>draw</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void tl::Window::draw (<link linkend="_classtl_1_1_rectangle">Rectangle</link> &amp; rectangle)</computeroutput></para><para>
+
+<para>Draw a rectangle to the screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rectangle</entry><entry>
+<para>The rectangle to draw. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00143">143</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a9840a8d047b1f9e4b8803e0fef20006a"/><section>
+    <title>draw()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>draw</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>void tl::Window::draw (<link linkend="_classtl_1_1_text">Text</link> &amp; text)</computeroutput></para><para>
+
+<para>Draw text to the screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>text</entry><entry>
+<para>The text you want to draw. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00151">151</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a622a8eaf9557f44baa439e47133e0b8c"/><section>
+    <title>getPosition()</title>
+<indexterm><primary>getPosition</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>getPosition</secondary></indexterm>
+<para><computeroutput><link linkend="_structtl_1_1_vec2i">Vec2i</link> tl::Window::getPosition ( ) const</computeroutput></para><para>
+
+<para>Get the current position of the window. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>X-position, y-position. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00224">224</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a2bcf4a5045beca6be155f7fe5063e12e"/><section>
+    <title>getSize()</title>
+<indexterm><primary>getSize</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>getSize</secondary></indexterm>
+<para><computeroutput><link linkend="_structtl_1_1_vec2i">Vec2i</link> tl::Window::getSize ( ) const</computeroutput></para><para>
+
+<para>Get size of the window. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Width, height. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00182">182</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1acc9900250b03144262deb12fbdb61378"/><section>
+    <title>isOpen()</title>
+<indexterm><primary>isOpen</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>isOpen</secondary></indexterm>
+<para><computeroutput>bool tl::Window::isOpen ( )</computeroutput></para><para>
+
+<para>Check if the window is open. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>True if window is open.</para>
+</formalpara>
+This method also makes sure the program doesn&apos;t go past the FPS cap if set with <link linkend="_classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d">Window::limitFPS()</link>. </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00115">115</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a375d826c0ad895b2430a99f6e8f5b11d"/><section>
+    <title>limitFPS()</title>
+<indexterm><primary>limitFPS</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>limitFPS</secondary></indexterm>
+<para><computeroutput>void tl::Window::limitFPS (<link linkend="_namespacetl_1a027b49b4b1bb51bafeac7cac614cbf51">u32</link> fps)</computeroutput></para><para>
+
+<para>Caps the framerate to given value, 0 for unlimited. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>fps</entry><entry>
+<para>Framerate cap.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                FPS cap is enforced in <link linkend="_classtl_1_1_window_1acc9900250b03144262deb12fbdb61378">Window::isOpen()</link>. </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00236">236</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a0d292d8450a90683c9fd1414cccae12c"/><section>
+    <title>move()</title>
+<indexterm><primary>move</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>void tl::Window::move (<link linkend="_structtl_1_1_vec2i">Vec2i</link> pos)</computeroutput></para><para>
+
+<para>Move the window from current position. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pos</entry><entry>
+<para>Move the window by x, y. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00216">216</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a9efb2affce62623dec72f2267704412b"/><section>
+    <title>setPosition()</title>
+<indexterm><primary>setPosition</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>setPosition</secondary></indexterm>
+<para><computeroutput>void tl::Window::setPosition (<link linkend="_structtl_1_1_vec2i">Vec2i</link> pos)</computeroutput></para><para>
+
+<para>Set the window&apos;s position on screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pos</entry><entry>
+<para>New x, y position for the window. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00208">208</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1aeda865c38f3820ce125fe9a7219cc15b"/><section>
+    <title>setSize()</title>
+<indexterm><primary>setSize</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>setSize</secondary></indexterm>
+<para><computeroutput>void tl::Window::setSize (<link linkend="_structtl_1_1_vec2i">Vec2i</link> size)</computeroutput></para><para>
+
+<para>Set the size of the window. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>size</entry><entry>
+<para>Set the width, height of this window. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00192">192</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<anchor xml:id="_classtl_1_1_window_1a11bed767345d14978dd12cc82e8c8d84"/><section>
+    <title>setTitle()</title>
+<indexterm><primary>setTitle</primary><secondary>tl::Window</secondary></indexterm>
+<indexterm><primary>tl::Window</primary><secondary>setTitle</secondary></indexterm>
+<para><computeroutput>void tl::Window::setTitle (const char * title)</computeroutput></para><para>
+
+<para>Change the window title. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>New title </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="__window_8cpp_source_1l00200">200</link> of file <link linkend="__window_8cpp_source">Window.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+TinyLib/Graphics/<link linkend="__window_8h">Window.h</link>TinyLib/Graphics/<link linkend="__window_8cpp">Window.cpp</link></section>
+</section>
