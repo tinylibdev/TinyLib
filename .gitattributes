@@ -4,4 +4,4 @@
 *.h     text diff=cpp
 
 # Ignore docs in language detection
-TinyLib/_Info linguist-vendored
+TinyLib/_Info/** linguist-vendored
