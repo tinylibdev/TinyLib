@@ -13,8 +13,8 @@ namespace tl
 
         void create();
         void close();
-        void print(const char*);
-        void println(const char*);
+        void print(String);
+        void println(String);
         void print(u32);
         void println(u32);
         void clear();

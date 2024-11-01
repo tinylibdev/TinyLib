@@ -4,6 +4,16 @@
 // GetTickCount needs this.
 #define _WIN32_WINNT 0x0601
 
+#ifdef GDI_GRAPHICS
+#include <Windows.h>
+#include <wingdi.h>
+#else
+
+// No GDI functionality needed.
+#define NOGDI
+
+
+#include <shtypes.h>
 #include <Windows.h>
 #include <d3d11.h>
 #include <dxgi1_2.h>
@@ -18,9 +28,11 @@
 #pragma comment(lib, "d2d1.lib")
 #pragma comment(lib, "dwrite.lib")
 #pragma comment(lib, "dxgi.lib")
+#endif
 
 // Encryption
 #pragma comment(lib, "Advapi32.lib")
 
-// Stop Windows Rectangle from interfering with mine.
+// Undefines
 #undef Rectangle
+#undef NOGDI

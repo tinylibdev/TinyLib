@@ -10,12 +10,12 @@ For 0.2.0 I hope to have 100% Unix support to showcase the cross compatibility I
 Versions beyond this, I am not certain yet, but I do plan on adding features you would need often; Sprites/image support, audio support, network support, I hope to have them all in this library.
 
 ## How to use
-There are a few basic examples of using the library at [TinyLib/_Info/Examples](https://github.com/tinylibdev/TinyLib/tree/main/TinyLib/_Info/Examples). There is also online documentation available [here](https://tinylibdev.github.io/Docs/0.1.0/).
+There are a few basic examples of using the library at [TinyLib/_Info/Examples](https://github.com/tinylibdev/TinyLib/tree/main/TinyLib/_Info/Examples). There is also online documentation available [here](https://tinylibdev.github.io/Docs/0.1.1/).
 
 ## Setup
-If you'd like to quickly get started with the library on Visual Studio, I have a template for it with optimal project configuration [here](https://github.com/tinylibdev/TinyLib/releases/download/0.1/TinyLibTemplate.zip).
+If you'd like to quickly get started with the library on Visual Studio, I have a template for it with optimal project configuration [here](https://github.com/tinylibdev/TinyLib/releases/download/0.1.1/TinyLibTemplate.zip).
 #### Manual setup
-If you'd like to set this up manually, you'll just need the TinyLib folder, downloadable [here](https://github.com/tinylibdev/TinyLib/releases/download/0.1/TinyLib.zip). Once unzipped you'll need a new Visual Studio project and you need to put the path to the TinyLib folder in these places:  
+If you'd like to set this up manually, you'll just need the TinyLib folder, downloadable [here](https://github.com/tinylibdev/TinyLib/releases/download/0.1.1/TinyLib.zip). Once unzipped you'll need a new Visual Studio project and you need to put the path to the TinyLib folder in these places:  
 C/C++ -> General -> Additional Include Directories  
 Linker -> General -> Additional Library Directories  
 And you need to put the path to the TinyLib.lib in:  

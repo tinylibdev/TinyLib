@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pch_8h_source" xml:lang="en-US">
-<title>pch.h</title>
-<indexterm><primary>TinyLib/pch.h</primary></indexterm>
-Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_pch_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
-</programlisting></section>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__tiny_lib_8h_source" xml:lang="en-US">
-<title>TinyLib.h</title>
-<indexterm><primary>TinyLib/TinyLib.h</primary></indexterm>
-Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__tiny_lib_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__base_category_8h">Base/BaseCategory.h</link>&quot;</emphasis>
-<anchor xml:id="__tiny_lib_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__graphics_category_8h">Graphics/GraphicsCategory.h</link>&quot;</emphasis>
-<anchor xml:id="__tiny_lib_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__system_category_8h">System/SystemCategory.h</link>&quot;</emphasis>
-<anchor xml:id="__tiny_lib_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__console_category_8h">Console/ConsoleCategory.h</link>&quot;</emphasis>
-</programlisting></section>
