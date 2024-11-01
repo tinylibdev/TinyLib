@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__base_category_8h" xml:lang="en-US">
-<title>TinyLib/Base/BaseCategory.h File Reference</title>
-<indexterm><primary>TinyLib/Base/BaseCategory.h</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;Types.h&quot;<?linebreak?>#include &quot;Time.h&quot;<?linebreak?>#include &quot;Vector.h&quot;<?linebreak?>#include &quot;Memory.h&quot;<?linebreak?>#include &quot;Util.h&quot;<?linebreak?></programlisting></section>

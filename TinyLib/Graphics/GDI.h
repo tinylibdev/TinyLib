@@ -1,3 +1,4 @@
+#ifdef GDI_GRAPHICS
 #pragma once
 #include "../Base/Win/WinAPI.h"
 #include "Rectangle.h"
@@ -26,3 +27,4 @@ namespace tl
         HBITMAP offscreenBitmap;
     };
 }
+#endif

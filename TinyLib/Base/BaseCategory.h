@@ -7,3 +7,5 @@
 #include "Vector.h"
 #include "Memory.h"
 #include "Util.h"
+#include "String.h"
+#include "Bitset.h"

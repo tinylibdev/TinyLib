@@ -34,22 +34,21 @@ namespace tl
 
     /// @brief Display a C-string in console.
     /// @param text What text to display.
-    void Console::print(const char* text)
+    void Console::print(String text)
     {
         if (stdOut != NULL && stdOut != INVALID_HANDLE_VALUE)
         {
             unsigned long written = 0;
-            WriteConsoleA(stdOut, text, strlen(text), &written, NULL);
+            WriteConsoleA(stdOut, text.cStr(), text.length(), &written, NULL);
         }
     }
 
 
     /// @brief Display a C-string in console with a new line after.
     /// @param text What text to display.
-    void Console::println(const char* text)
+    void Console::println(String text)
     {
-        print(text);
-        print("\n");
+        print(text + "\n");
     }
 
 

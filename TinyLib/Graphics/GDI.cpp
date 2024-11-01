@@ -1,3 +1,4 @@
+#ifdef GDI_GRAPHICS
 #include "GDI.h"
 
 
@@ -52,7 +53,7 @@ namespace tl
 
     void _GraphicsGDI::draw(Text& text)
     {
-        if (text.getString() == nullptr || strlen(text.getString()) == 0) return;
+        if (text.getString().cStr() == nullptr || text.getString().length() == 0) return;
 
         SetTextColor(offscreenDC, RGB(text.getColor().r, text.getColor().g, text.getColor().b));
         SetBkMode(offscreenDC, TRANSPARENT);
@@ -68,7 +69,7 @@ namespace tl
         space.right = space.left + text.getSize().x;
         space.bottom = space.top + text.getSize().y;
 
-        DrawTextA(offscreenDC, text.getString(), -1, &space, DT_LEFT | DT_VCENTER | DT_SINGLELINE);
+        DrawTextA(offscreenDC, text.getString().cStr(), -1, &space, DT_LEFT | DT_VCENTER | DT_SINGLELINE);
 
         //SelectObject(offscreenDC, hOldFont);
         DeleteObject(hFont);
@@ -90,3 +91,4 @@ namespace tl
         BitBlt(mainDC, 0, 0, width, height, offscreenDC, 0, 0, SRCCOPY);
     }
 }
+#endif

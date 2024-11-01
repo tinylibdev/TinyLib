@@ -10,7 +10,7 @@ namespace tl
     /// 
     /// The defaults for each parameter, no string data, fonst size 12,
     /// position (0, 0).
-    Text::Text(const ascii* str, u32 fontSize, Vec2i pos)
+    Text::Text(String str, u32 fontSize, Vec2i pos)
     {
         setString(str);
         setFontSize(fontSize);
@@ -21,34 +21,20 @@ namespace tl
     /// @brief Clean up string data.
     Text::~Text()
     {
-        delete[] string;
     }
 
 
     /// @brief Set the string data.
     /// @param str New string for text.
-    void Text::setString(const ascii* str)
+    void Text::setString(String str)
     {
-        delete[] string;
-        string = nullptr;
-
-        if (str)
-        {
-            u32 length = strlen(str);
-
-            // Allocate new memory and copy the string
-            string = new ascii[length + 1];
-            for (u32 i = 0; i <= length; i++)
-            {
-                string[i] = str[i];
-            }
-        }
+        string = str;
     }
 
 
     /// @brief Get the string data from this text.
     /// @return Internal string.
-    ascii* Text::getString() const
+    String Text::getString() const
     {
         return string;
     }

@@ -1,3 +1,4 @@
+#ifndef GDI_GRAPHICS
 #pragma once
 #include "../Base/Win/WinAPI.h"
 #include "../Base/BaseCategory.h"
@@ -361,7 +362,46 @@ private:
         };
 
         DrawableObject() {}
-        ~DrawableObject() {}
+
+        DrawableObject(const DrawableObject& other) : type(other.type) {
+            switch (type) {
+            case DrawableType::Rectangle:
+                rectangle = other.rectangle;
+                break;
+            case DrawableType::Text:
+                text = other.text;
+                break;
+            }
+        }
+
+        DrawableObject& operator=(const DrawableObject& other) {
+            if (this != &other) {
+                this->~DrawableObject();
+
+                type = other.type;
+
+                switch (type) {
+                case DrawableType::Rectangle:
+                    rectangle = other.rectangle;
+                    break;
+                case DrawableType::Text:
+                    text = other.text;
+                    break;
+                }
+            }
+            return *this;
+        }
+
+        ~DrawableObject() {
+            switch (type) {
+            case DrawableType::Rectangle:
+                rectangle.~Rectangle();
+                break;
+            case DrawableType::Text:
+                text.~Text();
+                break;
+            }
+        }
     };
 
     tl::Vector<DrawableObject> drawQueue;
@@ -387,11 +427,11 @@ private:
             text.getPosition().y + text.getSize().y
         );
 
-        wchar_t* wideStr = asciiToWide(text.getString());
+        wchar_t* wideStr = asciiToWide(text.getString().cStr());
 
         D2DRenderTarget->DrawText(
             wideStr,
-            tl::strlen(text.getString()),
+            text.getString().length(),
             textFormat.Get(),
             &textRect,
             pBrush.Get()
@@ -444,3 +484,4 @@ private:
 
     tl::Vector<floatRectangle> rectangles;
 };
+#endif
